@@ -1,21 +1,12 @@
+import React from "react";
 import ReactDOM from "react-dom/client";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Layout from "./Layout.jsx";
-import Home from "./pages/Home";
-import {Contact} from "./pages/Contact";
+import App from "./App.jsx";
+import "./index.css";
+import { store } from "./store.js";
+import { Provider } from "react-redux";
 
-export default function App() {
-  return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route path="contact" element={<Contact />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
-  );
-}
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<App />);
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <Provider store={store}>
+    <App />
+  </Provider>
+);

@@ -1,31 +1,24 @@
-import React from 'react'
-import {useEffect} from 'react'
-import GoogleLogin from 'react-google-login';
-import { gapi } from 'gapi-script';
-const clientId="1072310200260-q1qe1abccig96i51rr1ab237c9mg91mq.apps.googleusercontent.com"
+import React from "react";
+
+import { useMediaQuery } from "react-responsive";
+
+
+import {Hero} from "../sections/Hero";
+import Services from "../sections/Services";
+import About from "../sections/About";
 const Home = () => {
-  useEffect(() => {
-    gapi.load("shareme_frontend:auth2", () => {
-     gapi.auth2.init({clientId:clientId})
-    })
-   }, []);
-
-
-  const handleLogin = (response) => {
-    console.log(response);
-  }
+  const isDesktopOrLaptop = useMediaQuery({ query: "(min-width: 1224px)" });
+  const isBigScreen = useMediaQuery({ query: "(min-width: 1824px)" });
+  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" });
+  const isPortrait = useMediaQuery({ query: "(orientation: portrait)" });
+  const isRetina = useMediaQuery({ query: "(min-resolution: 2dppx)" });
   return (
-
     <>
-    <GoogleLogin
-      clientId={clientId}
-      buttonText="Sign up with Google"
-      onSuccess={handleLogin}
-      className="w-full btn_font_family"
-      style={{ fontFamily: "Lato sans-serif" }}
-      />
+      <Hero />
+      <Services />
+      <About />
     </>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
