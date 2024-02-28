@@ -3,7 +3,7 @@ import React from "react";
 const WhyChooseUs = () => {
   return (
     <>
-      <h2 className="flex justify-center items-center border-t font-bold text-3xl leading-[1.1] py-8 sm:text-3xl md:text-6xl">
+      <h2 className="flex justify-center items-center border-t font-bold text-4xl leading-[1.1] py-8 sm:text-3xl md:text-6xl">
         <span className="py-2 text-transparent bg-clip-text leading-12 bg-gradient-to-r from-green-400 to-purple-500">
           Why Choose Us?
         </span>

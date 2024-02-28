@@ -7,7 +7,7 @@ const Services = () => {
         className="container mx-auto  space-y-1  py-8  lg:py-20 w-full"
       >
         <div className="mx-auto flex max-w-[58rem] flex-col py-5 items-center space-y-4 text-center">
-          <h2 className="font-bold text-3xl leading-[1.1] sm:text-3xl md:text-6xl">
+          <h2 className="font-bold text-4xl leading-[1.1] sm:text-3xl md:text-6xl">
             <span className="block w-full py-2 text-transparent bg-clip-text leading-12 bg-gradient-to-r from-green-400 to-purple-500 lg:inline">
               Services
             </span>

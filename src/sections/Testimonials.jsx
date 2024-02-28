@@ -7,7 +7,7 @@ const Testimonials = () => {
         <div className="w-full bg-white border-t border-b border-gray-200 px-5 py-16 md:py-24 text-gray-800">
           <div className="w-full max-w-6xl mx-auto">
             <div className="text-center max-w-xl mx-auto">
-              <span className="block text-6xl md:text-7xl font-bold mb-5 w-full py-2 text-transparent bg-clip-text leading-12 bg-gradient-to-r from-green-400 to-purple-500 lg:inline">
+              <span className="block text-4xl md:text-7xl font-bold mb-5 w-full py-2 text-transparent bg-clip-text leading-12 bg-gradient-to-r from-green-400 to-purple-500 lg:inline">
                 Our awesome clients reviews <br />
                 for inspiration.
               </span>

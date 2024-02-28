@@ -6,22 +6,22 @@ export const Hero = () => {
       <section className="pt-24 bg-gray-50">
         <div className="mx-auto max-w-7xl">
           <div className="w-full mx-auto text-left md:w-11/12 xl:w-9/12 md:text-center">
-            <h1 className="mb-8 text-4xl font-extrabold leading-none tracking-normal text-gray-900 md:text-6xl md:tracking-tight">
+            <h1 className="mb-8 justify-center px-4 text-4xl sm:px-5 font-extrabold leading-none tracking-normal text-gray-900 md:text-6xl md:tracking-tight">
               <span>Discover</span>{" "}
               <span className="block w-full py-2 text-transparent bg-clip-text leading-12 bg-gradient-to-r from-green-400 to-purple-500 lg:inline">
                 your secure, reliable, and functional business
               </span>{" "}
               <span>software solutions.</span>
             </h1>
-            <p className="px-0 mb-8 text-lg text-gray-600 md:text-xl lg:px-24">
-              your secure, reliable, and functional business software solutions.
+            <p className="flex px-5 mb-8 text-lg justify-center text-gray-600 md:text-xl lg:px-24">
+              Your secure, reliable, and functional business software solutions.
               next-level templates and designs. Crafted to help you tell your
               story.
             </p>
-            <div className="mb-4 space-x-0 md:space-x-2 md:mb-8">
+            <div className="flex direction-row mb-4 justify-center space-x-0 md:space-x-2 md:mb-8">
               <a
                 href="#_"
-                className="inline-flex items-center justify-center w-full px-6 py-3 mb-2 text-lg text-white bg-blue-700 rounded-2xl sm:w-auto sm:mb-0"
+                className="inline-flex items-center  w-[200px] px-6 py-3 mb-2 text-lg text-white bg-blue-700 rounded-2xl sm:mb-0"
               >
                 Contact Now!
                 <svg
@@ -39,7 +39,7 @@ export const Hero = () => {
               </a>
               <a
                 href="#_"
-                className="inline-flex items-center justify-center w-full px-6 py-3 mb-2 text-lg bg-gray-100 rounded-2xl sm:w-auto sm:mb-0"
+                className="inline-flex items-center justify-center w-[200px] px-6 py-3 mb-2 text-lg bg-gray-100 rounded-2xl sm:w-auto sm:mb-0"
               >
                 Learn More
                 <svg

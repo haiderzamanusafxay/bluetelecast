@@ -608,7 +608,7 @@ const About = () => {
 
             <div className="w-full px-4 lg:w-1/2 xl:w-5/12">
               <div className="mt-10 lg:mt-0">
-                <span className="block w-full py-2 text-transparent text-7xl font-bold bg-clip-text leading-12 bg-gradient-to-r from-green-400 to-purple-500 lg:inline">
+                <span className="block w-full py-2 text-4xl  md:text-4xl lg:text-7xl xl:text-7xl font-bold text-transparent bg-clip-text leading-12 bg-gradient-to-r from-green-400 to-purple-500 lg:inline">
                   About Bluetelecast
                 </span>
                 <p className="mb-5 text-base text-body-color dark:text-dark-6">
