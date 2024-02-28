@@ -21,7 +21,7 @@ const Services = () => {
             <div className="flex h-[180px] flex-col justify-between rounded-md p-6">
               <div viewBox="0 0 24 24" className="h-8 w-8 fill-current">
                 <img
-                  src="https://icons8.com/icon/WMvhDPZBJ9X2/backend-development"
+                  src="https://cdn-icons-png.flaticon.com/512/9414/9414296.png"
                   width={500}
                   height={500}
                   alt="Picture of the author"
