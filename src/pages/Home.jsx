@@ -5,7 +5,9 @@ import { useMediaQuery } from "react-responsive";
 import { Hero } from "../sections/Hero";
 import Services from "../sections/Services";
 import About from "../sections/About";
+import WhyChooseUs from "../sections/WhyChooseUs";
 import Testimonials from "../sections/Testimonials";
+
 const Home = () => {
   const isDesktopOrLaptop = useMediaQuery({ query: "(min-width: 1224px)" });
   const isBigScreen = useMediaQuery({ query: "(min-width: 1824px)" });
@@ -17,6 +19,7 @@ const Home = () => {
       <Hero />
       <Services />
       <About />
+      <WhyChooseUs />
       <Testimonials />
     </>
   );

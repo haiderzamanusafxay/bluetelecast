@@ -3,7 +3,7 @@ import React from "react";
 const About = () => {
   return (
     <>
-      <section className="overflow-hidden lg:pt-[120px] lg:pb-[90px] bg-gray-50">
+      <section className="overflow-hidden lg:pt-[120px] border-t lg:pb-[90px] bg-gray-50">
         <div className="container w-11/12 mx-auto">
           <div className="flex flex-wrap items-center justify-between -mx-4">
             <div className="w-full px-4 lg:w-6/12">
@@ -608,12 +608,9 @@ const About = () => {
 
             <div className="w-full px-4 lg:w-1/2 xl:w-5/12">
               <div className="mt-10 lg:mt-0">
-                <span className="block w-full py-2 text-transparent bg-clip-text leading-12 bg-gradient-to-r from-green-400 to-purple-500 lg:inline">
+                <span className="block w-full py-2 text-transparent text-7xl font-bold bg-clip-text leading-12 bg-gradient-to-r from-green-400 to-purple-500 lg:inline">
                   About Bluetelecast
                 </span>
-                <h2 className="mb-5 text-3xl font-bold text-dar sm:text-[40px]/[48px]">
-                  Make your customers happy by giving services.
-                </h2>
                 <p className="mb-5 text-base text-body-color dark:text-dark-6">
                   In 2010, a small team of visionaries embarked on a journey to
                   revolutionize the digital landscape, laying the foundation for
