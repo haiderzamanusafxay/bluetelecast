@@ -3,312 +3,220 @@ import React from "react";
 const Footer = () => {
   return (
     <>
-      <footer className="font-[sans-serif] p-10 bg-gray-100">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-8">
-          <div className="xl:col-span-2">
-            <a href="javascript:void(0)">
-              <img
-                src="../../assets/bluetelecast.png"
-                alt="logo"
-                className="w-48"
-              />
-            </a>
-            <ul className="mt-10 flex space-x-6">
-              <li>
-                <a href="#fb">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    className="fill-black hover:fill-blue-700 w-6 h-6"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h7v-7h-2v-3h2V8.5A3.5 3.5 0 0 1 15.5 5H18v3h-2a1 1 0 0 0-1 1v2h3v3h-3v7h4a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2z"
-                      clip-rule="evenodd"
-                    />
-                  </svg>
-                </a>
-              </li>
+      <footer className="bg-white">
+        <div className="mx-auto max-w-screen-xl space-y-8 px-4 py-16 sm:px-6 lg:space-y-16 lg:px-8">
+          <div className="sm:flex sm:items-center sm:justify-between">
+            <div className="text-teal-600">
+              <img src="../../assets/bluetelecast.png" alt="" width="200" />
+            </div>
+
+            <ul className="mt-8 flex justify-start gap-6 sm:mt-0 sm:justify-end">
               <li>
                 <a
-                  href="https://www.linkedin.com/company/bluetelecast-software-company/"
+                  href="#"
+                  rel="noreferrer"
                   target="_blank"
+                  className="text-gray-700 transition hover:opacity-75"
                 >
+                  <span className="sr-only">Facebook</span>
+
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    className="fill-black hover:fill-blue-700 w-6 h-6"
+                    className="h-6 w-6"
+                    fill="currentColor"
                     viewBox="0 0 24 24"
+                    aria-hidden="true"
                   >
                     <path
-                      fill-rule="evenodd"
-                      d="M21 5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5zm-2.5 8.2v5.3h-2.79v-4.93a1.4 1.4 0 0 0-1.4-1.4c-.77 0-1.39.63-1.39 1.4v4.93h-2.79v-8.37h2.79v1.11c.48-.78 1.47-1.3 2.32-1.3 1.8 0 3.26 1.46 3.26 3.26zM6.88 8.56a1.686 1.686 0 0 0 0-3.37 1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68zm1.39 1.57v8.37H5.5v-8.37h2.77z"
-                      clip-rule="evenodd"
+                      fillRule="evenodd"
+                      d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                      clipRule="evenodd"
                     />
+                  </svg>
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#"
+                  rel="noreferrer"
+                  target="_blank"
+                  className="text-gray-700 transition hover:opacity-75"
+                >
+                  <span className="sr-only">Twitter</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    x="0px"
+                    y="0px"
+                    className="h-6 w-6"
+                    fill="currentColor"
+                    viewBox="0 0 50 50"
+                  >
+                    <path d="M25,2C12.318,2,2,12.317,2,25s10.318,23,23,23s23-10.317,23-23S37.682,2,25,2z M18,35h-4V20h4V35z M16,17 c-1.105,0-2-0.895-2-2c0-1.105,0.895-2,2-2s2,0.895,2,2C18,16.105,17.105,17,16,17z M37,35h-4v-5v-2.5c0-1.925-1.575-3.5-3.5-3.5 S26,25.575,26,27.5V35h-4V20h4v1.816C27.168,20.694,28.752,20,30.5,20c3.59,0,6.5,2.91,6.5,6.5V35z"></path>
                   </svg>
                 </a>
               </li>
             </ul>
           </div>
-          <div>
-            <h4 className="text-black font-semibold text-lg relative max-sm:cursor-pointer">
-              Services{" "}
-            </h4>
-            <ul className="mt-4 space-y-5">
-              <li>
-                <a
-                  href="javascript:void(0)"
-                  className="hover:text-blue-700 text-black text-sm"
-                >
-                  Web Development
-                </a>
-              </li>
-              <li>
-                <a
-                  href="javascript:void(0)"
-                  className="hover:text-blue-700 text-black text-sm"
-                >
-                  Pricing
-                </a>
-              </li>
-              <li>
-                <a
-                  href="javascript:void(0)"
-                  className="hover:text-blue-700 text-black text-sm"
-                >
-                  Support
-                </a>
-              </li>
-              <li>
-                <a
-                  href="javascript:void(0)"
-                  className="hover:text-blue-700 text-black text-sm"
-                >
-                  Client Portal
-                </a>
-              </li>
-              <li>
-                <a
-                  href="javascript:void(0)"
-                  className="hover:text-blue-700 text-black text-sm"
-                >
-                  Resources
-                </a>
-              </li>
-            </ul>
+
+          <div className="grid grid-cols-1 gap-8 border-t border-gray-100 pt-8 sm:grid-cols-2 lg:grid-cols-4 lg:pt-16">
+            <div>
+              <p className="font-medium text-gray-900">Services</p>
+
+              <ul className="mt-6 space-y-4 text-sm">
+                <li>
+                  <a
+                    href="#"
+                    className="text-gray-700 transition hover:opacity-75"
+                  >
+                    {" "}
+                    Web Development{" "}
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    className="text-gray-700 transition hover:opacity-75"
+                  >
+                    {" "}
+                    Software Development{" "}
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    className="text-gray-700 transition hover:opacity-75"
+                  >
+                    {" "}
+                    Android Apps{" "}
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    className="text-gray-700 transition hover:opacity-75"
+                  >
+                    {" "}
+                    IOS Apps{" "}
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    className="text-gray-700 transition hover:opacity-75"
+                  >
+                    {" "}
+                    Graphic Designing{" "}
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <p className="font-medium text-gray-900">Company</p>
+
+              <ul className="mt-6 space-y-4 text-sm">
+                <li>
+                  <a
+                    href="#"
+                    className="text-gray-700 transition hover:opacity-75"
+                  >
+                    {" "}
+                    About{" "}
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    className="text-gray-700 transition hover:opacity-75"
+                  >
+                    {" "}
+                    Meet the Team{" "}
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <p className="font-medium text-gray-900">Helpful Links</p>
+
+              <ul className="mt-6 space-y-4 text-sm">
+                <li>
+                  <a
+                    href="#"
+                    className="text-gray-700 transition hover:opacity-75"
+                  >
+                    {" "}
+                    Contact{" "}
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    className="text-gray-700 transition hover:opacity-75"
+                  >
+                    {" "}
+                    FAQs{" "}
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <p className="font-medium text-gray-900">Legal</p>
+
+              <ul className="mt-6 space-y-4 text-sm">
+                <li>
+                  <a
+                    href="#"
+                    className="text-gray-700 transition hover:opacity-75"
+                  >
+                    {" "}
+                    Accessibility{" "}
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    className="text-gray-700 transition hover:opacity-75"
+                  >
+                    {" "}
+                    Returns Policy{" "}
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    className="text-gray-700 transition hover:opacity-75"
+                  >
+                    {" "}
+                    Refund Policy{" "}
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    className="text-gray-700 transition hover:opacity-75"
+                  >
+                    {" "}
+                    Hiring Statistics{" "}
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div>
-            <h4 className="text-black font-semibold text-lg relative max-sm:cursor-pointer">
-              Platforms{" "}
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16px"
-                height="16px"
-                className="sm:hidden absolute right-0 top-1 fill-black"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M12 16a1 1 0 0 1-.71-.29l-6-6a1 1 0 0 1 1.42-1.42l5.29 5.3 5.29-5.29a1 1 0 0 1 1.41 1.41l-6 6a1 1 0 0 1-.7.29z"
-                  data-name="16"
-                  data-original="#000000"
-                ></path>
-              </svg>
-            </h4>
-            <ul className="space-y-5 mt-4 max-sm:hidden">
-              <li>
-                <a
-                  href="javascript:void(0)"
-                  className="hover:text-blue-700 text-black text-sm"
-                >
-                  Hubspot
-                </a>
-              </li>
-              <li>
-                <a
-                  href="javascript:void(0)"
-                  className="hover:text-blue-700 text-black text-sm"
-                >
-                  Integration Services
-                </a>
-              </li>
-              <li>
-                <a
-                  href="javascript:void(0)"
-                  className="hover:text-blue-700 text-black text-sm"
-                >
-                  Marketing Glossar
-                </a>
-              </li>
-              <li>
-                <a
-                  href="javascript:void(0)"
-                  className="hover:text-blue-700 text-black text-sm"
-                >
-                  UIPath
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h4 className="text-black font-semibold text-lg relative max-sm:cursor-pointer">
-              Company{" "}
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16px"
-                height="16px"
-                className="sm:hidden absolute right-0 top-1 fill-black"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M12 16a1 1 0 0 1-.71-.29l-6-6a1 1 0 0 1 1.42-1.42l5.29 5.3 5.29-5.29a1 1 0 0 1 1.41 1.41l-6 6a1 1 0 0 1-.7.29z"
-                  data-name="16"
-                  data-original="#000000"
-                ></path>
-              </svg>
-            </h4>
-            <ul className="space-y-5 mt-4 max-sm:hidden">
-              <li>
-                <a
-                  href="javascript:void(0)"
-                  className="hover:text-blue-700 text-black text-sm"
-                >
-                  About us
-                </a>
-              </li>
-              <li>
-                <a
-                  href="javascript:void(0)"
-                  className="hover:text-blue-700 text-black text-sm"
-                >
-                  Careers
-                </a>
-              </li>
-              <li>
-                <a
-                  href="javascript:void(0)"
-                  className="hover:text-blue-700 text-black text-sm"
-                >
-                  Blog
-                </a>
-              </li>
-              <li>
-                <a
-                  href="javascript:void(0)"
-                  className="hover:text-blue-700 text-black text-sm"
-                >
-                  Portfolio
-                </a>
-              </li>
-              <li>
-                <a
-                  href="javascript:void(0)"
-                  className="hover:text-blue-700 text-black text-sm"
-                >
-                  Events
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h4 className="text-black font-semibold text-lg relative max-sm:cursor-pointer">
-              Additional{" "}
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16px"
-                height="16px"
-                className="sm:hidden absolute right-0 top-1 fill-black"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M12 16a1 1 0 0 1-.71-.29l-6-6a1 1 0 0 1 1.42-1.42l5.29 5.3 5.29-5.29a1 1 0 0 1 1.41 1.41l-6 6a1 1 0 0 1-.7.29z"
-                  data-name="16"
-                  data-original="#000000"
-                ></path>
-              </svg>
-            </h4>
-            <ul className="space-y-5 mt-4 max-sm:hidden">
-              <li>
-                <a
-                  href="javascript:void(0)"
-                  className="hover:text-blue-700 text-black text-sm"
-                >
-                  FAQ
-                </a>
-              </li>
-              <li>
-                <a
-                  href="javascript:void(0)"
-                  className="hover:text-blue-700 text-black text-sm"
-                >
-                  Partners
-                </a>
-              </li>
-              <li>
-                <a
-                  href="javascript:void(0)"
-                  className="hover:text-blue-700 text-blacktext-sm"
-                >
-                  Sitemap
-                </a>
-              </li>
-              <li>
-                <a
-                  href="javascript:void(0)"
-                  className="hover:text-blue-700 text-black text-sm"
-                >
-                  Contact
-                </a>
-              </li>
-              <li>
-                <a
-                  href="javascript:void(0)"
-                  className="hover:text-blue-700 text-black text-sm"
-                >
-                  News
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <hr className="mt-8 border-gray-300" />
-        <div className="md:flex md:item-center mt-8">
-          <ul className="md:flex md:space-x-6 max-md:space-y-2">
-            <li>
-              <a
-                href="javascript:void(0)"
-                className="hover:text-blue-700 text-black text-sm"
-              >
-                Terms of Service
-              </a>
-            </li>
-            <li>
-              <a
-                href="javascript:void(0)"
-                className="hover:text-blue-700 text-black text-sm"
-              >
-                Privacy Policy
-              </a>
-            </li>
-            <li>
-              <a
-                href="javascript:void(0)"
-                className="hover:text-blue-700 text-black text-sm"
-              >
-                Security
-              </a>
-            </li>
-          </ul>
-          <p className="text-gray-800 text-sm ml-auto max-md:mt-5">
-            Copyright © {new Date().getFullYear()}
-            <a
-              href="https://readymadeui.com/"
-              target="_blank"
-              className="hover:underline mx-1"
-            >
-              Bluetelecast
-            </a>
-            All Rights Reserved.
+
+          <p className="text-xs text-gray-500">
+            &copy; {new Date().getFullYear()}. Bluetelecast. All rights
+            reserved.
           </p>
         </div>
       </footer>
