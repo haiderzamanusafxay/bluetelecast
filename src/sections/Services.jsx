@@ -3,7 +3,7 @@ const Services = () => {
   return (
     <>
       <section
-        id="features"
+        id="services"
         className="container mx-auto  space-y-1  py-8  lg:py-20 w-full"
       >
         <div className="mx-auto flex max-w-[58rem] flex-col py-5 items-center space-y-4 text-center">
