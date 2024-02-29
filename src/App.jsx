@@ -3,6 +3,7 @@ import { Routes, BrowserRouter, Route } from "react-router-dom";
 
 import Layout from "./Layout.jsx";
 import Home from "./pages/Home.jsx";
+import JobForm from "./pages/JobForm.jsx";
 import Contact from "./pages/Contact.jsx";
 import NotFound from "./pages/NotFound.jsx";
 
@@ -13,6 +14,7 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/job-form" element={<JobForm />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
