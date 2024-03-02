@@ -1,5 +1,7 @@
 import React from "react";
-
+import companiesImage from "../../assets/companies.png";
+import experienceImage from "../../assets/experience.png";
+import clientsImage from "../../assets/clients.png";
 const WhyChooseUs = () => {
   return (
     <>
@@ -12,7 +14,7 @@ const WhyChooseUs = () => {
         <div className="flex margin-4 items-center justify-evenly max-w-full">
           <div className="text-center justify-center items-center my-10">
             <div className="flex items-center justify-center w-10 h-10 mx-auto mb-3 rounded-ful sm:w-12 sm:h-12">
-              <img src="../../assets/experience.png" alt="" />
+              <img src={experienceImage} alt="" />
             </div>
             <h6 className="text-4xl font-bold text-deep-purple-accent-400">
               15+
@@ -21,7 +23,7 @@ const WhyChooseUs = () => {
           </div>
           <div className="text-center my-10">
             <div className="flex items-center justify-center w-10 h-10 mx-auto mb-3 rounded-full sm:w-12 sm:h-12">
-              <img src="../../assets/companies.png" alt="" />
+              <img src={companiesImage} alt="" />
             </div>
             <h6 className="text-4xl font-bold text-deep-purple-accent-400">
               6
@@ -30,7 +32,7 @@ const WhyChooseUs = () => {
           </div>
           <div className="text-center my-10">
             <div className="flex items-center justify-center w-10 h-10 mx-auto mb-3 rounded-full sm:w-12 sm:h-12">
-              <img src="../../assets/clients.png" alt="" />
+              <img src={clientsImage} alt="" />
             </div>
             <h6 className="text-4xl font-bold text-deep-purple-accent-400">
               1k+
