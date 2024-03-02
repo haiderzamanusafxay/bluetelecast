@@ -1,4 +1,5 @@
 import React from "react";
+import image from "../../assets/1/1.png";
 const Services = () => {
   return (
     <>
@@ -20,7 +21,7 @@ const Services = () => {
           <div className="relative overflow-hidden rounded-lg border bg-white select-none hover:shadow hover:shadow-teal-200 p-2">
             <div className="flex h-[180px] flex-col justify-between rounded-md p-6">
               <img
-                src="https://cdn-icons-png.flaticon.com/512/9414/9414296.png"
+                src={"https://cdn-icons-png.flaticon.com/512/9414/9414296.png"}
                 width={50}
                 height={50}
                 alt="web dev icon"
