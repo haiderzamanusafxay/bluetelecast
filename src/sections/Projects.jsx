@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import image from "../../assets/1/front.png";
 const Portfolio = () => {
   const [showCard, setShowCard] = useState("all");
 
@@ -26,7 +26,7 @@ const Portfolio = () => {
           </div>
           <div className="flex flex-wrap -mx-4">
             <PortfolioCard
-              ImageHref="../../assets/1/front.png"
+              ImageHref={image}
               category="Full Stack Web App"
               title="Enmarco"
               button="View Details"
