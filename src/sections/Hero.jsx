@@ -3,15 +3,24 @@ import React from "react";
 export const Hero = () => {
   return (
     <>
-      <section className="pt-24 bg-gray-50">
+      <section className="py-24 bg-gray-50">
         <div className="mx-auto max-w-7xl">
           <div className="w-full mx-auto text-left md:w-11/12 xl:w-9/12 md:text-center">
-            <h1 className="mb-8 justify-center px-4 text-4xl sm:px-5 font-extrabold leading-none tracking-normal text-gray-900 md:text-6xl md:tracking-tight">
+            {/* <h1 className="mb-8 justify-center px-4 text-4xl sm:px-5 font-extrabold leading-none tracking-normal text-gray-900 md:text-6xl md:tracking-tight">
               <span>Discover</span>{" "}
               <span className="block w-full py-2 text-transparent bg-clip-text leading-12 bg-gradient-to-r from-green-400 to-purple-500 lg:inline">
                 your secure, reliable, and functional business
               </span>{" "}
               <span>software solutions.</span>
+            </h1> */}
+            <h1 className="mb-8 justify-center px-4 text-4xl sm:px-5 font-extrabold leading-none tracking-normal text-gray-900 md:text-6xl md:tracking-tight">
+              <span>
+                Discover your secure, reliable, and functional business
+              </span>{" "}
+              <span className="block w-full py-2 text-transparent bg-clip-text leading-12 bg-gradient-to-r from-green-400 to-purple-500 lg:inline">
+                software
+              </span>{" "}
+              <span> solutions.</span>
             </h1>
             <p className="flex px-5 mb-8 text-lg justify-center text-gray-600 md:text-xl lg:px-24">
               Your secure, reliable, and functional business software solutions.
@@ -19,7 +28,7 @@ export const Hero = () => {
               story.
             </p>
             <div className="flex direction-row mb-4 justify-center space-x-0 md:space-x-2 md:mb-8">
-              <a
+              {/* <a
                 href="#_"
                 className="inline-flex items-center  w-[200px] px-6 py-3 mb-2 text-lg text-white bg-blue-700 rounded-2xl sm:mb-0"
               >
@@ -36,10 +45,10 @@ export const Hero = () => {
                     clipRule="evenodd"
                   ></path>
                 </svg>
-              </a>
+              </a> */}
               <a
                 href="#_"
-                className="inline-flex items-center justify-center w-[200px] px-6 py-3 mb-2 text-lg bg-gray-100 rounded-2xl sm:w-auto sm:mb-0"
+                className="inline-flex items-center justify-center w-[200px] px-6 py-3 mb-2 text-lg bg-blue-600 rounded-2xl sm:w-auto sm:mb-0"
               >
                 Learn More
                 <svg
@@ -59,7 +68,7 @@ export const Hero = () => {
               </a>
             </div>
           </div>
-          <div className="w-full mx-auto mt-20 text-center md:w-10/12">
+          {/* <div className="w-full mx-auto mt-20 text-center md:w-10/12">
             <div className="relative z-0 w-full mt-8">
               <div className="relative overflow-hidden shadow-2xl">
                 <div className="flex items-center flex-none px-4 bg-gray-600 rounded-b-none h-11 rounded-xl">
@@ -75,7 +84,7 @@ export const Hero = () => {
                 />
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
     </>

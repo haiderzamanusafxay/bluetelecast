@@ -5,6 +5,7 @@ import { useMediaQuery } from "react-responsive";
 import { Hero } from "../sections/Hero";
 import Services from "../sections/Services";
 import About from "../sections/About";
+import Projects from "../sections/Projects";
 import WhyChooseUs from "../sections/WhyChooseUs";
 import Testimonials from "../sections/Testimonials";
 
@@ -19,6 +20,7 @@ const Home = () => {
       <Hero />
       <Services />
       <About />
+      <Projects />
       <WhyChooseUs />
       <Testimonials />
     </>

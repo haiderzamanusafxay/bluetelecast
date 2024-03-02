@@ -9,66 +9,54 @@ const WhyChooseUs = () => {
             Why Choose Us?
           </span>
         </h2>
-        <div className="container mx-auto max-w-5xl flex gap-12 flex-wrap items-start justify-center md:justify-between py-10">
-          <div className="grid gap-4 justify-items-center text-center md:flex-1">
-            <div className=" rounded-full border-8 border-blue-500 p-4 ">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                className="w-14 h-14"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z"
-                ></path>
-              </svg>
+        <div className="flex margin-4 items-center justify-evenly max-w-full">
+          <div className="text-center justify-center items-center my-10">
+            <div className="flex items-center justify-center w-10 h-10 mx-auto mb-3 rounded-ful sm:w-12 sm:h-12">
+              <img src="../../assets/experience.png" alt="" />
             </div>
-            <h3 className="text-3xl font-bold">Safe</h3>
-            <p>Our services and private out-of-the-box</p>
+            <h6 className="text-4xl font-bold text-deep-purple-accent-400">
+              15+
+            </h6>
+            <p className="mb-2 font-bold text-md">Years Experience</p>
           </div>
-          <div className="grid gap-4 justify-items-center text-center md:flex-1">
-            <div className=" rounded-full border-8 border-blue-500 p-4 ">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                className="w-14 h-14"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"
-                ></path>
-              </svg>
+          <div className="text-center my-10">
+            <div className="flex items-center justify-center w-10 h-10 mx-auto mb-3 rounded-full sm:w-12 sm:h-12">
+              <img src="../../assets/companies.png" alt="" />
             </div>
-            <h3 className="text-3xl font-bold">Efficient</h3>
-            <p>Feel good about your wallet and the environment</p>
+            <h6 className="text-4xl font-bold text-deep-purple-accent-400">
+              6
+            </h6>
+            <p className="mb-2 font-bold text-md">Companies Worldwide</p>
           </div>
-          <div className="grid gap-4 justify-items-center text-center md:flex-1">
-            <div className=" rounded-full border-8 border-blue-500 p-4 ">
+          <div className="text-center my-10">
+            <div className="flex items-center justify-center w-10 h-10 mx-auto mb-3 rounded-full sm:w-12 sm:h-12">
+              <img src="../../assets/clients.png" alt="" />
+            </div>
+            <h6 className="text-4xl font-bold text-deep-purple-accent-400">
+              1k+
+            </h6>
+            <p className="mb-2 font-bold text-md">Clients</p>
+          </div>
+          <div className="text-center my-10">
+            <div className="flex items-center justify-center w-6 h-6 mx-auto mb-3 rounded-full bg-indigo-50 sm:w-12 sm:h-12">
               <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
+                className="w-8 h-8 text-deep-purple-accent-400 sm:w-10 sm:h-10"
                 stroke="currentColor"
-                className="w-14 h-14"
+                viewBox="0 0 52 52"
               >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z"
-                ></path>
+                <polygon
+                  strokeWidth="3"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  fill="none"
+                  points="29 13 14 29 25 29 23 39 38 23 27 23"
+                />
               </svg>
             </div>
-            <h3 className="text-3xl font-bold">Proven</h3>
-            <p>Leading the Smart Home world for 15 years</p>
+            <h6 className="text-4xl font-bold text-deep-purple-accent-400">
+              52
+            </h6>
+            <p className="mb-2 font-bold text-md">Products</p>
           </div>
         </div>
       </div>

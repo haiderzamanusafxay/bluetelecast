@@ -1,0 +1,19 @@
+https://www.enmarco.uy/
+
+Tech stack:
+-----------------
+Backend:
+-----------
+PHP
+Yii2
+Laravel
+RESTful APIs
+MySql Database
+
+Frontend:
+-----------
+javaScript
+React js
+jQuery
+HTML5
+CSS3
