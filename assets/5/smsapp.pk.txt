@@ -1,0 +1,17 @@
+https://smsapp.pk/
+
+Tech stack:
+-----------------
+Backend:
+-----------
+PHP
+Laravel
+RESTful APIs
+MySql Database
+
+Frontend:
+-----------
+javaScript
+jQuery
+HTML5
+CSS3

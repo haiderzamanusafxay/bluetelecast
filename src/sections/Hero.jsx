@@ -6,12 +6,21 @@ export const Hero = () => {
       <section className="py-24 bg-gray-50">
         <div className="mx-auto max-w-7xl">
           <div className="w-full mx-auto text-left md:w-11/12 xl:w-9/12 md:text-center">
-            <h1 className="mb-8 justify-center px-4 text-4xl sm:px-5 font-extrabold leading-none tracking-normal text-gray-900 md:text-6xl md:tracking-tight">
+            {/* <h1 className="mb-8 justify-center px-4 text-4xl sm:px-5 font-extrabold leading-none tracking-normal text-gray-900 md:text-6xl md:tracking-tight">
               <span>Discover</span>{" "}
               <span className="block w-full py-2 text-transparent bg-clip-text leading-12 bg-gradient-to-r from-green-400 to-purple-500 lg:inline">
                 your secure, reliable, and functional business
               </span>{" "}
               <span>software solutions.</span>
+            </h1> */}
+            <h1 className="mb-8 justify-center px-4 text-4xl sm:px-5 font-extrabold leading-none tracking-normal text-gray-900 md:text-6xl md:tracking-tight">
+              <span>
+                Discover your secure, reliable, and functional business
+              </span>{" "}
+              <span className="block w-full py-2 text-transparent bg-clip-text leading-12 bg-gradient-to-r from-green-400 to-purple-500 lg:inline">
+                software
+              </span>{" "}
+              <span> solutions.</span>
             </h1>
             <p className="flex px-5 mb-8 text-lg justify-center text-gray-600 md:text-xl lg:px-24">
               Your secure, reliable, and functional business software solutions.

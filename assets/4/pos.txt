@@ -1,0 +1,19 @@
+
+Tech stack:
+-----------------
+Backend:
+-----------
+PHP
+Laravel
+RESTful APIs
+MySql Database
+
+Frontend:
+-----------
+REACT js
+javaScript
+jQuery
+HTML5
+CSS3
+Antd
+Reactbootstrap
