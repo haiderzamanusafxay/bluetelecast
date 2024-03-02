@@ -1,5 +1,5 @@
 import React from "react";
-
+import logo from "../../assets/bluetelecast.png";
 const Footer = () => {
   return (
     <>
@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="mx-auto max-w-screen-xl space-y-8 px-4 py-16 sm:px-6 lg:space-y-16 lg:px-8">
           <div className="sm:flex sm:items-center sm:justify-between">
             <div className="text-teal-600">
-              <img src="../../assets/bluetelecast.png" alt="" width="200" />
+              <img src={GDPRImageFront} alt="" width="200" />
             </div>
 
             <ul className="mt-8 flex justify-start gap-6 sm:mt-0 sm:justify-end">

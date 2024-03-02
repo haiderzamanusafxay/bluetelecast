@@ -1,5 +1,8 @@
 import React, { useState } from "react";
-import image from "../../assets/1/front.png";
+import EnmarcoFront from "../../assets/1/front.png";
+import MISFrontImage from "../../assets/2/1.png";
+import GDPRImageFront from "../../assets/3/gdpr.png";
+
 const Portfolio = () => {
   const [showCard, setShowCard] = useState("all");
 
@@ -26,7 +29,7 @@ const Portfolio = () => {
           </div>
           <div className="flex flex-wrap -mx-4">
             <PortfolioCard
-              ImageHref={image}
+              ImageHref={EnmarcoFront}
               category="Full Stack Web App"
               title="Enmarco"
               button="View Details"
@@ -34,7 +37,7 @@ const Portfolio = () => {
               showCard={showCard}
             />
             <PortfolioCard
-              ImageHref="../../assets/2/1.png"
+              ImageHref={MISFrontImage}
               category="MIS (Full stack web app)"
               title="FLYAWAY HUB              "
               button="View Details"
@@ -42,7 +45,7 @@ const Portfolio = () => {
               showCard={showCard}
             />
             <PortfolioCard
-              ImageHref="../../assets/3/gdpr.png"
+              ImageHref={GDPRImageFront}
               category="Full Stack Web App"
               title="GDPR"
               button="View Details"
