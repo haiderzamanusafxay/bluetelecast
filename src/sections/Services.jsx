@@ -9,7 +9,10 @@ const Services = () => {
       >
         <div className="mx-auto flex max-w-[58rem] flex-col py-5 items-center space-y-4 text-center">
           <h2 className="font-bold text-4xl leading-[1.1] sm:text-3xl md:text-6xl">
-            <span className="block w-full py-2 text-transparent bg-clip-text leading-12 bg-gradient-to-r from-green-400 to-purple-500 lg:inline">
+            {/* <span className="block w-full py-2 text-transparent bg-clip-text leading-12 bg-gradient-to-r from-green-400 to-purple-500 lg:inline">
+              Services
+            </span> */}
+            <span className="block w-full py-2 text-gray-900 bg-clip-text leading-12 lg:inline">
               Services
             </span>
           </h2>
@@ -29,7 +32,7 @@ const Services = () => {
 
               <div className="space-y-2">
                 <h3 className="font-bold">Web Development</h3>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-sm text-gray-600">
                   Discover the art and science of online presence with
                   Bluetelecast's web design and development services.
                 </p>
@@ -47,7 +50,7 @@ const Services = () => {
               />
               <div className="space-y-2">
                 <h3 className="font-bold">Software Design</h3>
-                <p className="text-sm">
+                <p className="text-sm text-gray-600">
                   Empower your business with our custom software solutions. We
                   specialize in optimizing your operations with intuitive and
                   efficient software design
@@ -66,7 +69,7 @@ const Services = () => {
               />
               <div className="space-y-2">
                 <h3 className="font-bold">Android Apps</h3>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-sm text-gray-600">
                   Enter the world of Android seamlessly with Bluetelecast’s
                   expertly crafted apps.
                 </p>

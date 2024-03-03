@@ -17,12 +17,14 @@ const Portfolio = () => {
           <div className="flex flex-wrap -mx-4">
             <div className="w-full px-4">
               <div className="mx-auto mb-[60px] max-w-[510px] text-center">
-                <span className="block w-full py-2 text-transparent bg-clip-text text-5xl font-bold leading-12 bg-gradient-to-r from-green-400 to-purple-500 lg:inline">
+                {/* <span className="block w-full py-2 text-transparent bg-clip-text text-5xl font-bold leading-12 bg-gradient-to-r from-green-400 to-purple-500 lg:inline">
+                  Our Recent Projects
+                </span> */}
+                <span className="block w-full py-2 text-gray-900 bg-clip-text text-5xl font-bold leading-12  lg:inline">
                   Our Recent Projects
                 </span>
-                <p className="text-body-color text-base dark:text-dark-6">
-                  There are many variations of passages of Lorem Ipsum available
-                  but the majority have suffered alteration in some form.
+                <p className="text-body-color text-base text-blue-900">
+                  Celebrating Innovation: Explore Our Latest Projects
                 </p>
               </div>
             </div>
@@ -79,14 +81,14 @@ const PortfolioCard = ({
         }`}
       >
         <div className="relative mb-12">
-          <div className="overflow-hidden rounded-[10px]">
+          <div className="overflow-hidden rounded-[10px] shadow-2xl">
             <img
               src={ImageHref}
               alt="portfolio"
               className="w-full h-full object-cover"
             />
           </div>
-          <div className="relative z-10 mx-7 -mt-20 border-2  rounded-lg bg-white shadow-lg py-[34px] px-3 text-center shadow-portfolio-dark">
+          <div className="relative z-10 mx-7 -mt-20 border-2  rounded-lg bg-gray-50 shadow-2xl py-[34px] px-3 text-center shadow-portfolio-dark">
             <span className="text-primary mb-2 block text-sm font-medium">
               {category}
             </span>

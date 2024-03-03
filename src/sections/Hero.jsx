@@ -48,7 +48,7 @@ export const Hero = () => {
               </a> */}
               <a
                 href="#_"
-                className="inline-flex items-center justify-center w-[200px] px-6 py-3 mb-2 text-lg bg-blue-600 rounded-2xl sm:w-auto sm:mb-0"
+                className="inline-flex items-center justify-center w-[200px] px-6 py-3 mb-2 text-lg bg-blue-700 hover:bg-blue-800 rounded-2xl sm:w-auto sm:mb-0"
               >
                 Learn More
                 <svg
