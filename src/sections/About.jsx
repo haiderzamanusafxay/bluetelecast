@@ -1,6 +1,27 @@
 import React from "react";
+import { useRef } from "react";
+import { useEffect } from "react";
 
 const About = () => {
+  const paragraphRef = useRef(null);
+
+  useEffect(() => {
+    const paragraph = paragraphRef.current;
+
+    if (paragraph) {
+      const preventSelection = (event) => {
+        event.preventDefault();
+      };
+
+      paragraph.addEventListener("selectstart", preventSelection);
+      paragraph.addEventListener("copy", preventSelection);
+
+      return () => {
+        paragraph.removeEventListener("selectstart", preventSelection);
+        paragraph.removeEventListener("copy", preventSelection);
+      };
+    }
+  }, []);
   return (
     <>
       <section
@@ -614,29 +635,28 @@ const About = () => {
                 {/* <span className="block w-full py-2 text-4xl  md:text-4xl lg:text-7xl xl:text-7xl font-bold text-transparent bg-clip-text leading-12 bg-gradient-to-r from-green-400 to-purple-500 lg:inline">
                   About
                 </span> */}
-                <span className="block w-full py-2 text-4xl  md:text-4xl lg:text-7xl xl:text-7xl font-bold text-gray-900 bg-clip-text leading-12  lg:inline">
-                  About
+                <span className="block w-full py-2 text-4xl  md:text-3xl lg:text-4xl xl:text-3xl font-bold text-gray-900 bg-clip-text leading-12  lg:inline">
+                  Empowering Your Online Success
                 </span>
 
-                <p className="mb-5 text-base text-body-color dark:text-dark-6">
-                  In 2010, a small team of visionaries embarked on a journey to
-                  revolutionize the digital landscape, laying the foundation for
-                  what is now the thriving company known as BlueTelecast. From
-                  its humble beginnings, BlueTelecast has evolved into a
-                  fast-growing enterprise dedicated to spearheading digital
-                  transformation for businesses worldwide. Specializing in web
-                  development, database development, and IT consulting,
-                  BlueTelecast has become synonymous with innovation and
-                  excellence. Our journey is a testament to the relentless
-                  pursuit of technological advancements and a commitment to
-                  delivering unparalleled solutions to our clients.
-                  Bluetelecast’s core strength lies in its ability to understand
-                  the unique needs of each client. By combining expertise with a
-                  client-centric approach, we have consistently exceeded
-                  expectations, earning us a reputation for providing
-                  outstanding satisfaction. Our team is driven by the belief
-                  that every challenge is an opportunity for transformation, and
-                  we thrive on turning possibilities into reality.
+                <p
+                  className="mb-5 text-base text-body-color dark:text-dark-6"
+                  ref={paragraphRef}
+                >
+                  In 2010, a small group of people with big ideas started a
+                  company called Bluetelecast, a US-based company. They wanted
+                  to change the way things were done online, and now
+                  Bluetelecast is a successful company that helps businesses
+                  around the world. We're really good at making websites, custom
+                  software, mobile apps, UI/UX designing, organizing data, and
+                  giving advice about technology. Our success comes from always
+                  trying to improve and finding the best solutions for our
+                  clients. Bluetelecast is known for being creative and
+                  excellent at what we do. We understand that each client is
+                  different, and we use our skills and focus on clients to make
+                  them really happy. Our team believes that every problem is a
+                  chance to make something better, and we love turning ideas
+                  into reality.
                 </p>
                 <a
                   href="javascript:void(0)"

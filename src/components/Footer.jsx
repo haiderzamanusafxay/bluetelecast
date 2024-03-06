@@ -20,7 +20,7 @@ const Footer = () => {
             <ul className="mt-8 flex justify-start gap-6 sm:mt-0 sm:justify-end">
               <li>
                 <a
-                  href="#"
+                  href=""
                   rel="noreferrer"
                   target="_blank"
                   className="text-gray-700 transition hover:opacity-75"
@@ -40,7 +40,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="https://dribbble.com/Bluetelecast"
                   rel="noreferrer"
                   target="_blank"
                   className="text-gray-700 transition hover:opacity-75"
@@ -50,7 +50,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="https://www.behance.net/bluetelecast"
                   rel="noreferrer"
                   target="_blank"
                   className="text-gray-700 transition hover:opacity-75"
