@@ -1,15 +1,38 @@
 import React, { useState } from "react";
+import Modal from "react-modal";
+
 import EnmarcoFront from "../../assets/1/front.png";
 import MISFrontImage from "../../assets/2/1.png";
 import GDPRImageFront from "../../assets/3/gdpr.png";
 
+const customStyles = {
+  content: {
+    backgroundColor: "white",
+    width: 400,
+  },
+};
 const Portfolio = () => {
   const [showCard, setShowCard] = useState("all");
-
-  const handleProject = (category) => {
-    setShowCard(category);
-  };
-
+  const ProjectsArray = [
+    {
+      id: 0,
+      imageURL: EnmarcoFront,
+      title: "Enmarco",
+      subTitle: "Full Stack Web App",
+    },
+    {
+      id: 1,
+      imageURL: MISFrontImage,
+      title: "FLYAWAY HUB",
+      subTitle: "MIS (Full stack web app",
+    },
+    {
+      id: 2,
+      imageURL: GDPRImageFront,
+      title: "GDPR",
+      subTitle: "Full Stack Web App",
+    },
+  ];
   return (
     <>
       <section className="pt-20 pb-12 lg:pt-[120px] lg:pb-[90px] dark:bg-dark">
@@ -30,7 +53,19 @@ const Portfolio = () => {
             </div>
           </div>
           <div className="flex flex-wrap -mx-4">
-            <PortfolioCard
+            {ProjectsArray.map((project) => {
+              return (
+                <PortfolioCard
+                  ImageHref={project.imageURL}
+                  category={project.subTitle}
+                  title={project.title}
+                  button="View Details"
+                  buttonHref="#"
+                  showCard={showCard}
+                />
+              );
+            })}
+            {/*<PortfolioCard
               ImageHref={EnmarcoFront}
               category="Full Stack Web App"
               title="Enmarco"
@@ -38,7 +73,7 @@ const Portfolio = () => {
               buttonHref="#"
               showCard={showCard}
             />
-            <PortfolioCard
+             <PortfolioCard
               ImageHref={MISFrontImage}
               category="MIS (Full stack web app)"
               title="FLYAWAY HUB              "
@@ -53,7 +88,7 @@ const Portfolio = () => {
               button="View Details"
               buttonHref="#"
               showCard={showCard}
-            />
+            /> */}
           </div>
         </div>
       </section>
