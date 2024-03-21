@@ -35,7 +35,7 @@ const Technologies = () => {
     {
       id: 5,
       url: "../../assets/icons/technologiesIcons/ruby.png",
-      title: "Ruby (RoR - Ruby on Rails)",
+      title: "Ruby",
       alt: "Ruby",
     },
     {
@@ -95,6 +95,18 @@ const Technologies = () => {
       title: "Vue.js",
       alt: "Vue.js",
     },
+    {
+      id: 8,
+      url: "../../assets/icons/technologiesIcons/bootstrap.png",
+      title: "Bootstrap",
+      alt: "Bootstrap",
+    },
+    {
+      id: 9,
+      url: "../../assets/icons/technologiesIcons/Tailwind_CSS.png",
+      title: "Tailwind CSS",
+      alt: "Tailwind CSS",
+    },
   ];
 
   const MobileApp = [
@@ -134,7 +146,7 @@ const Technologies = () => {
     {
       id: 3,
       url: "../../assets/icons/technologiesIcons/sqlServer.png",
-      title: "Microsoft SQL Server",
+      title: "SQL Server",
       alt: "Microsoft SQL Server",
     },
     {
@@ -149,37 +161,43 @@ const Technologies = () => {
     {
       id: 0,
       url: "../../assets/icons/technologiesIcons/django.png",
-      title: "Django (Python)",
+      title: "Django",
       alt: "Django (Python)",
     },
     {
       id: 1,
       url: "../../assets/icons/technologiesIcons/flask-flask.webp",
-      title: "Flask (Python)",
+      title: "Flask",
       alt: "Flask (Python)",
     },
     {
       id: 2,
       url: "../../assets/icons/technologiesIcons/rubyonRails.png",
-      title: "Ruby on Rails (Ruby)",
+      title: "Ruby on Rails",
       alt: "Ruby on Rails (Ruby)",
     },
     {
       id: 3,
       url: "../../assets/icons/technologiesIcons/springJava.png",
-      title: "Spring (Java)",
+      title: "Spring",
       alt: "Spring (Java)",
     },
     {
       id: 4,
       url: "../../assets/icons/technologiesIcons/Laravel.svg",
-      title: "Laravel (PHP)",
+      title: "Laravel",
       alt: "Laravel (PHP)",
     },
     {
-      id: 4,
+      id: 5,
+      url: "../../assets/icons/technologiesIcons/asp-net1.png",
+      title: "ASP.NET",
+      alt: "ASP.NET",
+    },
+    {
+      id: 6,
       url: "../../assets/icons/technologiesIcons/expressjs.webp",
-      title: "Express.js (JavaScript - Node.js)",
+      title: "Express.js",
       alt: "Express.js (JavaScript - Node.js)",
     },
   ];
@@ -203,6 +221,112 @@ const Technologies = () => {
       title: "Google Cloud Platform (GCP)",
       alt: "Google Cloud Platform (GCP)",
     },
+  ];
+
+  const BigData = [
+    {
+      id: 0,
+      url: "../../assets/icons/technologiesIcons/hadoop-logo.jpg",
+      title: "Hadoop",
+      alt: "Hadoop",
+    },
+    {
+      id: 1,
+      url: "../../assets/icons/technologiesIcons/Spark.png",
+      title: "Apache Spark",
+      alt: "Apache Spark",
+    },
+    {
+      id: 2,
+      url: "../../assets/icons/technologiesIcons/Apache_Flink.png",
+      title: "Apache Flink",
+      alt: "Apache Flink",
+    },
+    {
+      id: 3,
+      url: "../../assets/icons/technologiesIcons/Tableau.png",
+      title: "Tableau",
+      alt: "Tableau",
+    },
+    {
+      id: 4,
+      url: "../../assets/icons/technologiesIcons/powerbi.jpg",
+      title: "Power BI",
+      alt: "Power BI",
+    },
+  ];
+
+  const AI = [
+    {
+      id: 0,
+      url: "../../assets/icons/technologiesIcons/TensorFlow.png",
+      title: "TensorFlow",
+      alt: "TensorFlow",
+    },
+    {
+      id: 1,
+      url: "../../assets/icons/technologiesIcons/PyTorch.png",
+      title: "PyTorch",
+      alt: "PyTorch",
+    },
+    {
+      id: 2,
+      url: "../../assets/icons/technologiesIcons/Scikit_learn.png",
+      title: "scikit-learn",
+      alt: "scikit-learn",
+    },
+    {
+      id: 3,
+      url: "../../assets/icons/technologiesIcons/opencv.png",
+      title: "OpenCV",
+      alt: "OpenCV",
+    },
+  
+  ];
+
+  const DevOps = [
+    {
+      id: 0,
+      url: "../../assets/icons/technologiesIcons/Docker.png",
+      title: "Docker",
+      alt: "Docker",
+    },
+    {
+      id: 1,
+      url: "../../assets/icons/technologiesIcons/Kubernetes.svg",
+      title: "Kubernetes",
+      alt: "Kubernetes",
+    },
+    {
+      id: 2,
+      url: "../../assets/icons/technologiesIcons/Jenkins.png",
+      title: "Jenkins",
+      alt: "Jenkins",
+    },
+    {
+      id: 3,
+      url: "../../assets/icons/technologiesIcons/Ansible.svg",
+      title: "Ansible",
+      alt: "Ansible",
+    },
+  
+  ];
+
+  const VersionControl = [
+    {
+      id: 0,
+      url: "../../assets/icons/technologiesIcons/git.png",
+      title: "Git",
+      alt: "Git",
+    },
+    {
+      id: 1,
+      url: "../../assets/icons/technologiesIcons/Apache_Subversion.png",
+      title: "SVN",
+      alt: "SVN",
+    },
+  
+  
   ];
 
   return (
@@ -350,6 +474,90 @@ const Technologies = () => {
                   title={cloud.title}
                   url={cloud.url}
                   alt={cloud.alt}
+                />
+              ))}
+            </div>
+          </div>
+        </div>
+
+        <div className="container mx-auto  md:w-9/12 gap-5 py-28 ">
+          <div className=" mx-auto text-center">
+            <h1 className="font-bold text-4xl leading-[1.1] sm:text-3xl md:text-4xl mb-20">
+              <span className="block w-full py-2 text-gray-900 bg-clip-text leading-12 lg:inline">
+                Big Data and Analytics
+              </span>
+            </h1>
+            <div className="flex flex-wrap justify-center gap-8">
+              {BigData.map((data) => (
+                <SmallCard
+                  key={data.id}
+                  id={data.id}
+                  title={data.title}
+                  url={data.url}
+                  alt={data.alt}
+                />
+              ))}
+            </div>
+          </div>
+        </div>
+
+        <div className="bg-gray-50 ">
+          <div className=" mx-auto text-center container md:w-9/12 gap-5 py-28">
+            <h1 className="font-bold text-4xl leading-[1.1] sm:text-3xl md:text-4xl mb-20">
+              <span className="block w-full py-2 text-gray-900 bg-clip-text leading-12 lg:inline">
+                Artificial Intelligence (AI) and Machine Learning (ML)
+              </span>
+            </h1>
+            <div className="flex flex-wrap justify-center gap-8">
+              {AI.map((ai) => (
+                <SmallCard
+                  key={ai.id}
+                  id={ai.id}
+                  title={ai.title}
+                  url={ai.url}
+                  alt={ai.alt}
+                />
+              ))}
+            </div>
+          </div>
+        </div>
+
+        <div className="container mx-auto  md:w-9/12 gap-5 py-28 ">
+          <div className=" mx-auto text-center">
+            <h1 className="font-bold text-4xl leading-[1.1] sm:text-3xl md:text-4xl mb-20">
+              <span className="block w-full py-2 text-gray-900 bg-clip-text leading-12 lg:inline">
+              DevOps
+              </span>
+            </h1>
+            <div className="flex flex-wrap justify-center gap-8">
+              {DevOps.map((dev) => (
+                <SmallCard
+                  key={dev.id}
+                  id={dev.id}
+                  title={dev.title}
+                  url={dev.url}
+                  alt={dev.alt}
+                />
+              ))}
+            </div>
+          </div>
+        </div>
+
+        <div className="bg-gray-50 ">
+          <div className=" mx-auto text-center container md:w-9/12 gap-5 py-28">
+            <h1 className="font-bold text-4xl leading-[1.1] sm:text-3xl md:text-4xl mb-20">
+              <span className="block w-full py-2 text-gray-900 bg-clip-text leading-12 lg:inline">
+              Version Control
+              </span>
+            </h1>
+            <div className="flex flex-wrap justify-center gap-8">
+              {VersionControl.map((vc) => (
+                <SmallCard
+                  key={vc.id}
+                  id={vc.id}
+                  title={vc.title}
+                  url={vc.url}
+                  alt={vc.alt}
                 />
               ))}
             </div>
