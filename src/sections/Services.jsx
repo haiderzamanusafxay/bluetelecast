@@ -1,83 +1,61 @@
 import React from "react";
-import image from "../../assets/1/1.png";
+import ServicesCard from "../components/ServicesCards";
+
+
+const ServicesList = [
+  {
+    id: 0,
+    url: "../../assets/icons/settings.png",
+    title: "SOFTWARE PRODUCT",
+    description:
+      "We offer a wide range of technical know-how and resources to meet any technical requirement. Moreover, we are dedicated to delivering excellent results and protecting intellectual property. Our team easily blends in and quickly shares knowledge to ensure smooth collaboration.",
+    alt: "SOFTWARE PRODUCT",
+  },
+  {
+    id: 1,
+    url: "../../assets/icons/setting.png",
+    title: "CUSTOM SOFTWARE",
+    description:
+      "We're a company that makes custom software, and we've been doing it for over 15 years. We create top-notch solutions for businesses that rely on high-quality software. Our dedication and the quality of our work are like having your own in-house team, but it costs less.",
+    alt: "CUSTOM SOFTWARE",
+  },
+  {
+    id: 2,
+    url: "../../assets/icons/appdev.png",
+    title: "MOBILE APPLICATION",
+    description:
+      "We provide services for developing applications on iOS, Android, and multiple platforms. Our goal is to make user-friendly mobile solutions that have won awards. We work with startups, small to medium-sized enterprises (SMEs), and large companies.",
+    alt: "MOBILE APPLICATION",
+  },
+
+
+];
+
 const Services = () => {
   return (
     <>
-      <section
-        id="services"
-        className="container mx-auto  space-y-1  py-8  lg:py-20 w-full"
-      >
-        <div className="mx-auto flex max-w-[58rem] flex-col py-5 items-center space-y-4 text-center">
-          <h2 className="font-bold text-4xl leading-[1.1] sm:text-3xl md:text-6xl">
-            {/* <span className="block w-full py-2 text-transparent bg-clip-text leading-12 bg-gradient-to-r from-green-400 to-purple-500 lg:inline">
-              Services
-            </span> */}
-            <span className="block w-full py-2 text-gray-900 bg-clip-text leading-12 lg:inline">
-              Services
-            </span>
-          </h2>
-
-          <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7"></p>
-        </div>
-
-        <div className="mx-auto grid justify-center gap-4 sm:grid-cols-2 md:max-w-[80rem] md:grid-cols-3">
-          <div className="relative overflow-hidden rounded-lg border bg-white select-none hover:shadow hover:shadow-teal-200 p-2">
-            <div className="flex h-[180px] flex-col justify-between rounded-md p-6">
-              <img
-                src={"https://cdn-icons-png.flaticon.com/512/9414/9414296.png"}
-                width={50}
-                height={50}
-                alt="web dev icon"
-              />
-
-              <div className="space-y-2">
-                <h3 className="font-bold">Web Development</h3>
-                <p className="text-sm text-gray-600">
-                  Discover the art and science of online presence with
-                  Bluetelecast's web design and development services.
-                </p>
-              </div>
-            </div>
+        <section className="pb-12 pt-24 ">
+          <div className="text-center w-full mx-auto md:w-11/12 xl:w-9/12 md:text-center">
+            <h1 className="font-bold text-4xl leading-[1.1] sm:text-3xl md:text-6xl pb-16">
+              <span className="block w-full py-2 text-gray-900 bg-clip-text leading-12 lg:inline">
+                Our Services
+              </span>
+            </h1>
           </div>
 
-          <div className="relative overflow-hidden rounded-lg border bg-white select-none hover:shadow hover:shadow-teal-200 p-2">
-            <div className="flex h-[180px] flex-col justify-between rounded-md p-6">
-              <img
-                src="https://cdn-icons-png.flaticon.com/512/2752/2752457.png"
-                alt=""
-                width={50}
-                height={50}
+          <div className="container mx-auto grid lg:grid-cols-3  md:w-9/12 gap-5 pb-24 ">
+            {ServicesList.map((service) => (
+              <ServicesCard
+                key={service.id}
+                id={service.id}
+                title={service.title}
+                description={service.description}
+                url={service.url}
+                alt={service.alt}
               />
-              <div className="space-y-2">
-                <h3 className="font-bold">Software Design</h3>
-                <p className="text-sm text-gray-600">
-                  Empower your business with our custom software solutions. We
-                  specialize in optimizing your operations with intuitive and
-                  efficient software design
-                </p>
-              </div>
-            </div>
+            ))}
           </div>
-
-          <div className="relative overflow-hidden rounded-lg border bg-white select-none hover:shadow hover:shadow-teal-200 p-2">
-            <div className="flex h-[180px] flex-col justify-between rounded-md p-6">
-              <img
-                src="https://developer.android.com/static/guide/practices/ui_guidelines/images/adaptive-icon-mask-applied.png"
-                width={50}
-                height={50}
-                alt=""
-              />
-              <div className="space-y-2">
-                <h3 className="font-bold">Android Apps</h3>
-                <p className="text-sm text-gray-600">
-                  Enter the world of Android seamlessly with Bluetelecast’s
-                  expertly crafted apps.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+        </section>
     </>
   );
 };

@@ -338,13 +338,13 @@ const Technologies = () => {
               Technologies
             </span>
           </h1>
-          <p className="flex px-5 mb-8 text-lg justify-center text-gray-600 md:text-xl lg:px-24 mt-8 ">
+          <p className="flex px-5 mb-8 text-lg text-center text-gray-900 md:text-xl lg:px-24 mt-8 ">
             We have a team of over 120 software engineers skilled in various
             languages like C++, Java, C#, RoR, Python, Objective C, JavaScript,
             and more. They have experience with different platforms, IDEs, APIs,
             databases, and frameworks.
           </p>
-          <p className="flex px-5 mb-8 text-lg justify-center text-gray-600 md:text-xl lg:px-24 mt-8 ">
+          <p className="flex px-5 mb-8 text-lg text-justify text-gray-900 md:text-xl lg:px-32 mt-8 ">
             This diverse technical knowledge is uncommon for a mid-sized
             software development partner. Our teams stay updated on the newest
             technologies, including AI, Machine Learning, Big Data, DevOps, and

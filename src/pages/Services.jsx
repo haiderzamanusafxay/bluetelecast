@@ -36,7 +36,7 @@ const Services = () => {
     },
     {
       id: 4,
-      url: "../../assets/icons/mobile-application.png",
+      url: "../../assets/icons/app-design.png",
       title: "SOFTWARE DESIGN",
       description:
         "Empower your business with our custom software solutions. We specialize in optimizing your operations with intuitive and efficient software design. Explore how we've enhanced workflows for clients in our case studies, demonstrating the tangible benefits of our tailored software solutions.",
@@ -44,7 +44,7 @@ const Services = () => {
     },
     {
       id: 5,
-      url: "../../assets/icons/database.png",
+      url: "../../assets/icons/design.png",
       title: "GRAPHIC DESIGN",
       description:
         "Explore the world of graphic design with Bluetelecast. Our designs don't just look good; they're made to connect with your audience. Trust us to give your brand a lively and engaging look through our graphic design skills.",
@@ -52,7 +52,7 @@ const Services = () => {
     },
     {
       id: 6,
-      url: "../../assets/icons/IT.png",
+      url: "../../assets/icons/app-maintenance.png",
       title: "APPLICATION MAINTENANCE AND SUPPORT",
       description:
         "Concentrate on important business tasks, and let Bluetelecast handle and support your apps. We offer different levels of support to keep your software running smoothly, update it, introduce new features, and make sure it can handle growth.",

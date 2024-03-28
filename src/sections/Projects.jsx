@@ -37,7 +37,7 @@ const Portfolio = () => {
     <>
       <section className="pt-20 pb-12 lg:pt-[120px] lg:pb-[90px] dark:bg-dark">
         <div className="container mx-auto">
-          <div className="flex flex-wrap -mx-4">
+          <div className="flex flex-wrap ">
             <div className="w-full px-4">
               <div className="mx-auto mb-[60px] max-w-[510px] text-center">
                 {/* <span className="block w-full py-2 text-transparent bg-clip-text text-5xl font-bold leading-12 bg-gradient-to-r from-green-400 to-purple-500 lg:inline">
@@ -52,7 +52,7 @@ const Portfolio = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-wrap -mx-4">
+          <div className="flex flex-wrap ">
             {ProjectsArray.map((project) => {
               return (
                 <PortfolioCard
