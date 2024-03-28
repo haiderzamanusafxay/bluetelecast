@@ -3,6 +3,7 @@ import React from "react";
 import { useMediaQuery } from "react-responsive";
 
 import { Hero } from "../sections/Hero";
+import WorkedWith from "../sections/WorkedWith";
 import Services from "../sections/Services";
 import About from "../sections/About";
 import Projects from "../sections/Projects";
@@ -19,6 +20,7 @@ const Home = () => {
   return (
     <>
       <Hero />
+      <WorkedWith />
       <Services />
       <About />
       <Projects />
