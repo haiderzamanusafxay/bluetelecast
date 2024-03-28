@@ -26,7 +26,7 @@ const About = () => {
     <>
       <section
         id="about"
-        className="overflow-hidden lg:pt-[120px] border-t lg:pb-[90px] bg-gray-50"
+        className="overflow-hidden lg:pt-[120px]  lg:pb-[90px] bg-gray-50"
       >
         <div className="container w-11/12 mx-auto">
           <div className="flex flex-wrap items-center justify-between -mx-4">

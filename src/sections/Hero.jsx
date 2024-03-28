@@ -4,7 +4,7 @@ export const Hero = () => {
   return (
     <>
       <section className="py-24 bg-gray-50">
-        <div className="mx-auto max-w-7xl">
+        <div className="mx-auto max-w-7xl pb-24">
           <div className="w-full mx-auto text-left md:w-11/12 xl:w-9/12 md:text-center">
             {/* <h1 className="mb-8 justify-center px-4 text-4xl sm:px-5 font-extrabold leading-none tracking-normal text-gray-900 md:text-6xl md:tracking-tight">
               <span>Discover</span>{" "}
@@ -17,12 +17,12 @@ export const Hero = () => {
               <span>
                 Discover your secure, reliable, and functional business
               </span>{" "}
-              <span className="block w-full py-2 text-transparent bg-clip-text leading-12 bg-gradient-to-r from-green-400 to-purple-500 lg:inline">
+              <span className="block w-full py-2  bg-clip-text leading-12 lg:inline text-blue-700">
                 software
               </span>{" "}
               <span> solutions.</span>
             </h1>
-            <p className="flex px-5 mb-8 text-lg justify-center text-gray-600 md:text-xl lg:px-24">
+            <p className="flex px-5 mb-8 text-lg justify-center text-gray-900 md:text-xl lg:px-24">
               Your secure, reliable, and functional business software solutions.
               next-level templates and designs. Crafted to help you tell your
               story.
@@ -48,7 +48,7 @@ export const Hero = () => {
               </a> */}
               <a
                 href="#_"
-                className="inline-flex items-center justify-center w-[200px] px-6 py-3 mb-2 text-lg bg-blue-700 hover:bg-blue-800 rounded-2xl sm:w-auto sm:mb-0"
+                className="inline-flex items-center justify-center w-[200px] px-6 py-3 mb-2 text-lg bg-blue-700 text-white hover:bg-blue-800 rounded-2xl sm:w-auto sm:mb-0"
               >
                 Learn More
                 <svg

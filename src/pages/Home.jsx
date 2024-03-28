@@ -10,6 +10,7 @@ import Projects from "../sections/Projects";
 import WhyChooseUs from "../sections/WhyChooseUs";
 import Testimonials from "../sections/Testimonials";
 
+
 const Home = () => {
   const isDesktopOrLaptop = useMediaQuery({ query: "(min-width: 1224px)" });
   const isBigScreen = useMediaQuery({ query: "(min-width: 1824px)" });
