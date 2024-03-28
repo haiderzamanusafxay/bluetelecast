@@ -10,7 +10,7 @@ import behance from "../../assets/behance.png";
 const Footer = () => {
   return (
     <>
-      <footer className="dark:bg-gray-900 text-gray-200 border-t">
+      <footer className="dark:bg-gray-900 text-gray-400 border-t">
         <div className="mx-auto max-w-screen-xl space-y-8 px-4 py-16 sm:px-6 lg:space-y-16 lg:px-8">
           <div className="sm:flex sm:items-center sm:justify-between">
             <div className="text-teal-600">
@@ -61,9 +61,9 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className="grid grid-cols-1 text-gray-300 gap-8 border-t border-gray-100 pt-8 sm:grid-cols-2 lg:grid-cols-4 lg:pt-16">
+          <div className="grid grid-cols-1 text-gray-400 gap-8 border-t border-gray-400 pt-8 sm:grid-cols-2 lg:grid-cols-4 lg:pt-16">
             <div>
-              <p className="font-medium text-gray-200">Services</p>
+              <p className="font-medium text-gray-400">Services</p>
 
               <ul className="mt-6 space-y-4  text-sm">
                 <li>
@@ -137,7 +137,7 @@ const Footer = () => {
             </div>
 
             <div>
-              <p className="font-medium text-gray-200">Company</p>
+              <p className="font-medium text-gray-400">Company</p>
 
               <ul className="mt-6 space-y-4 text-sm">
                 <li>
