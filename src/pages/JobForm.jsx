@@ -251,7 +251,7 @@ const JobForm = () => {
                   for="af-submit-application-desired-salary"
                   className="inline-block text-sm font-medium text-gray-500 mt-2.5"
                 >
-                  Your Role
+                  Role Applying For?
                 </label>
               </div>
 
