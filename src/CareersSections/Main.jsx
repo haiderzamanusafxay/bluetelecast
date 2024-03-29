@@ -3,7 +3,7 @@ const Main = () => {
     <section className="py-24 bg-gray-50">
       <div className="text-center w-full mx-auto md:w-11/12 xl:w-9/12 md:text-center">
         <h1 className="font-bold text-4xl leading-[1.1] sm:text-3xl md:text-6xl">
-          <span class="block w-full py-2 text-gray-900 bg-clip-text leading-12 lg:inline">
+          <span className="block w-full py-2 text-gray-900 bg-clip-text leading-12 lg:inline">
             Join Bluetelecast Software a global team
           </span>
         </h1>
