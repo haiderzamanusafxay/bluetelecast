@@ -1,16 +1,31 @@
 import { Link } from "react-router-dom";
+import React, { useState, useEffect } from 'react';
+
+function MyComponent(props) {
+  const [imageLoaded, setImageLoaded] = useState(false);
+
+  useEffect(() => {
+    const img = new Image(); // lowercase 'img' instead of 'Img'
+    img.onload = () => setImageLoaded(true);
+    img.src = props.src;
+  }, [props.src]); // Depend on props.src change
+
+
+  return imageLoaded ? <img className="rounded-t-lg w-16 m-auto opacity-90 border-b-2 dark:border-b-gray-900 pb-8 mb-8 transition duration-300 hover:scale-105"
+    src={props.src}
+    alt={props.alt} /> : null;
+}
+
 
 const ServicesCard = (props) => {
 
-  let image = props.url;
   return (
     <div className="max-w-2xl mx-auto text-center ">
       <Link to="/content-not-found">
         <div className="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm py-12 min-h-52 hover:shadow-lg">
           <div>
-            <img
-              className="rounded-t-lg w-16 m-auto opacity-90 border-b-2 dark:border-b-gray-900 pb-8 mb-8 transition duration-300 hover:scale-105"
-              src={image}
+            <MyComponent
+              src={props.url}
               alt={props.alt}
             />
 

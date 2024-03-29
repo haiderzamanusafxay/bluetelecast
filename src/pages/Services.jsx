@@ -20,7 +20,7 @@ const Services = () => {
     },
     {
       id: 2,
-      url: "/static/images/appdev.png",
+      url: "../../assets/icons/appdev.png",
       title: "MOBILE APPLICATION",
       description:
         "We provide services for developing applications on iOS, Android, and multiple platforms. Our goal is to make user-friendly mobile solutions that have won awards. We work with startups, small to medium-sized enterprises (SMEs), and large companies.",
