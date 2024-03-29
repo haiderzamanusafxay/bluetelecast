@@ -20,7 +20,7 @@ const Services = () => {
     },
     {
       id: 2,
-      url: "../../assets/icons/appdev.png",
+      url: "/static/images/appdev.png",
       title: "MOBILE APPLICATION",
       description:
         "We provide services for developing applications on iOS, Android, and multiple platforms. Our goal is to make user-friendly mobile solutions that have won awards. We work with startups, small to medium-sized enterprises (SMEs), and large companies.",
@@ -28,7 +28,7 @@ const Services = () => {
     },
     {
       id: 3,
-      url: "../../assets/icons/website.png",
+      url: "/static/images/website.png",
       title: "WEB DESIGN AND DEVELOPMENT",
       description:
         "Discover the art and science of online presence with Bluetelecast's web design and development services. We craft unique websites that seamlessly blend style and function. Let our portfolio speak for itself as we showcase our ability to elevate businesses through compelling digital experiences.",
@@ -36,7 +36,7 @@ const Services = () => {
     },
     {
       id: 4,
-      url: "../../assets/icons/app-design.png",
+      url: "/static/images/app-design.png",
       title: "SOFTWARE DESIGN",
       description:
         "Empower your business with our custom software solutions. We specialize in optimizing your operations with intuitive and efficient software design. Explore how we've enhanced workflows for clients in our case studies, demonstrating the tangible benefits of our tailored software solutions.",
@@ -44,7 +44,7 @@ const Services = () => {
     },
     {
       id: 5,
-      url: "../../assets/icons/design.png",
+      url: "/static/images/design.png",
       title: "GRAPHIC DESIGN",
       description:
         "Explore the world of graphic design with Bluetelecast. Our designs don't just look good; they're made to connect with your audience. Trust us to give your brand a lively and engaging look through our graphic design skills.",
@@ -52,7 +52,7 @@ const Services = () => {
     },
     {
       id: 6,
-      url: "../../assets/icons/app-maintenance.png",
+      url: "/static/images/app-maintenance.png",
       title: "APPLICATION MAINTENANCE AND SUPPORT",
       description:
         "Concentrate on important business tasks, and let Bluetelecast handle and support your apps. We offer different levels of support to keep your software running smoothly, update it, introduce new features, and make sure it can handle growth.",

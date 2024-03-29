@@ -5,7 +5,7 @@ import ServicesCard from "../components/ServicesCards";
 const ServicesList = [
   {
     id: 0,
-    url: "../../assets/icons/settings.png",
+    url: "/static/images/settings.png",
     title: "SOFTWARE PRODUCT",
     description:
       "We offer a wide range of technical know-how and resources to meet any technical requirement. Moreover, we are dedicated to delivering excellent results and protecting intellectual property. Our team easily blends in and quickly shares knowledge to ensure smooth collaboration.",
@@ -13,7 +13,7 @@ const ServicesList = [
   },
   {
     id: 1,
-    url: "../../assets/icons/setting.png",
+    url: "/static/images/setting.png",
     title: "CUSTOM SOFTWARE",
     description:
       "We're a company that makes custom software, and we've been doing it for over 15 years. We create top-notch solutions for businesses that rely on high-quality software. Our dedication and the quality of our work are like having your own in-house team, but it costs less.",
@@ -21,7 +21,7 @@ const ServicesList = [
   },
   {
     id: 2,
-    url: "../../assets/icons/appdev.png",
+    url: "/static/images/appdev.png",
     title: "MOBILE APPLICATION",
     description:
       "We provide services for developing applications on iOS, Android, and multiple platforms. Our goal is to make user-friendly mobile solutions that have won awards. We work with startups, small to medium-sized enterprises (SMEs), and large companies.",
