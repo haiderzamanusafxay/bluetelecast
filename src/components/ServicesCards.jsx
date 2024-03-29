@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 
 const ServicesCard = (props) => {
+
+  let image = props.url;
   return (
     <div className="max-w-2xl mx-auto text-center ">
       <Link to="/content-not-found">
@@ -8,7 +10,7 @@ const ServicesCard = (props) => {
           <div>
             <img
               className="rounded-t-lg w-16 m-auto opacity-90 border-b-2 dark:border-b-gray-900 pb-8 mb-8 transition duration-300 hover:scale-105"
-              src={props.url}
+              src={image}
               alt={props.alt}
             />
 
