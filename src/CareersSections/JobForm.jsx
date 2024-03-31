@@ -10,6 +10,9 @@ import {
   useFormik,
 } from "formik";
 const JobForm = () => {
+  const phoneRegExp =
+    /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/;
+
   const formik = useFormik({
     initialValues: {
       firstName: "",
@@ -18,14 +21,23 @@ const JobForm = () => {
       phone: "",
       position: "",
       message: "",
+      terms: false,
     },
     validationSchema: Yup.object({
-      firstName: Yup.string().required("Required"),
+      firstName: Yup.string()
+        .required("Required")
+        .matches(/^[a-zA-Z\s]*$/, "Name must contain only letters and spaces")
+        .min(5, "Must be 5 characters or more")
+        .max(50, "Must be 50 characters or less"),
       lastName: Yup.string().required("Required"),
       email: Yup.string().email("Invalid email address").required("Required"),
-      phone: Yup.string().required("Required"),
-      position: Yup.string().required("Required"),
-      message: Yup.string().required("Required"),
+      phone: Yup.string()
+        .matches(phoneRegExp, "Must contain only numbers")
+        .required("Required"),
+      message: Yup.string()
+        .required("Required")
+        .min(100, "Must be 10 characters or more"),
+      terms: Yup.bool().oneOf([true], "Required").required("Required"),
     }),
     onSubmit: (values) => {
       console.log(values);
@@ -62,13 +74,8 @@ const JobForm = () => {
                   <ErrorMessage
                     name="firstName"
                     component="div"
-                    className="error"
+                    className="error text-red-500"
                   />
-                  {/* <input
-                  id="af-submit-application-email"
-                  type="text"
-                  className="py-2 px-3 pe-11 block w-full border-2 border-gray-200 shadow-sm text-sm rounded-lg focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none"
-                /> */}
                 </div>
 
                 <div className="sm:col-span-3">
@@ -81,10 +88,15 @@ const JobForm = () => {
                 </div>
 
                 <div className="sm:col-span-9">
-                  <input
-                    id="af-submit-application-email"
+                  <Field
                     type="text"
-                    className="py-2 px-3 pe-11 block w-full border-2 border-gray-200 shadow-sm text-sm rounded-lg focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none    "
+                    name="lastName"
+                    className="py-2 px-3 pe-11 block w-full border-2 border-gray-200 shadow-sm text-sm rounded-lg focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none"
+                  />
+                  <ErrorMessage
+                    name="lastName"
+                    component="div"
+                    className="error text-red-500"
                   />
                 </div>
 
@@ -98,10 +110,15 @@ const JobForm = () => {
                 </div>
 
                 <div className="sm:col-span-9">
-                  <input
-                    id="af-submit-application-email"
+                  <Field
                     type="email"
-                    className="py-2 px-3 pe-11 block w-full border-2 border-gray-200 shadow-sm text-sm rounded-lg focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none    "
+                    name="email"
+                    className="py-2 px-3 pe-11 block w-full border-2 border-gray-200 shadow-sm text-sm rounded-lg focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none"
+                  />
+                  <ErrorMessage
+                    name="email"
+                    component="div"
+                    className="error text-red-500"
                   />
                 </div>
 
@@ -117,10 +134,15 @@ const JobForm = () => {
                 </div>
 
                 <div className="sm:col-span-9">
-                  <input
-                    id="af-submit-application-phone"
+                  <Field
                     type="tel"
-                    className="py-2 px-3 pe-11 block w-full border-2 border-gray-200 shadow-sm rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none        "
+                    name="phone"
+                    className="py-2 px-3 pe-11 block w-full border-2 border-gray-200 shadow-sm text-sm rounded-lg focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none"
+                  />
+                  <ErrorMessage
+                    name="phone"
+                    component="div"
+                    className="error text-red-500"
                   />
                 </div>
 
@@ -164,13 +186,26 @@ const JobForm = () => {
                 </div>
 
                 <div className="sm:col-span-9">
-                  <textarea
+                  <Field
+                    id="af-submit-application-bio"
+                    name="message"
+                    as="textarea"
+                    className="py-2 px-3 block w-full border-2 border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none"
+                    rows="6"
+                    placeholder="Add a cover letter or anything else you want to share."
+                  />
+                  <ErrorMessage
+                    name="message"
+                    component="div"
+                    className="error text-red-500"
+                  />
+                  {/* <textarea
                     required
                     id="af-submit-application-bio"
                     className="py-2 px-3 block w-full border-2 border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none        "
                     rows="6"
                     placeholder="Add a cover letter or anything else you want to share."
-                  ></textarea>
+                  ></textarea> */}
                 </div>
               </div>
 
@@ -191,6 +226,7 @@ const JobForm = () => {
                     className="relative float-left -ml-[1.5rem] mr-[6px] mt-[0.15rem] h-[1.125rem] w-[1.125rem] appearance-none rounded-[0.25rem] border-[0.125rem] border-solid border-neutral-300 outline-none before:pointer-events-none before:absolute before:h-[0.875rem] before:w-[0.875rem] before:scale-0 before:rounded-full before:bg-transparent before:opacity-0 before:shadow-[0px_0px_0px_13px_transparent] before:content-[''] checked:border-primary checked:bg-primary checked:before:opacity-[0.16] checked:after:absolute checked:after:-mt-px checked:after:ml-[0.25rem] checked:after:block checked:after:h-[0.8125rem] checked:after:w-[0.375rem] checked:after:rotate-45 checked:after:border-[0.125rem] checked:after:border-l-0 checked:after:border-t-0 checked:after:border-solid checked:after:border-white checked:after:bg-transparent checked:after:content-[''] hover:cursor-pointer hover:before:opacity-[0.04] hover:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:shadow-none focus:transition-[border-color_0.2s] focus:before:scale-100 focus:before:opacity-[0.12] focus:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-[0.875rem] focus:after:w-[0.875rem] focus:after:rounded-[0.125rem] focus:after:content-[''] checked:focus:before:scale-100 checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] checked:focus:after:-mt-px checked:focus:after:ml-[0.25rem] checked:focus:after:h-[0.8125rem] checked:focus:after:w-[0.375rem] checked:focus:after:rotate-45 checked:focus:after:rounded-none checked:focus:after:border-[0.125rem] checked:focus:after:border-l-0 checked:focus:after:border-t-0 checked:focus:after:border-solid checked:focus:after:border-white checked:focus:after:bg-blue-primary dark:border-neutral-600 dark:checked:border-gray-400 dark:checked:bg-blue-700 dark:focus:before:shadow-[0px_0px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca]"
                     type="checkbox"
                     id="checkboxDefault"
+                    name="terms"
                   />
                   <label
                     className="inline-block pl-[0.15rem] hover:cursor-pointer text-gray-600"
@@ -198,12 +234,17 @@ const JobForm = () => {
                   >
                     Accept terms and conditions.
                   </label>
+                  <ErrorMessage
+                    name="terms"
+                    component="div"
+                    className="error text-red-500"
+                  />
                 </div>
               </div>
 
               <>
                 <button
-                  type="button"
+                  type="submit"
                   className="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none"
                 >
                   Submit application
