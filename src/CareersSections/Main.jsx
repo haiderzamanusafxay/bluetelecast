@@ -1,3 +1,4 @@
+import image from "../../assets/careers.jpg";
 const Main = () => {
   return (
     <section className="py-24 bg-gray-50">
@@ -17,7 +18,7 @@ const Main = () => {
 
         <div className="m-auto">
           <div className="m-auto w-10/12 md:w-6/12 mt-2">
-            <img className="rounded-md" src="../../assets/careers.jpg" />
+            <img className="rounded-md" src={image} />
           </div>
           <div className="w-9/12 m-auto md:px-8">
             <p className="flex  mt-16 text-lg text-gray-900 md:text-xl text-center">
