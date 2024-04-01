@@ -1,9 +1,10 @@
+import image from "../../assets/careers.jpg";
 const Main = () => {
   return (
     <section className="py-24 bg-gray-50">
       <div className="text-center w-full mx-auto md:w-11/12 xl:w-9/12 md:text-center">
         <h1 className="font-bold text-4xl leading-[1.1] sm:text-3xl md:text-6xl">
-          <span class="block w-full py-2 text-gray-900 bg-clip-text leading-12 lg:inline">
+          <span className="block w-full py-2 text-gray-900 bg-clip-text leading-12 lg:inline">
             Join Bluetelecast Software a global team
           </span>
         </h1>
@@ -17,7 +18,7 @@ const Main = () => {
 
         <div className="m-auto">
           <div className="m-auto w-10/12 md:w-6/12 mt-2">
-            <img className="rounded-md" src="../../assets/careers.jpg" />
+            <img className="rounded-md" src={image} />
           </div>
           <div className="w-9/12 m-auto md:px-8">
             <p className="flex  mt-16 text-lg text-gray-900 md:text-xl text-center">

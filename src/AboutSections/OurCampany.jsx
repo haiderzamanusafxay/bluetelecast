@@ -5,7 +5,7 @@ const OurCampany = () => {
     <section className="py-24 bg-gray-50">
       <div className="text-center w-full mx-auto md:w-11/12 xl:w-9/12 md:text-center">
         <h1 className="font-bold text-4xl leading-[1.1] sm:text-3xl md:text-6xl">
-          <span class="block w-full py-2 text-gray-900 bg-clip-text leading-12 lg:inline">
+          <span className="block w-full py-2 text-gray-900 bg-clip-text leading-12 lg:inline">
             About Our Company
           </span>
         </h1>
@@ -23,13 +23,16 @@ const OurCampany = () => {
         </Link>
         <hr className="mt-20 mb-10" />
         <h1 className="font-bold text-4xl leading-[1.1] sm:text-3xl md:text-6xl pt-40 mb-8 ">
-          <span class="block w-full py-2 text-gray-900 bg-clip-text leading-12 lg:inline">
+          <span className="block w-full py-2 text-gray-900 bg-clip-text leading-12 lg:inline">
             What Do We Do?
           </span>
         </h1>
         <div className="md:flex justify-center gap-5  w-11/12 m-auto">
           <div className="md:w-1/2 mt-2">
-            <img className="rounded-l-2xl" src="../../assets/aboutcompany.jpg" />
+            <img
+              className="rounded-l-2xl"
+              src="../../assets/aboutcompany.jpg"
+            />
           </div>
           <div className="md:w-1/2 text-left md:px-8">
             <p className="flex mb-8 text-lg justify-center text-gray-600 md:text-xl ">
