@@ -21,7 +21,6 @@ const ServicesCard = (props) => {
 
   return (
     <div className="max-w-2xl mx-auto text-center ">
-      <Link to="/content-not-found">
         <div className="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm py-12 min-h-52 hover:shadow-lg">
           <div>
             <MyComponent
@@ -47,7 +46,6 @@ const ServicesCard = (props) => {
             </Link>
           </div>
         </div>
-      </Link>
     </div>
 
   );

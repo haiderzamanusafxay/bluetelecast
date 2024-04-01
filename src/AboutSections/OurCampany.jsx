@@ -17,7 +17,7 @@ const OurCampany = () => {
         </p>
         <Link
           to="servises"
-          className="inline-flex items-center justify-center  px-6 py-3 mb-2 text-lg bg-blue-700  hover:bg-blue-800 rounded-2xl sm:w-auto sm:mb-0 font-semibold"
+          className="inline-flex items-center justify-center  px-6 py-3 mb-2 text-lg bg-blue-700 text-white hover:bg-blue-800 rounded-2xl sm:w-auto sm:mb-0 font-semibold"
         >
           Explore our services
         </Link>
