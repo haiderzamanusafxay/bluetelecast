@@ -23,6 +23,9 @@
     "react-responsive": "^9.0.2",
     "react-sound": "^1.2.0",
     "yup": "^1.4.0"
+
+    "swiper": "^11.1.0"
+
   },
   "devDependencies": {
     "@types/react": "^18.2.43",
