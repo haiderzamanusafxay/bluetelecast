@@ -13,6 +13,7 @@ import Technologies from "./pages/Technologies.jsx";
 import Careers from "./pages/Careers.jsx";
 import OurCampany from "./pages/OurCompany.jsx";
 import Testimonals from "./pages/Testimonals.jsx";
+import WhyUs from "./pages/WhyUS.jsx";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           <Route path="/services" element={<Services />} />
           <Route path="/technologies" element={<Technologies />} />
           <Route path="/careers" element={<Careers />} />
+          <Route path="/why-us" element={<WhyUs />} />
           <Route path="/testimonals" element={<Testimonals />} />
           <Route path="/content-not-found" element={<ContentNotFound />} />
 

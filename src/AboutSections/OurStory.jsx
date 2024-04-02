@@ -33,8 +33,8 @@ const OurStory = () => {
             {" "}
             Our leadership team,
           </span>{" "}
-           with over 10+ years of experience in the USA and working with onsite
-          & remote teams, acts as the bridge between you and the skilled
+          with over 10+ years of experience in the USA and working with onsite &
+          remote teams, acts as the bridge between you and the skilled
           professionals who bring your ideas to life. We're committed to
           building strong partnerships with our customers and team, aiming for
           long-term relationships built on trust and respect.
@@ -48,9 +48,7 @@ const OurStory = () => {
           Don't just take our word for it – see what our clients frequently
           express about their experiences with us.
         </p>
-        <h2 className="text-blue-700 text-xl text-center">
-          Faheem Momand CEO Bluetelecast
-        </h2>
+        <h2 className="text-blue-700 text-xl text-center">Bluetelecast CEO</h2>
       </div>
     </section>
   );
