@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import React, { useState, useEffect } from 'react';
 
-function MyComponent(props) {
+function LoadImages(props) {
   const [imageLoaded, setImageLoaded] = useState(false);
 
   useEffect(() => {
@@ -23,7 +23,7 @@ const ServicesCard = (props) => {
     <div className="max-w-2xl mx-auto text-center ">
         <div className="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm py-12 min-h-52 hover:shadow-lg">
           <div>
-            <MyComponent
+            <LoadImages
               src={props.url}
               alt={props.alt}
             />

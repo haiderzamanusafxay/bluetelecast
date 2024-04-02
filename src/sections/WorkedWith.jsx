@@ -2,7 +2,9 @@ import { Button, Card, CardBody, Typography } from "@material-tailwind/react";
 
 export function WorkedWith() {
   return (
-    <section className="py-8 px-8 lg:py-20">
+    <section className="pb-8 px-8 lg:pb-20">
+
+                  <img className="m-auto md:w-5/12 mt-4" src="/static/images/herro.png"/>
       <div className="container !mx-auto text-center place-content-center grid">
         <Typography
           variant="h1"
