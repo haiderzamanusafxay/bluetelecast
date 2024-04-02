@@ -27,24 +27,24 @@ const Portfolio = () => {
       title: "Pixto™",
       subTitle: "Logo & Brand identitiy",
     },
-    {
-      id: 3,
-      imageURL: "../../assets/1/front.png",
-      title: "Enmarco",
-      subTitle: "Web",
-    },
-    {
-      id: 4,
-      imageURL: "../../assets/2/1.png",
-      title: "FLYAWAY HUB",
-      subTitle: "MIS",
-    },
-    {
-      id: 5,
-      imageURL: "../../assets/3/gdpr.png",
-      title: "GDPR",
-      subTitle: "Web",
-    },
+    // {
+    //   id: 3,
+    //   imageURL: "../../assets/1/front.png",
+    //   title: "Enmarco",
+    //   subTitle: "Web",
+    // },
+    // {
+    //   id: 4,
+    //   imageURL: "../../assets/2/1.png",
+    //   title: "FLYAWAY HUB",
+    //   subTitle: "MIS",
+    // },
+    // {
+    //   id: 5,
+    //   imageURL: "../../assets/3/gdpr.png",
+    //   title: "GDPR",
+    //   subTitle: "Web",
+    // },
   ];
   return (
     <>

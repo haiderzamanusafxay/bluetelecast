@@ -6,6 +6,8 @@ import { useMediaQuery } from "react-responsive";
 function Navbar() {
   const [showMenu, setShowMenu] = useState(false);
   const [showDropDown, setShowDropDown] = useState(false);
+  const [showDropDownIndustries, setShowDropDownIndustries] = useState(false);
+
   const isSmallScreen = useMediaQuery({ query: "(max-width: 340px)" });
 
   const toggleMenu = () => {
@@ -13,10 +15,18 @@ function Navbar() {
     console.log("done");
   };
 
-
   // Function to toggle the menu
   const toggleDropdown = () => {
     setShowDropDown(!showDropDown);
+  };
+
+  // Function to toggle the menu
+  const toggleDropdownIndustries = () => {
+    setShowDropDownIndustries(!showDropDownIndustries);
+  };
+
+  const closeDropdown = () => {
+    setShowDropDown(false);
   };
   return (
     <>
@@ -26,18 +36,15 @@ function Navbar() {
             to="/"
             className="flex items-center space-x-3 rtl:space-x-reverse"
           >
-            <img
-              src={logo}
-              className="h-6"
-              alt="Bluetelecast"
-            />
+            <img src={logo} className="h-6" alt="Bluetelecast" />
           </Link>
           <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
             <Link
               type="button"
               to="/contact"
-              className={`text-white bg-blue-700 hover:bg-blue-800 ${isSmallScreen && "hidden"
-                } focus:ring-4 focus:outline-none font-medium rounded-2xl text-sm px-4 py-2 text-center`}
+              className={`text-white bg-blue-700 hover:bg-blue-800 ${
+                isSmallScreen && "hidden"
+              } focus:ring-4 focus:outline-none font-medium rounded-2xl text-sm px-4 py-2 text-center`}
             >
               Contact
             </Link>
@@ -70,12 +77,12 @@ function Navbar() {
             </button>
           </div>
           <div
-            className={`items-center justify-between ${showMenu ? "" : "hidden"
-              }  w-full md:flex md:w-auto md:order-1`}
+            className={`items-center justify-between ${
+              showMenu ? "" : "hidden"
+            }  w-full md:flex md:w-auto md:order-1`}
             id="navbar-sticky"
           >
             <ul className="flex flex-col p-4 md:p-0 mt-4 text-gray-300 font-medium border border-gray-100 rounded-lg  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 ">
-            
               <li>
                 <Link
                   to="services"
@@ -92,7 +99,11 @@ function Navbar() {
                   Technologies
                 </Link>
               </li>
-              <li className="relative">
+              <li
+                className="relative"
+                onMouseEnter={toggleDropdown}
+                onMouseLeave={toggleDropdown}
+              >
                 {/* Dropdown Button */}
                 <button
                   id="dropdownHoverButton"
@@ -100,47 +111,190 @@ function Navbar() {
                   data-dropdown-trigger="hover"
                   className="flex items-center px-3 md:w-20  rounded hover:bg-gray-800 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 "
                   type="button"
-                  onClick={toggleDropdown}
-                  style={{ minHeight: '25px' }} 
+                  style={{ minHeight: "25px" }}
                 >
                   <span>Company</span>
-                  <svg className="w-2.5 h-2.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6" style={{ fontWeight: "normal" }}>
-                    <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 4 4 4-4" />
+                  <svg
+                    className="w-2.5 h-2.5 ms-2"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 10 6"
+                    style={{ fontWeight: "normal" }}
+                  >
+                    <path
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="m1 1 4 4 4-4"
+                    />
                   </svg>
                 </button>
 
                 {/* Dropdown Content */}
-                <div id="dropdownHover" className={`${showDropDown ? "block" : "hidden"} absolute bg-white divide-y divide-gray-100 rounded-md shadow w-44 mt-2 z-200`}>
-                  <ul className="font-medium text-gray-900 " aria-labelledby="dropdownHoverButton">
+                <div
+                  id="dropdownHover"
+                  className={`${
+                    showDropDown ? "block" : "hidden"
+                  } absolute shadow w-52  z-200 bg-white`}
+                >
+                  <ul
+                    className="font-medium text-gray-900  px-2 divide-y divide-gray-200 "
+                    aria-labelledby="dropdownHoverButton"
+                  >
                     <li>
-                      <Link to="/our-company" className="block px-4 py-2 hover:bg-gray-100 md:hover:text-blue-700">Our Company</Link>
+                      <Link
+                        to="/our-company"
+                        className="block px-4 py-2 md:hover:text-blue-700 "
+                      >
+                        Our Company
+                      </Link>
                     </li>
                     <li>
-                      <Link to="#" className="block px-4 py-2 hover:bg-gray-100 md:hover:text-blue-700">Why us</Link>
+                      <Link
+                        to="/why-us"
+                        className="block px-4 py-2 md:hover:text-blue-700"
+                      >
+                        Why us
+                      </Link>
                     </li>
                     <li>
-                      <Link to="/team" className="block px-4 py-2 hover:bg-gray-100 md:hover:text-blue-700">Team</Link>
+                      <Link
+                        to="/team"
+                        className="block px-4 py-2 md:hover:text-blue-700"
+                      >
+                        Team
+                      </Link>
                     </li>
                     <li>
-                      <Link to="#" className="block px-4 py-2 hover:bg-gray-100 md:hover:text-blue-700">Parterners</Link>
+                      <Link
+                        to="#"
+                        className="block px-4 py-2 md:hover:text-blue-700"
+                      >
+                        Parterners
+                      </Link>
                     </li>
                     <li>
-                      <Link to="#" className="block px-4 py-2 hover:bg-gray-100 md:hover:text-blue-700">Clients</Link>
+                      <Link
+                        to="#"
+                        className="block px-4 py-2 md:hover:text-blue-700"
+                      >
+                        Clients
+                      </Link>
                     </li>
                     <li>
-                      <Link to="/testimonals" className="block px-4 py-2 hover:bg-gray-100 md:hover:text-blue-700">Testimonals</Link>
+                      <Link
+                        to="/testimonals"
+                        className="block px-4 py-2 pb-4 md:hover:text-blue-700"
+                      >
+                        Testimonals
+                      </Link>
                     </li>
                   </ul>
                 </div>
               </li>
 
-              <li>
-                <Link
-                  to="#"
-                  className="block py-2 px-3 rounded hover:bg-gray-800 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 "
+              <li
+                className="relative"
+                onMouseEnter={toggleDropdownIndustries}
+                onMouseLeave={toggleDropdownIndustries}
+              >
+                {/* Dropdown Button Industries*/}
+                <button
+                  id="dropdownHoverButton"
+                  data-dropdown-toggle="dropdownHover"
+                  data-dropdown-trigger="hover"
+                  className="flex items-center px-3 md:w-20  rounded hover:bg-gray-800 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 "
+                  type="button"
+                  style={{ minHeight: "25px" }}
                 >
-                  Industries
-                </Link>
+                  <span>Industries</span>
+                  <svg
+                    className="w-2.5 h-2.5 ms-2"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 10 6"
+                    style={{ fontWeight: "normal" }}
+                  >
+                    <path
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="m1 1 4 4 4-4"
+                    />
+                  </svg>
+                </button>
+
+                {/* Dropdown Content Industries*/}
+                <div
+                  id="dropdownHoverIndustries"
+                  className={`${
+                    showDropDownIndustries ? "block" : "hidden"
+                  } absolute bg-white   shadow w-52  z-200`}
+                >
+                  <ul
+                    className="font-medium text-gray-900 divide-y divide-gray-200"
+                    aria-labelledby="dropdownHoverButton"
+                  >
+                    <li>
+                      <Link
+                        to="#"
+                        className="block px-4 py-2  md:hover:text-blue-700"
+                      >
+                        Healthcare
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="#"
+                        className="block px-4 py-2 md:hover:text-blue-700"
+                      >
+                        Entertainment
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="#"
+                        className="block px-4 py-2 md:hover:text-blue-700"
+                      >
+                        Property
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="#"
+                        className="block px-4 py-2  md:hover:text-blue-700"
+                      >
+                        Manufacturing
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="#"
+                        className="block px-4 py-2 md:hover:text-blue-700"
+                      >
+                        E-commerce
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="#"
+                        className="block px-4 py-2  md:hover:text-blue-700"
+                      >
+                        ELearning
+                      </Link>
+                      <Link
+                        to="#"
+                        className="block px-4 py-2 pb-4 md:hover:text-blue-700"
+                      >
+                        Ticketing system
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
               </li>
               <li>
                 <Link
