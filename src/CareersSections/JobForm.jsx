@@ -46,8 +46,8 @@ const JobForm = () => {
   return (
     <>
       <FormikProvider value={formik}>
-        <div className="flex justify-center items-center px-4 py-10 sm:px-6 lg:px-8 lg:py-8 mx-auto mb-24">
-          <div className="bg-white  rounded-xl shadow-xl p-4 sm:p-7 md:w-7/12">
+        <div className="flex justify-center items-center bg-gray-50 px-4 py-10 sm:px-6 lg:px-8 lg:py-8">
+          <div className="bg-gradient-to-r from-cyan-100 to-blue-400 rounded-xl shadow-xl p-4 sm:p-7 max-w-screen-lg">
             <form>
               <div className="grid sm:grid-cols-12  gap-2 sm:gap-4 py-8 first:pt-0 last:pb-0 border-t first:border-transparent border-gray-200     ">
                 <div className="sm:col-span-12">

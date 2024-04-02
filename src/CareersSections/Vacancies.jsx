@@ -1,47 +1,55 @@
+import { Link } from "react-router-dom";
 const Vacancies = () => {
   return (
-    <section className="pt-24 pb-8">
-      <div className="text-center w-full mx-auto md:w-7/12 md:text-center">
-        <h1 className="font-bold text-2xl leading-[1.1] sm:text-3xl md:text-4xl mt-4">
-          <span className="block w-full py-2 text-gray-900 bg-clip-text leading-12 lg:inline">
-            List of vacancies
-          </span>
-        </h1>
-        <ul className="p-8 list-disc list-inside text-start bg-gray-40 border-y border-gray-100  m-auto rounded  mt-10 grid sm:grid-cols-2 md:grid-cols-3">
-          <li className="mb-2 text-gray-700">Web Developer</li>
-          <li className="mb-2 text-gray-700">Software engineer</li>
-          <li className="mb-2 text-gray-700">Full Stack Developer</li>
-          <li className="mb-2 text-gray-700">Project manager</li>
-          <li className="mb-2 text-gray-700">Graphics Designer</li>
-          <li className="mb-2 text-gray-700">UI/UX Designer</li>
+    <div className="m-5">
+      <h1 className="md:text-6xl text-4xl lg:text-6x my-20 text-center font-bold text-gray-700">
+        Jobs Available
+      </h1>
+      <div className="group mx-2 mt-10 grid max-w-screen-lg grid-cols-12 space-x-8 overflow-hidden rounded-lg border py-8 text-gray-700 shadow transition hover:shadow-lg sm:mx-auto">
+        <a
+          href="#"
+          className="order-2 col-span-1 mt-4 -ml-14 text-left text-gray-600 hover:text-gray-700 sm:-order-1 sm:ml-4"
+        >
+          <div className="group relative h-20 w-20 overflow-hidden rounded-lg">
+            <img
+              src="https://img.freepik.com/free-vector/hand-drawn-web-developers_23-2148819604.jpg?size=626&ext=jpg&ga=GA1.1.1224184972.1711843200&semt=ais"
+              alt=""
+              className="h-full w-full object-cover text-gray-700"
+            />
+          </div>
+        </a>
+        <div className="col-span-11 flex flex-col pr-8 text-left sm:pl-4">
+          <h3 className="text-sm text-gray-600">Bluetelecast</h3>
+          <a
+            href="#"
+            className="mb-3 overflow-hidden pr-7 text-lg font-semibold sm:text-xl"
+          >
+            {" "}
+            Sr. Frontend Engineer{" "}
+          </a>
+          <p className="overflow-hidden pr-7 text-sm">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+            nonummy nibh euismod tincidunt ut laoreet dolore magna .
+          </p>
 
-          <li className="mb-2 text-gray-700">Marketing Coordinator</li>
-          <li className="mb-2 text-gray-700">Operations Manager</li>
-          <li className="mb-2 text-gray-700">Logo Designer </li>
-          <li className="mb-2 text-gray-700">Animation Creator</li>
-          <li className="mb-2 text-gray-700">Digital marketing Coordinator </li>
-        </ul>
-        <div className="container mx-auto mt-10">
-          <div className="md:flex md:justify-center">
-            <div className=" md:mr-4">
-              <div className=" px-8 md:px-12">
-                <p className="text-lg text-gray-900 md:text-xl ">
-                  If you have the right skills and want to join our team, check
-                  out our job openings or send your resume to &nbsp;
-                  <a
-                    className="text-blue-700 underline"
-                    href="mailto:info@bluetelecast.com"
-                  >
-                    info@bluetelecast.com
-                  </a>{" "}
-                  or fill the below form.
-                </p>
-              </div>
+          <div className="mt-5 flex flex-col space-y-3 text-sm font-medium text-gray-500 sm:flex-row sm:items-center sm:space-y-0 sm:space-x-2">
+            <div className="">
+              Experience:
+              <span className="ml-2 mr-3 rounded-full bg-green-100 px-2 py-0.5 text-green-900">
+                {" "}
+                2 Years{" "}
+              </span>
+              <Link
+                to="#"
+                className="ml-2 mr-3 rounded-full bg-blue-700 px-2 py-0.5 text-white"
+              >
+                Details
+              </Link>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 
