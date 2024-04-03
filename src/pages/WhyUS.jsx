@@ -62,7 +62,12 @@ const WhyUs = () => {
   ];
   return (
     <>
-      <section className="pb-8 bg-gray-50">
+      <section className="pb-8 bg-gray-50"   style={{
+          backgroundImage: 'linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(254, 255, 255, 0.8)), url("/static/images/bg.png")',
+          backgroundSize: 'cover',
+          backgroundRepeat: 'no-repeat',
+          width: '100%',
+        }}>
         <div className="text-md w-9/12 m-auto pt-4 flex items-center ">
           <span>
             <Link to="/" className="hover:text-blue-700" title="Home">

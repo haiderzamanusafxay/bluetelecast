@@ -90,11 +90,16 @@ const Services = () => {
         </div>
 
         <div className="text-center w-full mx-auto md:w-11/12 xl:w-9/12 md:text-center pt-24">
-          <h1 className="font-bold text-4xl leading-[1.1] sm:text-3xl md:text-6xl pb-16">
+          <h1 className="font-bold text-4xl leading-[1.1] sm:text-3xl md:text-6xl pb-8">
             <span className="block w-full py-2 text-gray-900 bg-clip-text leading-12 lg:inline">
               Our Services
             </span>
           </h1>
+          <p className="flex px-5 mb-8 text-lg text-center text-gray-900 md:text-xl lg:px-24 pb-8">
+            We're really good at making awesome mobile apps, websites, logos,
+            and ads. We help businesses get better and bigger by creating cool
+            stuff that people love and solving tricky problems.
+          </p>
         </div>
 
         <div className="container mx-auto grid lg:grid-cols-3  md:w-9/12 gap-5 pb-24 bg-gray-50">

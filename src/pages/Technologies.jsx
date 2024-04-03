@@ -328,7 +328,14 @@ const Technologies = () => {
 
   return (
     <>
-    <section className="pb-24 bg-gray-50">
+    <section className="pb-36 bg-gray-50"
+         style={{
+          backgroundImage: 'linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(254, 255, 255, 0.8)), url("/static/images/bg.png")',
+          backgroundSize: 'cover',
+          backgroundRepeat: 'no-repeat',
+          width: '100%',
+        }}>
+         
         <div className="text-md w-9/12 m-auto pt-4 flex items-center ">
           <span>
             <Link to="/" className="hover:text-blue-700" title="Home">
@@ -376,7 +383,8 @@ const Technologies = () => {
         </div>
       </section>
 
-      <section>
+      <section       style={{ backgroundImage: "url('/static/images/glob.svg')" }}
+>
         <div className="container mx-auto  md:w-9/12 gap-5 py-28 ">
           <div className=" mx-auto text-center">
             <h1 className="font-bold text-4xl leading-[1.1] sm:text-3xl md:text-4xl mb-20">
@@ -397,7 +405,8 @@ const Technologies = () => {
             </div>
           </div>
         </div>
-        <div className="bg-gray-50 ">
+        <div className="bg-gray-50 "      style={{ backgroundImage: "url('/static/images/glob.svg')" }}
+>
           <div className=" mx-auto text-center container md:w-9/12 gap-5 py-28">
             <h1 className="font-bold text-4xl leading-[1.1] sm:text-3xl md:text-4xl mb-20">
               <span className="block w-full py-2 text-gray-900 bg-clip-text leading-12 lg:inline">

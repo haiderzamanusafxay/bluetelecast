@@ -41,6 +41,7 @@ const Services = () => {
                 Our Services
               </span>
             </h1>
+            
           </div>
 
           <div className="container mx-auto grid lg:grid-cols-3  md:w-9/12 gap-5 pb-24 ">
