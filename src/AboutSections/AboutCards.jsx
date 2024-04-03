@@ -18,7 +18,7 @@ function LoadImages(props) {
 const AboutCard = (props) => {
   return (
     <div className="max-w-2xl mx-auto text-center ">
-      <div className="max-w-sm py-6 shadow-lg  hover:shadow-xl border-b-4 border-gray-900">
+      <div className="max-w-sm py-6 hover:shadow-lg border-b-4 border-gray-900">
         <div>
         <LoadImages
               src={props.url}
