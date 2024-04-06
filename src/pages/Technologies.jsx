@@ -367,13 +367,13 @@ const Technologies = () => {
               Technologies
             </span>
           </h1>
-          <p className="flex px-5 mb-8 text-lg text-center text-gray-900 md:text-xl lg:px-24 mt-8 ">
+          <p className="flex px-5 mb-8 text-lg text-justify text-gray-900 md:text-xl lg:px-24 mt-8 ">
             We have a team of over 120 software engineers skilled in various
             languages like C++, Java, C#, RoR, Python, Objective C, JavaScript,
             and more. They have experience with different platforms, IDEs, APIs,
             databases, and frameworks.
           </p>
-          <p className="flex px-5 mb-8 text-lg text-justify text-gray-900 md:text-xl lg:px-32 mt-8 ">
+          <p className="flex px-5 mb-8 text-lg text-justify text-gray-900 md:text-xl lg:px-24 mt-8 pb-8">
             This diverse technical knowledge is uncommon for a mid-sized
             software development partner. Our teams stay updated on the newest
             technologies, including AI, Machine Learning, Big Data, DevOps, and
@@ -383,8 +383,7 @@ const Technologies = () => {
         </div>
       </section>
 
-      <section       style={{ backgroundImage: "url('/static/images/glob.svg')" }}
->
+      <section>
         <div className="container mx-auto  md:w-9/12 gap-5 py-28 ">
           <div className=" mx-auto text-center">
             <h1 className="font-bold text-4xl leading-[1.1] sm:text-3xl md:text-4xl mb-20">
@@ -405,8 +404,7 @@ const Technologies = () => {
             </div>
           </div>
         </div>
-        <div className="bg-gray-50 "      style={{ backgroundImage: "url('/static/images/glob.svg')" }}
->
+        <div className="bg-gray-50 ">
           <div className=" mx-auto text-center container md:w-9/12 gap-5 py-28">
             <h1 className="font-bold text-4xl leading-[1.1] sm:text-3xl md:text-4xl mb-20">
               <span className="block w-full py-2 text-gray-900 bg-clip-text leading-12 lg:inline">

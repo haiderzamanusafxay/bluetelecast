@@ -35,7 +35,7 @@ const About = () => {
 
               <div className="py-3 sm:py-4">
                 <img
-                  src="https://img.freepik.com/free-vector/web-development-programmer-engineering-coding-website-augmented-reality-interface-screens-developer-project-engineer-programming-software-application-design-cartoon-illustration_107791-3863.jpg"
+                  src="/static/images/bg.png"
                   alt=""
                   className="w-full rounded-2xl"
                 />

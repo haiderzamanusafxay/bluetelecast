@@ -89,13 +89,22 @@ const Services = () => {
           <span className="text-blue-700">Our Services</span>
         </div>
 
-        <div className="text-center w-full mx-auto md:w-11/12 xl:w-9/12 md:text-center pt-24">
+        <div
+          className="text-center w-full mx-auto md:w-11/12 xl:w-9/12 md:text-center pt-24"
+          style={{
+            backgroundImage:
+              'linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(254, 255, 255, 0.8)), url("/static/images/bg.png")',
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
+            width: "100%",
+          }}
+        >
           <h1 className="font-bold text-4xl leading-[1.1] sm:text-3xl md:text-6xl pb-8">
             <span className="block w-full py-2 text-gray-900 bg-clip-text leading-12 lg:inline">
               Our Services
             </span>
           </h1>
-          <p className="flex px-5 mb-8 text-lg text-center text-gray-900 md:text-xl lg:px-24 pb-8">
+          <p className="flex px-5  text-lg text-justify md:text-center m-auto  text-gray-900 md:text-xl  md:w-9/12 lg:px-24 pb-16">
             We're really good at making awesome mobile apps, websites, logos,
             and ads. We help businesses get better and bigger by creating cool
             stuff that people love and solving tricky problems.

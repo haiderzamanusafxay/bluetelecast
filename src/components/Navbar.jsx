@@ -169,7 +169,7 @@ function Navbar() {
                     </li>
                     <li>
                       <Link
-                        to="#"
+                        to="/our-partners"
                         className="block px-4 py-2 md:hover:text-blue-700"
                       >
                         Parterners
@@ -177,7 +177,7 @@ function Navbar() {
                     </li>
                     <li>
                       <Link
-                        to="#"
+                        to="/our-clients"
                         className="block px-4 py-2 md:hover:text-blue-700"
                       >
                         Clients

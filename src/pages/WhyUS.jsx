@@ -99,7 +99,7 @@ const WhyUs = () => {
               Why Choose Bluetelecast for Your Software Development Needs?
             </span>
           </h1>
-          <p className="flex px-5 mb-8 text-lg text-center text-gray-900 md:text-xl lg:px-24 md:mt-8 ">
+          <p className="flex px-5 mb-8 text-lg text-justify text-gray-900 md:text-xl lg:px-24 md:mt-8 ">
             At Bluetelecast, we understand that choosing the right partner for
             your software development projects is crucial for the success of
             your business. Here's why Bluetelecast stands out as the ideal

@@ -130,13 +130,13 @@ const Team = () => {
               Our Team
             </span>
           </h1>
-          <p className="flex  mb-8 text-lg text-center text-gray-900 md:text-xl   ">
+          <p className="flex  mb-8 text-lg text-justify text-gray-900 md:text-xl   ">
             At Bluetelecast, our team members are the ones who make everything
             happen. Each person has an important role in helping us reach our
             goal of making really good products for our customers while keeping
             up with new technology.
           </p>
-          <p className="flex  mb-8 text-lg text-center text-gray-900 md:text-xl   ">
+          <p className="flex  mb-8 text-lg text-justify text-gray-900 md:text-xl   ">
             We give our team members the freedom to do their jobs well and take
             care of our customers. Our values like being honest, fair, and clear
             help us lead the company in the right way. This helps us build
