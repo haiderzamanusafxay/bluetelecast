@@ -11,7 +11,7 @@ function LoadImages(props) {
   }, [props.src]); // Depend on props.src change
 
 
-  return imageLoaded ? <img className="rounded-t-lg w-16 m-auto opacity-90 border-b-2 dark:border-b-gray-900 pb-8 mb-8 transition duration-300 hover:scale-105"
+  return imageLoaded ? <img className="rounded-t-lg w-16 m-auto opacity-90 border-b-2 border-b-gray-900 pb-8 mb-8 transition duration-300 hover:scale-110"
     src={props.src}
     alt={props.alt} /> : null;
 }

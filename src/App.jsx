@@ -14,6 +14,8 @@ import Careers from "./pages/Careers.jsx";
 import OurCampany from "./pages/OurCompany.jsx";
 import Testimonals from "./pages/Testimonals.jsx";
 import WhyUs from "./pages/WhyUS.jsx";
+import OurClients from "./pages/OurClients.jsx";
+import OurPartners from "./pages/OurPartners.jsx";
 
 function App() {
   return (
@@ -29,9 +31,10 @@ function App() {
           <Route path="/technologies" element={<Technologies />} />
           <Route path="/careers" element={<Careers />} />
           <Route path="/why-us" element={<WhyUs />} />
+          <Route path="/our-clients" element={<OurClients />} />
+          <Route path="/our-partners" element={<OurPartners />} />
           <Route path="/testimonals" element={<Testimonals />} />
           <Route path="/content-not-found" element={<ContentNotFound />} />
-
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
