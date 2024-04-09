@@ -34,7 +34,7 @@ const ServicesCard = (props) => {
             <h1 className="text-gray-900 font-bold text-2xl tracking-tight mb-2 dark:text-gray-900 ">
               {props.title}
             </h1>
-            <p className="font-normal text-gray-900 text-justify mb-5 ">
+            <p className="flex text-gray-900 text-lg text-justify mb-5 ">
               {props.description}
             </p>
 

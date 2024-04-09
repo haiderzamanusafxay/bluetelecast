@@ -7,7 +7,7 @@ const WhyUs = () => {
       id: 0,
       url: "/static/images/track.png",
       alt: "values",
-      title: "1. Proven Track Record of Excellence:",
+      title: "Proven Track Record of Excellence:",
       description:
         "With over a decade of experience in the industry, Bluetelecast has earned a reputation for delivering top-notch custom software solutions. Our portfolio showcases a diverse range of successful projects across various industries.",
     },
@@ -15,7 +15,7 @@ const WhyUs = () => {
       id: 1,
       url: "/static/images/solution.png",
       alt: "values",
-      title: "2. Tailored Solutions for Every Business:",
+      title: "Tailored Solutions for Every Business:",
       description:
         "Whether you're a big corporation, a medium-sized enterprise, or a startup, we have the expertise to meet your unique requirements. Our team takes the time to understand your business objectives and tailors solutions that align perfectly with your goals.",
     },
@@ -23,7 +23,7 @@ const WhyUs = () => {
       id: 2,
       url: "/static/images/agile.png",
       alt: "values",
-      title: "3. Agile and Flexible Approach:",
+      title: "Agile and Flexible Approach:",
       description:
         "We embrace agile methodologies to ensure flexibility and adaptability throughout the development process. Our iterative approach allows for quick adjustments based on feedback, resulting in faster time-to-market and superior outcomes.",
     },
@@ -31,7 +31,7 @@ const WhyUs = () => {
       id: 3,
       url: "/static/images/global-network.png",
       alt: "values",
-      title: "4. Global Talent Network:",
+      title: "Global Talent Network:",
       description:
         "With a team of over 110 experienced professionals spread across two global locations, Bluetelecast offers a diverse talent pool with expertise in various technologies and domains. Our collaborative approach ensures seamless communication and efficient project execution.",
     },
@@ -39,7 +39,7 @@ const WhyUs = () => {
       id: 4,
       url: "/static/images/execution.png",
       alt: "values",
-      title: "5. Comprehensive Service Offering:",
+      title: "Comprehensive Service Offering:",
       description:
         "From mobile app development and web app development to e-commerce solutions and enterprise software, we provide end-to-end software development services to address all your needs. Whether it's front-end or back-end development, design, cloud computing, or full-stack development, we have the skills and resources to deliver.",
     },
@@ -47,7 +47,7 @@ const WhyUs = () => {
       id: 5,
       url: "/static/images/cost.png",
       alt: "values",
-      title: "6. Cost-Effective Solutions:",
+      title: "Cost-Effective Solutions:",
       description:
         "Bluetelecast offers competitive pricing and flexible engagement models to fit your budget and timeline. By partnering with us, you gain access to a dedicated team of experts without the overhead costs associated with hiring in-house.",
     },
@@ -55,7 +55,7 @@ const WhyUs = () => {
       id: 6,
       url: "/static/images/badge.png",
       alt: "values",
-      title: "7. Commitment to Quality and Customer Satisfaction:",
+      title: "Commitment to Quality and Customer Satisfaction:",
       description:
         "Quality is at the heart of everything we do at Bluetelecast. We adhere to industry best practices and rigorous quality standards to ensure that every project we deliver meets or exceeds expectations. Customer satisfaction is our ultimate goal, and we go above and beyond to ensure that our clients are delighted with the results.",
     },

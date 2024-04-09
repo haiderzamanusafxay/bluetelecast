@@ -11,13 +11,27 @@ const Footer = () => {
   return (
     <>
       <footer className="bg-gray-900 text-gray-400 border-t">
-        <div className="mx-auto max-w-screen-xl space-y-8 px-4 py-16 sm:px-6 lg:space-y-16 lg:px-8">
-          <div className="sm:flex sm:items-center sm:justify-between">
+        <div className="mx-auto max-w-screen-xl space-y-8 px-4 py-16 sm:px-6 lg:space-y-8 lg:px-8">
+          <div className="md:flex md:items-center md:justify-between">
             <div className="text-teal-600">
               <img src={logo} alt="" width="200" />
             </div>
-
-            <ul className="mt-8 flex  justify-start gap-6 sm:mt-0 sm:justify-end">
+            <div className="grid grid-cols-2 mt-8 md:mt-0 md:grid-cols-3 md:m-auto w-5/12  md:w-3/12 gap-5 items-center place-items-center">
+              <img src="static/images/footer/clutch.webp" alt="Clutch" className="shadow hover:filter hover:grayscale transition-all" width="100" />
+              <img
+                src="static/images/footer/goofgirms.webp"
+                alt="Good Firms"
+                width="100"
+                className="rounded-lg shadow hover:filter hover:grayscale transition-all"
+              />
+              <img
+                src="static/images/footer/toprated.webp"
+                alt="Top Rated App Development Companies"
+                width="100"
+                className="shadow hover:filter hover:grayscale transition-all"
+              />
+            </div>
+            <ul className="mt-8 flex justify-start gap-6 md:mt-0 md:justify-end">
               <li>
                 <a
                   href=""
@@ -61,74 +75,53 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className="grid grid-cols-1 text-gray-400 gap-8 border-t border-gray-400 pt-8 sm:grid-cols-2 lg:grid-cols-4 lg:pt-16">
+          <div className="grid grid-cols-1 text-gray-400 gap-8 border-t border-gray-400 pt-8 sm:grid-cols-2 lg:grid-cols-4 ">
             <div>
               <p className="font-medium text-gray-300">Services</p>
 
               <ul className="mt-6 space-y-4  text-sm">
                 <li>
-                <Link
-                    to="/services"
-                    className=" transition hover:opacity-75"
-                  >
+                  <Link to="/services" className=" transition hover:opacity-75">
                     {" "}
                     Software Product{" "}
                   </Link>
                 </li>
 
                 <li>
-                <Link
-                    to="/services"
-                    className=" transition hover:opacity-75"
-                  >
+                  <Link to="/services" className=" transition hover:opacity-75">
                     {" "}
                     Custom Software{" "}
                   </Link>
                 </li>
 
                 <li>
-                <Link
-                    to="/services"
-                    className=" transition hover:opacity-75"
-                  >
+                  <Link to="/services" className=" transition hover:opacity-75">
                     {" "}
                     Mobile Application{" "}
                   </Link>
                 </li>
 
                 <li>
-                <Link
-                    to="/services"
-                    className="transition hover:opacity-75"
-                  >
+                  <Link to="/services" className="transition hover:opacity-75">
                     {" "}
                     Web Design & Development{" "}
                   </Link>
                 </li>
                 <li>
-                <Link
-                    to="/services"
-                    className="transition hover:opacity-75"
-                  >
+                  <Link to="/services" className="transition hover:opacity-75">
                     {" "}
                     Software Design{" "}
                   </Link>
                 </li>
                 <li>
-                <Link
-                    to="/services"
-                    className="transition hover:opacity-75"
-                  >
+                  <Link to="/services" className="transition hover:opacity-75">
                     {" "}
                     Graphic Design{" "}
                   </Link>
                 </li>
 
                 <li>
-                  <Link
-                    to="/services"
-                    className="transition hover:opacity-75"
-                  >
+                  <Link to="/services" className="transition hover:opacity-75">
                     {" "}
                     Application Maintenance & Support{" "}
                   </Link>
@@ -141,20 +134,14 @@ const Footer = () => {
 
               <ul className="mt-6 space-y-4 text-sm">
                 <li>
-                  <Link
-                    to="about-us"
-                    className=" transition hover:opacity-75"
-                  >
+                  <Link to="about-us" className=" transition hover:opacity-75">
                     {" "}
                     About{" "}
                   </Link>
                 </li>
 
                 <li>
-                  <Link
-                    to="/team"
-                    className="transition hover:opacity-75"
-                  >
+                  <Link to="/team" className="transition hover:opacity-75">
                     {" "}
                     Meet the Team{" "}
                   </Link>
@@ -167,20 +154,14 @@ const Footer = () => {
 
               <ul className="mt-6 space-y-4 text-sm">
                 <li>
-                  <Link
-                    to="/contact"
-                    className=" transition hover:opacity-75"
-                  >
+                  <Link to="/contact" className=" transition hover:opacity-75">
                     {" "}
                     Contact{" "}
                   </Link>
                 </li>
 
                 <li>
-                  <Link
-                    to="/faqs"
-                    className=" transition hover:opacity-75"
-                  >
+                  <Link to="/faqs" className=" transition hover:opacity-75">
                     {" "}
                     FAQs{" "}
                   </Link>
@@ -193,40 +174,28 @@ const Footer = () => {
 
               <ul className="mt-6 space-y-4 text-sm">
                 <li>
-                  <a
-                    href="#"
-                    className=" transition hover:opacity-75"
-                  >
+                  <a href="#" className=" transition hover:opacity-75">
                     {" "}
                     Accessibility{" "}
                   </a>
                 </li>
 
                 <li>
-                  <a
-                    href="#"
-                    className=" transition hover:opacity-75"
-                  >
+                  <a href="#" className=" transition hover:opacity-75">
                     {" "}
                     Returns Policy{" "}
                   </a>
                 </li>
 
                 <li>
-                  <a
-                    href="#"
-                    className="transition hover:opacity-75"
-                  >
+                  <a href="#" className="transition hover:opacity-75">
                     {" "}
                     Refund Policy{" "}
                   </a>
                 </li>
 
                 <li>
-                  <a
-                    href="#"
-                    className="transition hover:opacity-75"
-                  >
+                  <a href="#" className="transition hover:opacity-75">
                     {" "}
                     Hiring Statistics{" "}
                   </a>
