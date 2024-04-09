@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import ServicesCard from "../components/ServicesCards";
+import Faq from "../components/Faq";
 
 const Services = () => {
   const ServicesList = [
@@ -60,6 +61,65 @@ const Services = () => {
       alt: "APPLICATION MAINTENANCE AND SUPPORT",
     },
   ];
+
+  const Faqs = [
+    {
+      title: "What services does Bluetelecast offer?",
+      content:
+        "Bluetelecast offers a range of services including software development, mobile application development, website development, and logo design.",
+    },
+    {
+      title: "How experienced is Bluetelecast's team?",
+      content:
+        "Our team at Bluetelecast consists of highly skilled professionals with years of experience in their respective fields. We ensure that our team members are experts in the latest technologies and methodologies.",
+    },
+    {
+      title:
+        "Can Bluetelecast customize solutions according to our specific needs?",
+      content:
+        "Yes, at Bluetelecast, we understand that every project is unique. We are committed to providing customized solutions tailored to your specific requirements.",
+    },
+    {
+      title: "What industries has Bluetelecast worked with in the past?",
+      content:
+        "Bluetelecast has experience working with various industries including but not limited to healthcare, finance, e-commerce, education, and entertainment.",
+    },
+    {
+      title:
+        "How does Bluetelecast ensure the security of our data and intellectual property?",
+      content:
+        "Bluetelecast takes data security and confidentiality very seriously. We have strict protocols in place to safeguard your data and intellectual property throughout the development process.",
+    },
+    {
+      title: "What is Bluetelecast's development process like?",
+      content:
+        "Our development process at Bluetelecast is collaborative and transparent. We involve our clients at every stage of the project to ensure that their requirements are met and expectations are exceeded.",
+    },
+
+    {
+      title: "How long does it typically take Bluetelecast to complete a project?",
+      content:
+        "The duration of a project depends on its complexity and scope. Bluetelecast provides estimated timelines during the initial consultation phase and keeps our clients updated on the progress throughout the development process.",
+    },
+
+    {
+      title: "What after-sales support does Bluetelecast offer?",
+      content:
+        "Bluetelecast offers comprehensive after-sales support including maintenance, updates, and troubleshooting to ensure that your solution continues to perform optimally.",
+    },
+
+    {
+      title: "Can Bluetelecast provide references or examples of previous work?",
+      content:
+        "Yes, Bluetelecast can provide references and case studies of previous work upon request. You can also visit our portfolio section on our website to see examples of our work.",
+    },
+
+    {
+      title: "How do we get started with our project with Bluetelecast?",
+      content:
+        "Simply reach out to Bluetelecast via phone, email, or through the contact form on our website. We'll schedule an initial consultation to discuss your project requirements and provide you with a detailed proposal.",
+    },
+  ];
   return (
     <>
       <section className="pb-12 bg-gray-50">
@@ -111,7 +171,7 @@ const Services = () => {
           </p>
         </div>
 
-        <div className="container mx-auto grid lg:grid-cols-3  md:w-9/12 gap-5 pb-24 bg-gray-50">
+        <div className="container mx-auto grid md:grid-cols-2 lg:grid-cols-3 w-11/12 md:w-11/12  lg:w-9/12 gap-5 pb-24 bg-gray-50">
           {ServicesList.map((service) => (
             <ServicesCard
               key={service.id}
@@ -124,6 +184,7 @@ const Services = () => {
           ))}
         </div>
       </section>
+      <Faq items={Faqs} />{" "}
     </>
   );
 };
