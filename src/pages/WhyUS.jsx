@@ -62,7 +62,7 @@ const WhyUs = () => {
   ];
   return (
     <>
-      <section className="pb-8 bg-gray-50"   style={{
+      <section className="pb-8 bg-gray-50 mt-16"   style={{
           backgroundImage: 'linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(254, 255, 255, 0.8)), url("/static/images/bg.png")',
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat',

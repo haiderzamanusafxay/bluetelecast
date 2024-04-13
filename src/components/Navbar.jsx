@@ -1140,7 +1140,8 @@ function Navbar() {
   const [showDropDown, setShowDropDown] = useState(false);
   const [showDropDownIndustries, setShowDropDownIndustries] = useState(false);
   const [showDropDownSidebar, setShowDropDownSidebar] = useState(false);
-  const [showDropDownIndustriesSidebar, setShowDropDownIndustriesSidebar] = useState(false);
+  const [showDropDownIndustriesSidebar, setShowDropDownIndustriesSidebar] =
+    useState(false);
   const isSmallScreen = useMediaQuery({ query: "(max-width: 768px)" });
   const isMdScreen = useMediaQuery({ query: "(min-width: 768px)" });
 
@@ -1166,7 +1167,7 @@ function Navbar() {
 
   return (
     <>
-      <nav className="bg-gray-900 block w-full hid z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-200">
+      <nav className="bg-gray-900 block w-full hid z-20 top-0 start-0 border-b border-gray-700 fixed ">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 relative">
           <Link
             to="/"
@@ -1179,7 +1180,7 @@ function Navbar() {
             to="/contact"
             className={`text-white bg-blue-700 flex md:order-3 hover:bg-blue-800 ${
               isSmallScreen && "hidden"
-            } focus:ring-4 focus:outline-none font-medium rounded-2xl text-sm px-4 py-2 text-center`}
+            } focus:ring-4 focus:outline-none font-medium rounded-xl text-sm px-4 py-2 text-center`}
           >
             Contact
           </Link>

@@ -90,6 +90,7 @@ const OurTeam = [
 const Team = () => {
   return (
     <section
+      className="mt-16"
       style={{
         backgroundImage:
           'linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(254, 255, 255, 0.8)), url("/static/images/bg.png")',
@@ -98,32 +99,32 @@ const Team = () => {
         width: "100%",
       }}
     >
+      <div className="text-md w-9/12 m-auto pt-4 flex items-center ">
+        <span>
+          <Link to="/" className="hover:text-blue-700" title="Home">
+            Home{" "}
+          </Link>
+        </span>
+        <span className="px-2">
+          <svg
+            className=" h-2 w-2 text-gray-800 display-inline"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 8 14"
+          >
+            <path
+              stroke="currentColor"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="m1 13 5.7-5.326a.909.909 0 0 0 0-1.348L1 1"
+            />
+          </svg>
+        </span>
+        <span className="text-blue-700">Our Team</span>
+      </div>
       <div className="px-4  mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 ">
-        <div className="text-md w-9/12 m-auto pt-4 flex items-center ">
-          <span>
-            <Link to="/" className="hover:text-blue-700" title="Home">
-              Home{" "}
-            </Link>
-          </span>
-          <span className="px-2">
-            <svg
-              className=" h-2 w-2 text-gray-800 display-inline"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 8 14"
-            >
-              <path
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="m1 13 5.7-5.326a.909.909 0 0 0 0-1.348L1 1"
-              />
-            </svg>
-          </span>
-          <span className="text-blue-700">Our Team</span>
-        </div>
         <div className="text-center w-full mx-auto md:w-11/12 xl:w-9/12 md:text-center pt-24 mb-20">
           <h1 className="font-bold text-4xl leading-[1.1] sm:text-3xl md:text-6xl pb-8">
             <span className="block w-full py-2 text-gray-900 bg-clip-text leading-12 lg:inline">
@@ -172,7 +173,9 @@ const Person = (props) => {
           alt="Person"
         />
         <div className="text-center">
-          <Link className="text-xl font-bold hover:text-blue-700">{props.name}</Link>
+          <Link className="text-xl font-bold hover:text-blue-700">
+            {props.name}
+          </Link>
           <p className="text-md text-gray-800">{props.title}</p>
         </div>
       </div>

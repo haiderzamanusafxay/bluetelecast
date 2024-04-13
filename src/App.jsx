@@ -1,5 +1,6 @@
 import "./App.css";
-import { Routes, BrowserRouter, Route } from "react-router-dom";
+import { Routes, BrowserRouter, Route, useLocation } from "react-router-dom";
+import React, { useEffect } from "react";
 
 import Layout from "./Layout.jsx";
 import Home from "./pages/Home.jsx";
@@ -16,10 +17,12 @@ import Testimonals from "./pages/Testimonals.jsx";
 import WhyUs from "./pages/WhyUS.jsx";
 import OurClients from "./pages/OurClients.jsx";
 import OurPartners from "./pages/OurPartners.jsx";
+import PrivacyPolicy from "./pages/PrivacyPolicy.jsx";
 
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTopOnRouteChange />
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
@@ -34,6 +37,7 @@ function App() {
           <Route path="/our-clients" element={<OurClients />} />
           <Route path="/our-partners" element={<OurPartners />} />
           <Route path="/testimonals" element={<Testimonals />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/content-not-found" element={<ContentNotFound />} />
           <Route path="*" element={<NotFound />} />
         </Route>
@@ -43,3 +47,13 @@ function App() {
 }
 
 export default App;
+
+function ScrollToTopOnRouteChange() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
