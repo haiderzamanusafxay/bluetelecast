@@ -120,7 +120,7 @@ const TestimonalsData = [
 const Testimonals = () => {
   return (
     <section
-      className="pb-24 bg-gray-50"
+      className="pb-24 bg-gray-50 mt-16"
       // style={{ backgroundImage: "url('/static/images/glob.svg')" }}
       style={{
         backgroundImage:

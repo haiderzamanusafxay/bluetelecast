@@ -17,12 +17,11 @@ const Faq = ({ items }) => {
   };
 
   return (
-    <section className="max-w-4xl  mx-auto px-3 py-24">
-      <div className="mb-8 text-center">
-        <p className="text-lg text-gray-900 font-semibold">F.A.Q</p>
-        <h3 className="text-3xl font-bold "> Frequently Asked Questions</h3>
+    <section className="max-w-4xl md:mx-48 px-3 py-20">
+      <div className="mb-8 ">
+        <h3 className="text-4xl font-bold "> Frequently Asked Questions</h3>
       </div>
-      <div className="divide-y pt-8">
+      <div className="divide-y pt-4">
         {items.map(({ title, content }, index) => (
           <div key={index} className="  p-4 hover:bg-slate-50">
             <button

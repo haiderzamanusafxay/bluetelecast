@@ -55,7 +55,7 @@ const OurTeam = [
 
 const OurClients = () => {
   return (
-    <section
+    <section className="mt-16"
       style={{
         backgroundImage:
           'linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(254, 255, 255, 0.8)), url("/static/images/bg.png")',
@@ -64,7 +64,6 @@ const OurClients = () => {
         width: "100%",
       }}
     >
-      <div className="px-4  mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 ">
         <div className="text-md w-9/12 m-auto pt-4 flex items-center ">
           <span>
             <Link to="/" className="hover:text-blue-700" title="Home">
@@ -90,6 +89,7 @@ const OurClients = () => {
           </span>
           <span className="text-blue-700">Our Clients</span>
         </div>
+      <div className="px-4  mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 ">
         <div className="text-center w-full mx-auto md:w-11/12 xl:w-9/12 md:text-center pt-24 mb-20">
           <h1 className="font-bold text-4xl leading-[1.1] sm:text-3xl md:text-6xl pb-8">
             <span className="block w-full py-2 text-gray-900 bg-clip-text leading-12 lg:inline">

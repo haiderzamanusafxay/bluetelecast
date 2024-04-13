@@ -122,8 +122,8 @@ const Services = () => {
   ];
   return (
     <>
-      <section className="pb-12 bg-gray-50">
-        <div className="text-md w-9/12 m-auto pt-4 flex items-center ">
+      <section className="pb-12 mt-20">
+        <div className="text-md w-9/12 m-auto  flex items-center">
           <span>
             <Link to="/" className="hover:text-blue-700" title="Home">
               Home{" "}
@@ -170,8 +170,7 @@ const Services = () => {
             stuff that people love and solving tricky problems.
           </p>
         </div>
-
-        <div className="container mx-auto grid md:grid-cols-2 lg:grid-cols-3 w-11/12 md:w-11/12  lg:w-9/12 gap-5 pb-24 bg-gray-50">
+        <div className="container mx-auto grid md:grid-cols-2 lg:grid-cols-3 w-11/12 md:w-11/12  lg:w-9/12 gap-5 pb-24 border-b border-gray-200">
           {ServicesList.map((service) => (
             <ServicesCard
               key={service.id}

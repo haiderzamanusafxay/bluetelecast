@@ -11,26 +11,12 @@ const Footer = () => {
   return (
     <>
       <footer className="bg-gray-900 text-gray-400 border-t">
-        <div className="mx-auto max-w-screen-xl space-y-8 px-4 py-16 sm:px-6 lg:space-y-8 lg:px-8">
+        <div className="mx-auto max-w-screen-xl space-y-8 px-4 pt-16 pb-10 sm:px-6 lg:space-y-8 lg:px-8">
           <div className="md:flex md:items-center md:justify-between">
             <div className="text-teal-600">
               <img src={logo} alt="" width="200" />
             </div>
-            <div className="grid grid-cols-2 mt-8 md:mt-0 md:grid-cols-3 md:m-auto w-5/12  md:w-3/12 gap-5 items-center place-items-center">
-              <img src="static/images/footer/clutch.webp" alt="Clutch" className="shadow hover:filter hover:grayscale transition-all" width="100" />
-              <img
-                src="static/images/footer/goofgirms.webp"
-                alt="Good Firms"
-                width="100"
-                className="rounded-lg shadow hover:filter hover:grayscale transition-all"
-              />
-              <img
-                src="static/images/footer/toprated.webp"
-                alt="Top Rated App Development Companies"
-                width="100"
-                className="shadow hover:filter hover:grayscale transition-all"
-              />
-            </div>
+
             <ul className="mt-8 flex justify-start gap-6 md:mt-0 md:justify-end">
               <li>
                 <a
@@ -75,7 +61,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className="grid grid-cols-1 text-gray-400 gap-8 border-t border-gray-400 pt-8 sm:grid-cols-2 lg:grid-cols-4 ">
+          <div className="grid grid-cols-1 text-gray-400 gap-8 border-t border-gray-400 pt-8 sm:grid-cols-2 lg:grid-cols-5 ">
             <div>
               <p className="font-medium text-gray-300">Services</p>
 
@@ -134,16 +120,51 @@ const Footer = () => {
 
               <ul className="mt-6 space-y-4 text-sm">
                 <li>
-                  <Link to="about-us" className=" transition hover:opacity-75">
+                  <Link
+                    to="/our-company"
+                    className=" transition hover:opacity-75"
+                  >
                     {" "}
-                    About{" "}
+                    Our Company{" "}
                   </Link>
                 </li>
-
+                <li>
+                  <Link to="/why-us" className=" transition hover:opacity-75">
+                    {" "}
+                    Why Us{" "}
+                  </Link>
+                </li>
                 <li>
                   <Link to="/team" className="transition hover:opacity-75">
                     {" "}
-                    Meet the Team{" "}
+                    Team{" "}
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/our-partners"
+                    className=" transition hover:opacity-75"
+                  >
+                    {" "}
+                    Partners{" "}
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/our-clients"
+                    className=" transition hover:opacity-75"
+                  >
+                    {" "}
+                    Clients{" "}
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/testimonals"
+                    className=" transition hover:opacity-75"
+                  >
+                    {" "}
+                    Testimonials{" "}
                   </Link>
                 </li>
               </ul>
@@ -154,16 +175,36 @@ const Footer = () => {
 
               <ul className="mt-6 space-y-4 text-sm">
                 <li>
+                  <Link to="/services" className=" transition hover:opacity-75">
+                    {" "}
+                    Services{" "}
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/technologies"
+                    className=" transition hover:opacity-75"
+                  >
+                    {" "}
+                    Technologies{" "}
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/services" className=" transition hover:opacity-75">
+                    {" "}
+                    Industries{" "}
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/careers" className=" transition hover:opacity-75">
+                    {" "}
+                    Careers{" "}
+                  </Link>
+                </li>
+                <li>
                   <Link to="/contact" className=" transition hover:opacity-75">
                     {" "}
                     Contact{" "}
-                  </Link>
-                </li>
-
-                <li>
-                  <Link to="/faqs" className=" transition hover:opacity-75">
-                    {" "}
-                    FAQs{" "}
                   </Link>
                 </li>
               </ul>
@@ -181,10 +222,10 @@ const Footer = () => {
                 </li>
 
                 <li>
-                  <a href="#" className=" transition hover:opacity-75">
+                  <Link to="/privacy-policy" className=" transition hover:opacity-75">
                     {" "}
-                    Returns Policy{" "}
-                  </a>
+                    Privacy Policy{" "}
+                  </Link>
                 </li>
 
                 <li>
@@ -193,18 +234,56 @@ const Footer = () => {
                     Refund Policy{" "}
                   </a>
                 </li>
+              </ul>
+            </div>
 
+            <div>
+              <p className="font-medium text-gray-300">Contact</p>
+
+              <ul className="mt-6 space-y-4 text-sm">
                 <li>
-                  <a href="#" className="transition hover:opacity-75">
+                  <Link to="/services" className=" transition hover:opacity-75">
                     {" "}
-                    Hiring Statistics{" "}
-                  </a>
+                    Email: info@bluetelecast.com{" "}
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/services" className=" transition hover:opacity-75">
+                    {" "}
+                     sales@bluetelecast.com{" "}
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/services" className=" transition hover:opacity-75">
+                    {" "}
+                    Address: 227 Church St, New Haven, CT 06510{" "}
+                  </Link>
                 </li>
               </ul>
             </div>
           </div>
 
-          <p className="text-xs text-gray-300">
+          <div className="grid grid-cols-3  md:mt-0  md:m-auto w-12/12  md:w-3/12 gap-5 items-center place-items-center">
+            <img
+              src="static/images/footer/toprated.webp"
+              alt="Top Rated App Development Companies"
+              width="100"
+              className="shadow hover:filter hover:grayscale transition-all"
+            />
+            <img
+              src="static/images/footer/clutch.webp"
+              alt="Clutch"
+              className="shadow hover:filter hover:grayscale transition-all"
+              width="100"
+            />
+            <img
+              src="static/images/footer/goofgirms.webp"
+              alt="Good Firms"
+              width="100"
+              className="rounded-lg shadow hover:filter hover:grayscale transition-all"
+            />
+          </div>
+          <p className="text-sm text-gray-300 ">
             &copy; {new Date().getFullYear()}. Bluetelecast. All rights
             reserved.
           </p>
