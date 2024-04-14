@@ -1,5 +1,6 @@
 import React from "react";
 import * as Yup from "yup";
+import Map from "../components/Map.jsx";
 import {
   Formik,
   Form,
@@ -42,6 +43,14 @@ const Contact = () => {
       <FormikProvider value={formik}>
         <div className="flex items-center justify-center py-20 bg-gray-100">
           <div className="mx-auto w-full max-w-[550px]">
+            <h2 className="mb-6 mt-6 text-4xl tracking-tight font-extrabold text-center text-gray-900">
+              Contact Us
+            </h2>
+            <p className="mb-8 lg:mb-16 font-light text-center text-gray-600 sm:text-xl">
+              Got a technical issue? want to send us a feedback? Need details
+              about our Business plan? Let us know.
+            </p>
+
             <form action="https://formbold.com/s/FORM_ID" method="POST">
               <div className="mb-5">
                 <label
@@ -137,6 +146,7 @@ const Contact = () => {
           </div>
         </div>
       </FormikProvider>
+      <Map />
     </>
   );
 };
