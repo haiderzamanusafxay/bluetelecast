@@ -222,7 +222,10 @@ const Footer = () => {
                 </li>
 
                 <li>
-                  <Link to="/privacy-policy" className=" transition hover:opacity-75">
+                  <Link
+                    to="/privacy-policy"
+                    className=" transition hover:opacity-75"
+                  >
                     {" "}
                     Privacy Policy{" "}
                   </Link>
@@ -250,13 +253,25 @@ const Footer = () => {
                 <li>
                   <Link to="/services" className=" transition hover:opacity-75">
                     {" "}
-                     sales@bluetelecast.com{" "}
+                    sales@bluetelecast.com{" "}
                   </Link>
                 </li>
                 <li>
                   <Link to="/services" className=" transition hover:opacity-75">
                     {" "}
-                    Address: 227 Church St, New Haven, CT 06510{" "}
+                    Address: 227 Church St, New Haven US.{" "}
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/services" className=" transition hover:opacity-75">
+                    {" "}
+                    Phone: +1 475-300-7486{" "}
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/services" className=" transition hover:opacity-75">
+                    {" "}
+                    Open Hours: Mon – Sat: 8 am – 5 pm, Sunday: CLOSED{" "}
                   </Link>
                 </li>
               </ul>

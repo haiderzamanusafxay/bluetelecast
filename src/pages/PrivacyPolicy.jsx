@@ -4,7 +4,7 @@ const PrivacyPolicy = () => {
   return (
     <section
       className="pb-24 bg-gray-50 mt-16"
-      style={{ 
+      style={{
         backgroundImage:
           'linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(254, 255, 255, 0.8)), url("/static/images/bg.png")',
         backgroundSize: "cover",
@@ -37,7 +37,10 @@ const PrivacyPolicy = () => {
         </span>
         <span className="text-blue-700">Privacy Policy</span>
       </div>
-      <div className=" mx-auto w-11/12 md:w-8/12  pt-24" style={{ userSelect: "none" }}>
+      <div
+        className=" mx-auto w-11/12 md:w-8/12  pt-24"
+        style={{ userSelect: "none" }}
+      >
         <h1 className="font-bold text-4xl leading-[1.1] sm:text-3xl md:text-6xl">
           <span className="block w-full py-2 text-gray-900 bg-clip-text leading-12 lg:inline">
             Privacy Policy
@@ -178,8 +181,12 @@ const PrivacyPolicy = () => {
           </span>
         </h2>
         <p className="flex text-md text-justify text-gray-600 text-lg nd-pr-16 ">
-          This privacy statement will be updated as needed, with changes
-          reflected by the 03/02/2023 date.
+          For privacy concerns, complaints, or questions, please contact us at 
+          <a className="text-blue-700 px-2" href="">
+            {" "}
+            Info@bluetelecast.com.
+          </a>{" "}
+          We aim to respond within 7 business days.
         </p>
       </div>
     </section>

@@ -126,18 +126,18 @@ const Team = () => {
       </div>
       <div className="px-4  mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 ">
         <div className="text-center w-full mx-auto md:w-11/12 xl:w-9/12 md:text-center pt-24 mb-20">
-          <h1 className="font-bold text-4xl leading-[1.1] sm:text-3xl md:text-6xl pb-8">
+          <h1 className="font-bold text-2xl leading-[1.1] sm:text-3xl md:text-4xl pb-4">
             <span className="block w-full py-2 text-gray-900 bg-clip-text leading-12 lg:inline">
               Our Team
             </span>
           </h1>
-          <p className="flex  mb-8 text-lg text-justify text-gray-900 md:text-xl   ">
+          <p className="flex  mb-4  text-md md:text-lg text-justify text-gray-900 nd-pr-16">
             At Bluetelecast, our team members are the ones who make everything
             happen. Each person has an important role in helping us reach our
             goal of making really good products for our customers while keeping
             up with new technology.
           </p>
-          <p className="flex  mb-8 text-lg text-justify text-gray-900 md:text-xl   ">
+          <p className="flex  mb-8 text-md md:text-lg text-justify text-gray-900    ">
             We give our team members the freedom to do their jobs well and take
             care of our customers. Our values like being honest, fair, and clear
             help us lead the company in the right way. This helps us build
