@@ -159,12 +159,12 @@ const Services = () => {
             width: "100%",
           }}
         >
-          <h1 className="font-bold text-2xl leading-[1.1]  md:text-4xl pb-8">
+          <h1 className="font-bold text-2xl leading-[1.1]  md:text-3xl pb-4">
             <span className="block w-full py-2 text-gray-900 bg-clip-text leading-12 lg:inline">
               Our Services
             </span>
           </h1>
-          <p className="flex px-5 text-md text-justify md:text-center m-auto  text-gray-900 md:text-lg  md:w-9/12 lg:px-24 pb-16">
+          <p className="flex px-5 text-md text-justify  md:text-center m-auto  text-gray-900 md:text-base   md:w-9/12  2xl:w-6/12 lg:px-24 pb-16">
             We're really good at making awesome mobile apps, websites, logos,
             and ads. We help businesses get better and bigger by creating cool
             stuff that people love and solving tricky problems.
