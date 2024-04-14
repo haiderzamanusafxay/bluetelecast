@@ -1,95 +1,74 @@
-import React, { useState } from "react";
-import Modal from "react-modal";
 
-import EnmarcoFront from "../../assets/1/front.png";
-import MISFrontImage from "../../assets/2/1.png";
-import GDPRImageFront from "../../assets/3/gdpr.png";
+import { Link } from "react-router-dom";
 
-const customStyles = {
-  content: {
-    backgroundColor: "white",
-    width: 400,
-  },
-};
+// const customStyles = {
+//   content: {
+//     backgroundColor: "white",
+//     width: 400,
+//   },
+// };
 const Portfolio = () => {
-  const [showCard, setShowCard] = useState("all");
   const ProjectsArray = [
     {
       id: 0,
-      imageURL: EnmarcoFront,
-      title: "Enmarco",
-      subTitle: "Full Stack Web App",
+      imageURL: "/static/images/projects/logoSixdor.jpg",
+      title: "Sixdor™",
+      subTitle: "Logo Design",
     },
     {
       id: 1,
-      imageURL: MISFrontImage,
-      title: "FLYAWAY HUB",
-      subTitle: "MIS (Full stack web app",
+      imageURL: "/static/images/projects/Zotxu.jpg",
+      title: "Zotxu - Brand Identity",
+      subTitle: "Brand Identity",
     },
     {
       id: 2,
-      imageURL: GDPRImageFront,
-      title: "GDPR",
-      subTitle: "Full Stack Web App",
+      imageURL: "/static/images/projects/Pixto.jpg",
+      title: "Pixto™",
+      subTitle: "Logo & Brand identitiy",
     },
+    // {
+    //   id: 3,
+    //   imageURL: "../../assets/1/front.png",
+    //   title: "Enmarco",
+    //   subTitle: "Web",
+    // },
+    // {
+    //   id: 4,
+    //   imageURL: "../../assets/2/1.png",
+    //   title: "FLYAWAY HUB",
+    //   subTitle: "MIS",
+    // },
+    // {
+    //   id: 5,
+    //   imageURL: "../../assets/3/gdpr.png",
+    //   title: "GDPR",
+    //   subTitle: "Web",
+    // },
   ];
   return (
     <>
-      <section className="pt-20 pb-12 lg:pt-[120px] lg:pb-[90px] dark:bg-dark">
-        <div className="container mx-auto">
-          <div className="flex flex-wrap ">
-            <div className="w-full px-4">
-              <div className="mx-auto mb-[60px] max-w-[510px] text-center">
-                {/* <span className="block w-full py-2 text-transparent bg-clip-text text-5xl font-bold leading-12 bg-gradient-to-r from-green-400 to-purple-500 lg:inline">
-                  Our Recent Projects
-                </span> */}
-                <span className="block w-full py-2 text-gray-900 bg-clip-text text-5xl font-bold leading-12  lg:inline">
-                  Our Recent Projects
-                </span>
-                <p className="text-body-color text-base text-blue-900">
-                  Celebrating Innovation: Explore Our Latest Projects
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="flex flex-wrap ">
-            {ProjectsArray.map((project) => {
-              return (
-                <PortfolioCard
-                  ImageHref={project.imageURL}
-                  category={project.subTitle}
-                  title={project.title}
-                  button="View Details"
-                  buttonHref="#"
-                  showCard={showCard}
-                />
-              );
-            })}
-            {/*<PortfolioCard
-              ImageHref={EnmarcoFront}
-              category="Full Stack Web App"
-              title="Enmarco"
-              button="View Details"
-              buttonHref="#"
-              showCard={showCard}
-            />
-             <PortfolioCard
-              ImageHref={MISFrontImage}
-              category="MIS (Full stack web app)"
-              title="FLYAWAY HUB              "
-              button="View Details"
-              buttonHref="#"
-              showCard={showCard}
-            />
-            <PortfolioCard
-              ImageHref={GDPRImageFront}
-              category="Full Stack Web App"
-              title="GDPR"
-              button="View Details"
-              buttonHref="#"
-              showCard={showCard}
-            /> */}
-          </div>
+      <section className="pb-12">
+        <div className="text-center w-full mx-auto md:w-11/12 xl:w-9/12 md:text-center pt-24">
+          <h1 className="font-bold text-4xl leading-[1.1] sm:text-3xl md:text-6xl pb-16">
+            <span className="block w-full py-2 text-gray-900 bg-clip-text leading-12 lg:inline">
+              Our Resent Projects
+            </span>
+          </h1>
+        </div>
+
+        <div className="container mx-auto grid md:grid-cols-2 lg:grid-cols-3  md:w-10/12 gap-10 pb-24 ">
+          {ProjectsArray.map((project) => {
+            return (
+              <PortfolioCard
+                id={project.id}
+                ImageHref={project.imageURL}
+                title={project.title}
+                category={project.subTitle}
+                buttonHref="/content-not-found"
+              />
+            );
+          })}
         </div>
       </section>
     </>
@@ -98,45 +77,19 @@ const Portfolio = () => {
 
 export default Portfolio;
 
-const PortfolioCard = ({
-  showCard,
-  category,
-  ImageHref,
-  title,
-  button,
-  buttonHref,
-}) => {
+const PortfolioCard = ({ category, ImageHref, title, buttonHref }) => {
   return (
     <>
-      <div
-        className={`w-full px-4 md:w-1/2 xl:w-1/3 ${
-          showCard === "all" || showCard === category.toLowerCase()
-            ? "block"
-            : "hidden"
-        }`}
+      <Link
+        to={buttonHref}
+        className="font-medium text-gray-900 m-auto hover:underline"
       >
-        <div className="relative mb-12">
-          <div className="overflow-hidden rounded-[10px] shadow-2xl">
-            <img
-              src={ImageHref}
-              alt="portfolio"
-              className="w-full h-full object-cover"
-            />
-          </div>
-          <div className="relative z-10 mx-7 -mt-20 border-2  rounded-lg bg-gray-50 shadow-2xl py-[34px] px-3 text-center shadow-portfolio-dark">
-            <span className="text-primary mb-2 block text-sm font-medium">
-              {category}
-            </span>
-            <h3 className="text-dark  mb-5 text-xl font-bold">{title}</h3>
-            <a
-              href={buttonHref}
-              className="text-body-color dark:text-dark-6 hover:border-primary hover:bg-blue-600 inline-block rounded-full border border-stroke dark:border-dark-3 py-[10px] px-7 text-sm font-medium transition hover:text-white"
-            >
-              {button}
-            </a>
-          </div>
+        <div className="p-6 m-auto w-10/12 md:w-full rounded-lg shadow-md hover:shadow-lg bg-gray-50">
+          <img className="w-full rounded-lg shadow-lg" src={ImageHref} alt="" />
+          <h1 className="text-xl text-gray-900 pt-2 font-bold">{title}</h1>
+          <h4 className="text-md text-gray-600 font-semibold">{category}</h4>
         </div>
-      </div>
+      </Link>
     </>
   );
 };

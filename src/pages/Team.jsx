@@ -1,137 +1,184 @@
+import { Link } from "react-router-dom";
+
+const OurTeam = [
+  {
+    id: 111,
+    url: "/static/images/team/",
+    name: "Aimal Khan Samsor",
+    title: "Business Development Director",
+  },
+  {
+    id: 0,
+    url: "/static/images/team/",
+    name: "jorry Dorelian",
+    title: "Operations Manager",
+  },
+  {
+    id: 1,
+    url: "/static/images/team/",
+    name: "Fiasal Khan",
+    title: "Technical Manager",
+  },
+  {
+    id: 2,
+    url: "/static/images/team/",
+    name: "Joe",
+    title: "Board of Director",
+  },
+  {
+    id: 4,
+    url: "/static/images/team/",
+    name: "Thomas",
+    title: "Full Stack Developer",
+  },
+  {
+    id: 5,
+    url: "/static/images/team/",
+    name: "Kevin",
+    title: "Full Stack Developer",
+  },
+  {
+    id: 6,
+    url: "/static/images/team/",
+    name: "Gabor",
+    title: "UI/UX Designer",
+  },
+  {
+    id: 7,
+    url: "/static/images/team/",
+    name: "Raiful Islam Badhon",
+    title: "Logo Desinger",
+  },
+  {
+    id: 8,
+    url: "/static/images/team/",
+    name: "Mohammad Yusuf",
+    title: "Full Stack Developer",
+  },
+  {
+    id: 9,
+    url: "/static/images/team/",
+    name: "Tina Steven",
+    title: "Marketing Manager",
+  },
+  {
+    id: 10,
+    url: "/static/images/team/",
+    name: "John Scott",
+    title: "Sales Manager",
+  },
+  {
+    id: 11,
+    url: "/static/images/team/",
+    name: "Susan Caplan",
+    title: "HR Manager",
+  },
+  {
+    id: 12,
+    url: "/static/images/team/",
+    name: "Qais Abdul Rashid",
+    title: "Sales Lead ",
+  },
+  {
+    id: 13,
+    url: "/static/images/team/",
+    name: "Haider Zaman",
+    title: "Full Stack Developer",
+  },
+];
+
 const Team = () => {
   return (
-    <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-      <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
-        <div>
-          <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400">
-            Dream Team
+    <section
+      className="mt-16"
+      style={{
+        backgroundImage:
+          'linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(254, 255, 255, 0.8)), url("/static/images/bg.png")',
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+        width: "100%",
+      }}
+    >
+      <div className="text-md w-9/12 m-auto pt-4 flex items-center ">
+        <span>
+          <Link to="/" className="hover:text-blue-700" title="Home">
+            Home{" "}
+          </Link>
+        </span>
+        <span className="px-2">
+          <svg
+            className=" h-2 w-2 text-gray-800 display-inline"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 8 14"
+          >
+            <path
+              stroke="currentColor"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="m1 13 5.7-5.326a.909.909 0 0 0 0-1.348L1 1"
+            />
+          </svg>
+        </span>
+        <span className="text-blue-700">Our Team</span>
+      </div>
+      <div className="px-4  mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 ">
+        <div className="text-center w-full mx-auto md:w-11/12 xl:w-9/12 md:text-center pt-24 mb-20">
+          <h1 className="font-bold text-4xl leading-[1.1] sm:text-3xl md:text-6xl pb-8">
+            <span className="block w-full py-2 text-gray-900 bg-clip-text leading-12 lg:inline">
+              Our Team
+            </span>
+          </h1>
+          <p className="flex  mb-8 text-lg text-justify text-gray-900 md:text-xl   ">
+            At Bluetelecast, our team members are the ones who make everything
+            happen. Each person has an important role in helping us reach our
+            goal of making really good products for our customers while keeping
+            up with new technology.
+          </p>
+          <p className="flex  mb-8 text-lg text-justify text-gray-900 md:text-xl   ">
+            We give our team members the freedom to do their jobs well and take
+            care of our customers. Our values like being honest, fair, and clear
+            help us lead the company in the right way. This helps us build
+            strong, long-lasting relationships with our customers, based on
+            trust and respect.
           </p>
         </div>
-        <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
-          <span className="relative inline-block">
-            <svg
-              viewBox="0 0 52 24"
-              fill="currentColor"
-              className="absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 text-blue-gray-100 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block"
-            >
-              <rect
-                fill="url(#247432cb-6e6c-4bec-9766-564ed7c230dc)"
-                width="52"
-                height="24"
-              />
-            </svg>
-            <span className="relative md:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 bg-clip-text leading-12">
-              Our Talented Team Of Professionals
-            </span>
-          </span>{" "}
-        </h2>
-        <p className="text-base text-gray-700 md:text-lg">
-          Meet our team of dedicated professionals.
-        </p>
-      </div>
-      <div className="grid gap-10 row-gap-8 mx-auto sm:row-gap-10 lg:max-w-screen-lg sm:grid-cols-2 lg:grid-cols-3">
-        <div className="flex">
-          <img
-            className="object-cover w-20 h-20 mr-4 rounded-full shadow"
-            src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260"
-            alt="Person"
-          />
-          <div className="flex flex-col justify-center">
-            <p className="text-lg font-bold">Oliver Aguilerra</p>
-            <p className="text-sm text-gray-800">Product Manager</p>
-          </div>
-        </div>
-        <div className="flex">
-          <img
-            className="object-cover w-20 h-20 mr-4 rounded-full shadow"
-            src="https://images.pexels.com/photos/2381069/pexels-photo-2381069.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
-            alt="Person"
-          />
-          <div className="flex flex-col justify-center">
-            <p className="text-lg font-bold">Marta Clermont</p>
-            <p className="text-sm text-gray-800">Design Team Lead</p>
-          </div>
-        </div>
-        <div className="flex">
-          <img
-            className="object-cover w-20 h-20 mr-4 rounded-full shadow"
-            src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
-            alt="Person"
-          />
-          <div className="flex flex-col justify-center">
-            <p className="text-lg font-bold">Anthony Geek</p>
-            <p className="text-sm text-gray-800">CTO, Lorem Inc.</p>
-          </div>
-        </div>
-        <div className="flex">
-          <img
-            className="object-cover w-20 h-20 mr-4 rounded-full shadow"
-            src="https://images.pexels.com/photos/3747435/pexels-photo-3747435.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
-            alt="Person"
-          />
-          <div className="flex flex-col justify-center">
-            <p className="text-lg font-bold">Alice Melbourne</p>
-            <p className="text-sm text-gray-800">Human Resources</p>
-          </div>
-        </div>
-        <div className="flex">
-          <img
-            className="object-cover w-20 h-20 mr-4 rounded-full shadow"
-            src="https://images.pexels.com/photos/3785077/pexels-photo-3785077.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500"
-            alt="Person"
-          />
-          <div className="flex flex-col justify-center">
-            <p className="text-lg font-bold">Martin Garix</p>
-            <p className="text-sm text-gray-800">Bad boy</p>
-          </div>
-        </div>
-        <div className="flex">
-          <img
-            className="object-cover w-20 h-20 mr-4 rounded-full shadow"
-            src="https://images.pexels.com/photos/3931603/pexels-photo-3931603.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
-            alt="Person"
-          />
-          <div className="flex flex-col justify-center">
-            <p className="text-lg font-bold">Andrew Larkin</p>
-            <p className="text-sm text-gray-800">Backend Developer</p>
-          </div>
-        </div>
-        <div className="flex">
-          <img
-            className="object-cover w-20 h-20 mr-4 rounded-full shadow"
-            src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260"
-            alt="Person"
-          />
-          <div className="flex flex-col justify-center">
-            <p className="text-lg font-bold">Sophie Denmo</p>
-            <p className="text-sm text-gray-800">Designer UI/UX</p>
-          </div>
-        </div>
-        <div className="flex">
-          <img
-            className="object-cover w-20 h-20 mr-4 rounded-full shadow"
-            src="https://images.pexels.com/photos/3931553/pexels-photo-3931553.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
-            alt="Person"
-          />
-          <div className="flex flex-col justify-center">
-            <p className="text-lg font-bold">Benedict Caro</p>
-            <p className="text-sm text-gray-800">Frontend Developer</p>
-          </div>
-        </div>
-        <div className="flex">
-          <img
-            className="object-cover w-20 h-20 mr-4 rounded-full shadow"
-            src="https://images.pexels.com/photos/3783255/pexels-photo-3783255.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
-            alt="Person"
-          />
-          <div className="flex flex-col justify-center">
-            <p className="text-lg font-bold">Adam Molly</p>
-            <p className="text-sm text-gray-800">Full Stack Developer</p>
-          </div>
+        <div className="grid gap-10 row-gap-8 mx-auto sm:row-gap-10 lg:max-w-screen-lg grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 pb-24">
+          {OurTeam.map((team) => (
+            <Person
+              key={team.id}
+              id={team.id}
+              url={team.url}
+              title={team.title}
+              name={team.name}
+            />
+          ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
 export default Team;
+
+const Person = (props) => {
+  return (
+    <>
+      <div className="flex flex-col items-center">
+        <img
+          className="object-cover w-20 h-20 mr-4 rounded-full shadow"
+          src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260"
+          alt="Person"
+        />
+        <div className="text-center">
+          <Link className="text-xl font-bold hover:text-blue-700">
+            {props.name}
+          </Link>
+          <p className="text-md text-gray-800">{props.title}</p>
+        </div>
+      </div>
+    </>
+  );
+};

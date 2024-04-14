@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import SmallCard from "../Technologies/SmallCard";
 
 const Technologies = () => {
@@ -281,7 +282,6 @@ const Technologies = () => {
       title: "OpenCV",
       alt: "OpenCV",
     },
-  
   ];
 
   const DevOps = [
@@ -309,7 +309,6 @@ const Technologies = () => {
       title: "Ansible",
       alt: "Ansible",
     },
-  
   ];
 
   const VersionControl = [
@@ -325,26 +324,56 @@ const Technologies = () => {
       title: "SVN",
       alt: "SVN",
     },
-  
-  
   ];
 
   return (
     <>
-      <section className="py-24 bg-gray-50">
-        <div className="text-center w-full mx-auto md:w-11/12 xl:w-9/12 md:text-center">
+    <section className="pb-36 bg-gray-50 mt-16"
+         style={{
+          backgroundImage: 'linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(254, 255, 255, 0.8)), url("/static/images/bg.png")',
+          backgroundSize: 'cover',
+          backgroundRepeat: 'no-repeat',
+          width: '100%',
+        }}>
+         
+        <div className="text-md w-9/12 m-auto pt-4 flex items-center ">
+          <span>
+            <Link to="/" className="hover:text-blue-700" title="Home">
+              Home{" "}
+            </Link>
+          </span>
+          <span className="px-2">
+            <svg
+              className=" h-2 w-2 text-gray-800 display-inline"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 8 14"
+            >
+              <path
+                stroke="currentColor"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="m1 13 5.7-5.326a.909.909 0 0 0 0-1.348L1 1"
+              />
+            </svg>
+          </span>
+          <span className="text-blue-700">Technologies</span>
+        </div>
+        <div className="text-center w-full mx-auto md:w-11/12 xl:w-9/12 md:text-center pt-24">
           <h1 className="font-bold text-4xl leading-[1.1] sm:text-3xl md:text-6xl pb-8">
             <span className="block w-full py-2 text-gray-900 bg-clip-text leading-12 lg:inline">
               Technologies
             </span>
           </h1>
-          <p className="flex px-5 mb-8 text-lg text-center text-gray-900 md:text-xl lg:px-24 mt-8 ">
+          <p className="flex px-5 mb-8 text-lg text-justify text-gray-900 md:text-xl lg:px-24 mt-8 ">
             We have a team of over 120 software engineers skilled in various
             languages like C++, Java, C#, RoR, Python, Objective C, JavaScript,
             and more. They have experience with different platforms, IDEs, APIs,
             databases, and frameworks.
           </p>
-          <p className="flex px-5 mb-8 text-lg text-justify text-gray-900 md:text-xl lg:px-32 mt-8 ">
+          <p className="flex px-5 mb-8 text-lg text-justify text-gray-900 md:text-xl lg:px-24 mt-8 pb-8">
             This diverse technical knowledge is uncommon for a mid-sized
             software development partner. Our teams stay updated on the newest
             technologies, including AI, Machine Learning, Big Data, DevOps, and
@@ -526,7 +555,7 @@ const Technologies = () => {
           <div className=" mx-auto text-center">
             <h1 className="font-bold text-4xl leading-[1.1] sm:text-3xl md:text-4xl mb-20">
               <span className="block w-full py-2 text-gray-900 bg-clip-text leading-12 lg:inline">
-              DevOps
+                DevOps
               </span>
             </h1>
             <div className="flex flex-wrap justify-center gap-8">
@@ -547,7 +576,7 @@ const Technologies = () => {
           <div className=" mx-auto text-center container md:w-9/12 gap-5 py-28">
             <h1 className="font-bold text-4xl leading-[1.1] sm:text-3xl md:text-4xl mb-20">
               <span className="block w-full py-2 text-gray-900 bg-clip-text leading-12 lg:inline">
-              Version Control
+                Version Control
               </span>
             </h1>
             <div className="flex flex-wrap justify-center gap-8">

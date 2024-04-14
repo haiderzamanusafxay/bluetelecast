@@ -1,4 +1,6 @@
+import { Link } from "react-router-dom";
 import ServicesCard from "../components/ServicesCards";
+import Faq from "../components/Faq";
 
 const Services = () => {
   const ServicesList = [
@@ -59,18 +61,116 @@ const Services = () => {
       alt: "APPLICATION MAINTENANCE AND SUPPORT",
     },
   ];
+
+  const Faqs = [
+    {
+      title: "What services does Bluetelecast offer?",
+      content:
+        "Bluetelecast offers a range of services including software development, mobile application development, website development, and logo design.",
+    },
+    {
+      title: "How experienced is Bluetelecast's team?",
+      content:
+        "Our team at Bluetelecast consists of highly skilled professionals with years of experience in their respective fields. We ensure that our team members are experts in the latest technologies and methodologies.",
+    },
+    {
+      title:
+        "Can Bluetelecast customize solutions according to our specific needs?",
+      content:
+        "Yes, at Bluetelecast, we understand that every project is unique. We are committed to providing customized solutions tailored to your specific requirements.",
+    },
+    {
+      title: "What industries has Bluetelecast worked with in the past?",
+      content:
+        "Bluetelecast has experience working with various industries including but not limited to healthcare, finance, e-commerce, education, and entertainment.",
+    },
+    {
+      title:
+        "How does Bluetelecast ensure the security of our data and intellectual property?",
+      content:
+        "Bluetelecast takes data security and confidentiality very seriously. We have strict protocols in place to safeguard your data and intellectual property throughout the development process.",
+    },
+    {
+      title: "What is Bluetelecast's development process like?",
+      content:
+        "Our development process at Bluetelecast is collaborative and transparent. We involve our clients at every stage of the project to ensure that their requirements are met and expectations are exceeded.",
+    },
+
+    {
+      title: "How long does it typically take Bluetelecast to complete a project?",
+      content:
+        "The duration of a project depends on its complexity and scope. Bluetelecast provides estimated timelines during the initial consultation phase and keeps our clients updated on the progress throughout the development process.",
+    },
+
+    {
+      title: "What after-sales support does Bluetelecast offer?",
+      content:
+        "Bluetelecast offers comprehensive after-sales support including maintenance, updates, and troubleshooting to ensure that your solution continues to perform optimally.",
+    },
+
+    {
+      title: "Can Bluetelecast provide references or examples of previous work?",
+      content:
+        "Yes, Bluetelecast can provide references and case studies of previous work upon request. You can also visit our portfolio section on our website to see examples of our work.",
+    },
+
+    {
+      title: "How do we get started with our project with Bluetelecast?",
+      content:
+        "Simply reach out to Bluetelecast via phone, email, or through the contact form on our website. We'll schedule an initial consultation to discuss your project requirements and provide you with a detailed proposal.",
+    },
+  ];
   return (
     <>
-      <section className="pb-12 pt-24 bg-gray-50">
-        <div className="text-center w-full mx-auto md:w-11/12 xl:w-9/12 md:text-center">
-          <h1 className="font-bold text-4xl leading-[1.1] sm:text-3xl md:text-6xl pb-16">
-            <span className="block w-full py-2 text-gray-900 bg-clip-text leading-12 lg:inline">
-            Our Services
-            </span>
-          </h1>
+      <section className="pb-12 mt-20">
+        <div className="text-md w-9/12 m-auto  flex items-center">
+          <span>
+            <Link to="/" className="hover:text-blue-700" title="Home">
+              Home{" "}
+            </Link>
+          </span>
+          <span className="px-2">
+            <svg
+              className="w-2 h-2 text-gray-800 display-inline"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 8 14"
+            >
+              <path
+                stroke="currentColor"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="m1 13 5.7-5.326a.909.909 0 0 0 0-1.348L1 1"
+              />
+            </svg>
+          </span>
+          <span className="text-blue-700">Our Services</span>
         </div>
 
-        <div className="container mx-auto grid lg:grid-cols-3  md:w-9/12 gap-5 pb-24 bg-gray-50">
+        <div
+          className="text-center w-full mx-auto md:w-11/12 xl:w-9/12 md:text-center pt-24"
+          style={{
+            backgroundImage:
+              'linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(254, 255, 255, 0.8)), url("/static/images/bg.png")',
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
+            width: "100%",
+          }}
+        >
+          <h1 className="font-bold text-4xl leading-[1.1] sm:text-3xl md:text-6xl pb-8">
+            <span className="block w-full py-2 text-gray-900 bg-clip-text leading-12 lg:inline">
+              Our Services
+            </span>
+          </h1>
+          <p className="flex px-5  text-lg text-justify md:text-center m-auto  text-gray-900 md:text-xl  md:w-9/12 lg:px-24 pb-16">
+            We're really good at making awesome mobile apps, websites, logos,
+            and ads. We help businesses get better and bigger by creating cool
+            stuff that people love and solving tricky problems.
+          </p>
+        </div>
+        <div className="container mx-auto grid md:grid-cols-2 lg:grid-cols-3 w-11/12 md:w-11/12  lg:w-9/12 gap-5 pb-24 border-b border-gray-200">
           {ServicesList.map((service) => (
             <ServicesCard
               key={service.id}
@@ -83,6 +183,7 @@ const Services = () => {
           ))}
         </div>
       </section>
+      <Faq items={Faqs} />{" "}
     </>
   );
 };

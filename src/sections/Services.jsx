@@ -1,7 +1,6 @@
 import React from "react";
 import ServicesCard from "../components/ServicesCards";
 
-
 const ServicesList = [
   {
     id: 0,
@@ -27,35 +26,34 @@ const ServicesList = [
       "We provide services for developing applications on iOS, Android, and multiple platforms. Our goal is to make user-friendly mobile solutions that have won awards. We work with startups, small to medium-sized enterprises (SMEs), and large companies.",
     alt: "MOBILE APPLICATION",
   },
-
-
 ];
+
 
 const Services = () => {
   return (
     <>
-        <section className="pb-12 pt-24 ">
-          <div className="text-center w-full mx-auto md:w-11/12 xl:w-9/12 md:text-center">
-            <h1 className="font-bold text-4xl leading-[1.1] sm:text-3xl md:text-6xl pb-16">
-              <span className="block w-full py-2 text-gray-900 bg-clip-text leading-12 lg:inline">
-                Our Services
-              </span>
-            </h1>
-          </div>
+      <section className="pb-12 pt-24 ">
+        <div className="text-center w-full mx-auto md:w-11/12 xl:w-9/12 md:text-center">
+          <h1 className="font-bold text-4xl leading-[1.1] sm:text-3xl md:text-6xl pb-16">
+            <span className="block w-full py-2 text-gray-900 bg-clip-text leading-12 lg:inline">
+              Our Services
+            </span>
+          </h1>
+        </div>
 
-          <div className="container mx-auto grid lg:grid-cols-3  md:w-9/12 gap-5 pb-24 ">
-            {ServicesList.map((service) => (
-              <ServicesCard
-                key={service.id}
-                id={service.id}
-                title={service.title}
-                description={service.description}
-                url={service.url}
-                alt={service.alt}
-              />
-            ))}
-          </div>
-        </section>
+        <div className="container mx-auto grid md:grid-cols-2 lg:grid-cols-3 w-11/12 md:w-11/12  lg:w-9/12 gap-5 pb-24 ">
+          {ServicesList.map((service) => (
+            <ServicesCard
+              key={service.id}
+              id={service.id}
+              title={service.title}
+              description={service.description}
+              url={service.url}
+              alt={service.alt}
+            />
+          ))}
+        </div>
+      </section>
     </>
   );
 };
