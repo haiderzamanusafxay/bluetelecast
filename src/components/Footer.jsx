@@ -279,24 +279,39 @@ const Footer = () => {
           </div>
 
           <div className="grid grid-cols-3  md:mt-0  md:m-auto w-12/12  md:w-3/12 gap-5 items-center place-items-center">
-            <img
-              src="static/images/footer/toprated.webp"
-              alt="Top Rated App Development Companies"
-              width="100"
-              className="shadow hover:filter hover:grayscale transition-all"
-            />
-            <img
-              src="static/images/footer/clutch.webp"
-              alt="Clutch"
-              className="shadow hover:filter hover:grayscale transition-all"
-              width="100"
-            />
-            <img
-              src="static/images/footer/goofgirms.webp"
-              alt="Good Firms"
-              width="100"
-              className="rounded-lg shadow hover:filter hover:grayscale transition-all"
-            />
+            <a
+              href="https://superbcompanies.com/categories/mobile-app-development-companies/"
+              target="_blank"
+            >
+              <img
+                src="static/images/footer/toprated.webp"
+                alt="Top Rated App Development Companies"
+                width="100"
+                className="shadow hover:filter hover:grayscale transition-all"
+              />
+            </a>
+            <a
+              href="https://clutch.co/it-services/connecticut?related_services=field_pp_sl_application_dev"
+              target="_blank"
+            >
+              <img
+                src="static/images/footer/clutch.webp"
+                alt="Clutch"
+                className="shadow hover:filter hover:grayscale transition-all"
+                width="100"
+              />
+            </a>
+            <a
+              href="https://www.goodfirms.co/directory/state/top-software-development-companies/ohio"
+              target="_blank"
+            >
+              <img
+                src="static/images/footer/goofgirms.webp"
+                alt="Good Firms"
+                width="100"
+                className="rounded-lg shadow hover:filter hover:grayscale transition-all"
+              />
+            </a>
           </div>
           <p className="text-sm text-gray-300 ">
             &copy; {new Date().getFullYear()}. Bluetelecast. All rights
