@@ -29,7 +29,7 @@ const WhyUsCard = (props) => {
           <h1 className="text-gray-900 font-bold text-2xl tracking-tight mb-2">
             {props.title}
           </h1>
-          <p className="font-normal text-gray-900 text-justify ">
+          <p className="font-normal text-gray-900 text-base text-justify ">
             {props.description}
           </p>
         </div>

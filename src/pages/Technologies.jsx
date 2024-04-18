@@ -362,18 +362,18 @@ const Technologies = () => {
           <span className="text-blue-700">Technologies</span>
         </div>
         <div className="text-center w-full mx-auto md:w-11/12 xl:w-9/12 md:text-center pt-24">
-          <h1 className="font-bold text-4xl leading-[1.1] sm:text-3xl md:text-6xl pb-8">
+          <h1 className="font-bold text-2xl leading-[1.1] md:text-3xl">
             <span className="block w-full py-2 text-gray-900 bg-clip-text leading-12 lg:inline">
               Technologies
             </span>
           </h1>
-          <p className="flex px-5 mb-8 text-lg text-justify text-gray-900 md:text-xl lg:px-24 mt-8 ">
+          <p className="flex px-5 mb-8 text-base text-justify text-gray-900  lg:px-24 mt-4 ">
             We have a team of over 120 software engineers skilled in various
             languages like C++, Java, C#, RoR, Python, Objective C, JavaScript,
             and more. They have experience with different platforms, IDEs, APIs,
             databases, and frameworks.
           </p>
-          <p className="flex px-5 mb-8 text-lg text-justify text-gray-900 md:text-xl lg:px-24 mt-8 pb-8">
+          <p className="flex px-5 mb-8 text-base text-justify text-gray-900 lg:px-24 mt-8 pb-36">
             This diverse technical knowledge is uncommon for a mid-sized
             software development partner. Our teams stay updated on the newest
             technologies, including AI, Machine Learning, Big Data, DevOps, and
@@ -386,7 +386,7 @@ const Technologies = () => {
       <section>
         <div className="container mx-auto  md:w-9/12 gap-5 py-28 ">
           <div className=" mx-auto text-center">
-            <h1 className="font-bold text-4xl leading-[1.1] sm:text-3xl md:text-4xl mb-20">
+            <h1 className="font-bold text-2xl leading-[1.1] sm:text-3xl md:text-3xl mb-20">
               <span className="block w-full py-2 text-gray-900 bg-clip-text leading-12 lg:inline">
                 Programming Languages
               </span>
@@ -406,7 +406,7 @@ const Technologies = () => {
         </div>
         <div className="bg-gray-50 ">
           <div className=" mx-auto text-center container md:w-9/12 gap-5 py-28">
-            <h1 className="font-bold text-4xl leading-[1.1] sm:text-3xl md:text-4xl mb-20">
+            <h1 className="font-bold text-2xl leading-[1.1] md:text-3xl mb-20">
               <span className="block w-full py-2 text-gray-900 bg-clip-text leading-12 lg:inline">
                 Web Development
               </span>
@@ -427,7 +427,7 @@ const Technologies = () => {
 
         <div className="container mx-auto  md:w-9/12 gap-5 py-28 ">
           <div className=" mx-auto text-center">
-            <h1 className="font-bold text-4xl leading-[1.1] sm:text-3xl md:text-4xl mb-20">
+            <h1 className="font-bold text-2xl leading-[1.1] md:text-3xl mb-20">
               <span className="block w-full py-2 text-gray-900 bg-clip-text leading-12 lg:inline">
                 Mobile App Development
               </span>
@@ -448,7 +448,7 @@ const Technologies = () => {
 
         <div className="bg-gray-50 ">
           <div className=" mx-auto text-center container md:w-9/12 gap-5 py-28">
-            <h1 className="font-bold text-4xl leading-[1.1] sm:text-3xl md:text-4xl mb-20">
+            <h1 className="font-bold text-2xl leading-[1.1] md:text-3xl mb-20">
               <span className="block w-full py-2 text-gray-900 bg-clip-text leading-12 lg:inline">
                 Database Management Systems (DBMS)
               </span>
@@ -469,7 +469,7 @@ const Technologies = () => {
 
         <div className="container mx-auto  md:w-9/12 gap-5 py-28 ">
           <div className=" mx-auto text-center">
-            <h1 className="font-bold text-4xl leading-[1.1] sm:text-3xl md:text-4xl mb-20">
+            <h1 className="font-bold text-2xl leading-[1.1] md:text-3xl mb-20">
               <span className="block w-full py-2 text-gray-900 bg-clip-text leading-12 lg:inline">
                 Frameworks
               </span>
@@ -490,7 +490,7 @@ const Technologies = () => {
 
         <div className="bg-gray-50 ">
           <div className=" mx-auto text-center container md:w-9/12 gap-5 py-28">
-            <h1 className="font-bold text-4xl leading-[1.1] sm:text-3xl md:text-4xl mb-20">
+            <h1 className="font-bold text-2xl leading-[1.1] md:text-3xl mb-20">
               <span className="block w-full py-2 text-gray-900 bg-clip-text leading-12 lg:inline">
                 Cloud Computing
               </span>
@@ -511,7 +511,7 @@ const Technologies = () => {
 
         <div className="container mx-auto  md:w-9/12 gap-5 py-28 ">
           <div className=" mx-auto text-center">
-            <h1 className="font-bold text-4xl leading-[1.1] sm:text-3xl md:text-4xl mb-20">
+            <h1 className="font-bold text-2xl leading-[1.1] md:text-3xl mb-20">
               <span className="block w-full py-2 text-gray-900 bg-clip-text leading-12 lg:inline">
                 Big Data and Analytics
               </span>
@@ -532,7 +532,7 @@ const Technologies = () => {
 
         <div className="bg-gray-50 ">
           <div className=" mx-auto text-center container md:w-9/12 gap-5 py-28">
-            <h1 className="font-bold text-4xl leading-[1.1] sm:text-3xl md:text-4xl mb-20">
+            <h1 className="font-bold text-2xl leading-[1.1] md:text-3xl mb-20">
               <span className="block w-full py-2 text-gray-900 bg-clip-text leading-12 lg:inline">
                 Artificial Intelligence (AI) and Machine Learning (ML)
               </span>
@@ -553,7 +553,7 @@ const Technologies = () => {
 
         <div className="container mx-auto  md:w-9/12 gap-5 py-28 ">
           <div className=" mx-auto text-center">
-            <h1 className="font-bold text-4xl leading-[1.1] sm:text-3xl md:text-4xl mb-20">
+            <h1 className="font-bold text-2xl leading-[1.1]  md:text-3xl mb-20">
               <span className="block w-full py-2 text-gray-900 bg-clip-text leading-12 lg:inline">
                 DevOps
               </span>
@@ -574,7 +574,7 @@ const Technologies = () => {
 
         <div className="bg-gray-50 ">
           <div className=" mx-auto text-center container md:w-9/12 gap-5 py-28">
-            <h1 className="font-bold text-4xl leading-[1.1] sm:text-3xl md:text-4xl mb-20">
+            <h1 className="font-bold text-2xl leading-[1.1] md:text-3xl mb-20">
               <span className="block w-full py-2 text-gray-900 bg-clip-text leading-12 lg:inline">
                 Version Control
               </span>
