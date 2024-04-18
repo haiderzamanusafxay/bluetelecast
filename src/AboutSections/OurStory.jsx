@@ -1,14 +1,14 @@
 const OurStory = () => {
   return (
     <section className="py-24">
-      <div className=" mx-auto w-11/12 md:w-8/12 ">
-        <h1 className="font-bold text-4xl leading-[1.1] sm:text-3xl md:text-6xl">
+      <div className=" mx-auto w-11/12 md:w-8/12   ">
+        <h1 className="font-bold text-2xl leading-[1.1] md:text-3xl">
           <span className="block w-full py-2 text-gray-900 bg-clip-text leading-12 lg:inline">
             Our Story
           </span>
         </h1>
 
-        <p className="mb-8 text-md text-justify text-gray-600 text-lg nd-pr-16 md:mt-8 ">
+        <p className="mb-8 text-justify text-gray-600 text-base nd-pr-16 md:mt-8 ">
           In 2010, a small group of people with big ideas started a company
           called Bluetelecast, a US-based company. They wanted to change the way
           things were done online, and now Bluetelecast is a successful company
@@ -29,7 +29,7 @@ const OurStory = () => {
           quality professional software services.
           <br />
           <br />
-          <span className="text-blue-700 font-bold text-lg">
+          <span className="text-blue-700 font-bold text-base">
             {" "}
             Our leadership team,
           </span>{" "}
@@ -48,7 +48,7 @@ const OurStory = () => {
           Don't just take our word for it – see what our clients frequently
           express about their experiences with us.
         </p>
-        <h2 className="text-blue-700 text-xl text-center">Bluetelecast CEO</h2>
+        <h2 className="text-blue-700 text-lg text-center">Bluetelecast CEO</h2>
       </div>
     </section>
   );

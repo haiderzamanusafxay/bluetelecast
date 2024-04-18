@@ -1153,17 +1153,17 @@ function Navbar() {
     setShowDropDown(!showDropDown);
   };
 
-  const toggleDropdownIndustries = () => {
-    setShowDropDownIndustries(!showDropDownIndustries);
-  };
+  // const toggleDropdownIndustries = () => {
+  //   setShowDropDownIndustries(!showDropDownIndustries);
+  // };
 
   const toggleDropdownSidebar = () => {
     setShowDropDownSidebar(!showDropDownSidebar);
   };
 
-  const toggleDropdownIndustriesSidebar = () => {
-    setShowDropDownIndustriesSidebar(!showDropDownIndustriesSidebar);
-  };
+  // const toggleDropdownIndustriesSidebar = () => {
+  //   setShowDropDownIndustriesSidebar(!showDropDownIndustriesSidebar);
+  // };
 
   return (
     <>
@@ -1301,14 +1301,14 @@ function Navbar() {
                   </div>
                 </li>
 
-                <li>
+                {/* <li>
                   <div
                     className="relative"
                     onMouseEnter={toggleDropdownIndustries}
                     onMouseLeave={toggleDropdownIndustries}
-                  >
-                    {/* Dropdown Button Industries*/}
-                    <button
+                  > */}
+                {/* Dropdown Button Industries*/}
+                {/* <button
                       id="dropdownHoverButton"
                       data-dropdown-toggle="dropdownHover"
                       data-dropdown-trigger="hover"
@@ -1333,10 +1333,10 @@ function Navbar() {
                           d="m1 1 4 4 4-4"
                         />
                       </svg>
-                    </button>
+                    </button> */}
 
-                    {/* Dropdown Content Industries*/}
-                    <div
+                {/* Dropdown Content Industries*/}
+                {/* <div
                       id="dropdownHoverIndustries"
                       className={`${
                         showDropDownIndustries ? "block " : "hidden"
@@ -1405,6 +1405,15 @@ function Navbar() {
                       </ul>
                     </div>
                   </div>
+                </li> */}
+
+                <li>
+                  <Link
+                    to="/industries"
+                    className="block py-2 px-3 rounded hover:bg-gray-800 md:hover:bg-transparent md:hover:text-gray-500 md:p-0 "
+                  >
+                    Industries
+                  </Link>
                 </li>
                 <li>
                   <Link
@@ -1582,7 +1591,7 @@ function Navbar() {
                     {/* Add more dropdown items here */}
                   </ul>
                 </li>
-                <li>
+                {/* <li>
                   <div
                     className=" text-gray-300 py-4 hover:text-gray-600 cursor-pointer flex justify-between"
                     onClick={toggleDropdownIndustriesSidebar}
@@ -1674,6 +1683,15 @@ function Navbar() {
                       </Link>
                     </li>
                   </ul>
+                </li> */}
+                 <li>
+                  <Link
+                    to="/careers"
+                    className="block text-gray-300 py-4 hover:text-gray-600"
+                    onClick={toggleMenu}
+                  >
+                    Industries
+                  </Link>
                 </li>
                 <li>
                   <Link

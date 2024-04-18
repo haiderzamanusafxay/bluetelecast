@@ -32,7 +32,6 @@ const About = () => {
         <div className="container w-11/12 mx-auto">
           <div className="flex flex-wrap items-center justify-between -mx-4">
             <div className="w-full px-4 lg:w-6/12">
-
               <div className="py-3 sm:py-4">
                 <img
                   src="/static/images/bg.png"
@@ -44,13 +43,14 @@ const About = () => {
 
             <div className="w-full px-4 lg:w-1/2 xl:w-5/12">
               <div className="mt-10 lg:mt-0">
-
-                <span className="block w-full py-2 text-4xl  md:text-3xl lg:text-4xl xl:text-3xl font-bold text-gray-900 bg-clip-text leading-12  lg:inline">
-                  Empowering Your Online Success
-                </span>
+                <h1>
+                  <span className="block w-full py-2 text-2xl  md:text-3xl  font-bold text-gray-900 bg-clip-text leading-12  lg:inline">
+                    Empowering Your Online Success
+                  </span>
+                </h1>
 
                 <p
-                  className="mb-5 text-base text-body-color dark:text-dark-6"
+                  className="flex text-gray-900 text-md  nd-pr-16 md:text-base text-justify pt-4"
                   ref={paragraphRef}
                 >
                   In 2010, a small group of people with big ideas started a

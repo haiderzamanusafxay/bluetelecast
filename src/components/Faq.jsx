@@ -17,9 +17,9 @@ const Faq = ({ items }) => {
   };
 
   return (
-    <section className="max-w-4xl md:mx-48 px-3 py-20">
+    <section className="max-w-4xl m-auto  px-3 py-20">
       <div className="mb-8 ">
-        <h3 className="text-4xl font-bold "> Frequently Asked Questions</h3>
+        <h3 className="text-3xl font-bold text-center"> Frequently Asked Questions</h3>
       </div>
       <div className="divide-y pt-4">
         {items.map(({ title, content }, index) => (
@@ -41,7 +41,7 @@ const Faq = ({ items }) => {
             </button>
             {activeIndex.includes(index) && (
               <div className="mt-3">
-                <p className="text-lg text-gray-900">{content}</p>
+                <p className="text-base text-gray-900">{content}</p>
               </div>
             )}
           </div>
