@@ -92,19 +92,24 @@ const Contact = () => {
               </div>
               <div className="mb-5">
                 <label
-                  for="subject"
+                  htmlFor="service"
                   className="mb-3 block text-base font-medium text-[#07074D]"
                 >
-                  Subject
+                  Service Need
                 </label>
                 <Field
-                  type="text"
-                  name="subject"
-                  placeholder="Subject"
-                  className="py-2 px-3 pe-11 block w-full border-2 border-gray-200 shadow-sm text-sm rounded-lg focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none"
-                />
+                  as="select"
+                  name="service"
+                  className="py-2 px-3 pe-11 block w-full border-2 bg-white border-gray-200 shadow-sm text-sm rounded-lg focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none"
+                >
+                  <option value="">Select a Service</option>
+                  <option value="service2">Graphic Designing</option>
+                  <option value="service1">Web Development</option>
+                  <option value="service3">Software Development</option>
+                  <option value="service4">Digital Marketing</option>
+                </Field>
                 <ErrorMessage
-                  name="subject"
+                  name="service"
                   component="div"
                   className="error text-red-500"
                 />
@@ -129,13 +134,6 @@ const Contact = () => {
                   component="div"
                   className="text-red-500"
                 />
-                {/* <textarea
-                  rows="4"
-                  name="message"
-                  id="message"
-                  placeholder="Type your message"
-                  className="w-full resize rounded-lg border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
-                ></textarea> */}
               </div>
               <div>
                 <button className="hover:shadow-form rounded-full bg-[#6A64F1] py-3 px-8 text-base font-semibold text-white outline-none">
