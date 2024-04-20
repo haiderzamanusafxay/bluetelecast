@@ -38,7 +38,7 @@ const PrivacyPolicy = () => {
         <span className="text-blue-700">Privacy Policy</span>
       </div>
       <div
-        className=" mx-auto w-11/12 md:w-8/12  pt-24"
+        className=" mx-auto max-w-screen-xl w-11/12 md:w-11/12 lg:w-9/12 md:px-6 pt-24"
         style={{ userSelect: "none" }}
       >
         <h1 className="font-bold text-2xl leading-[1.1] md:text-3xl">

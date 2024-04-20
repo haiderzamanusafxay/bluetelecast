@@ -14,7 +14,7 @@ const WhyChooseUs = () => {
             Why Choose Us?
           </span>
         </h2>
-        <div className=" mx-auto grid grid-cols-2  lg:grid-cols-4  md:w-10/12 gap-5 margin-4 ">
+        <div className=" mx-auto grid grid-cols-2 lg:grid-cols-4  max-w-screen-xl w-11/12 md:w-11/12 lg:w-9/12 gap-5 margin-4 ">
           <div className="text-center justify-center items-center ">
             <div className="flex items-center justify-center w-10 h-10 mx-auto mb-3 rounded-ful sm:w-12 sm:h-12">
               <img src={experienceImage} alt="" />

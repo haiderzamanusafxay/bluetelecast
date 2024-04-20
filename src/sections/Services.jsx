@@ -41,7 +41,7 @@ const Services = () => {
           </h1>
         </div>
 
-        <div className="container mx-auto grid md:grid-cols-2 lg:grid-cols-3 w-11/12 md:w-11/12  lg:w-9/12 gap-5 pb-24 ">
+        <div className="container mx-auto grid md:grid-cols-2 lg:grid-cols-3 max-w-screen-xl w-11/12 md:w-11/12 lg:w-9/12 gap-5 pb-24 ">
           {ServicesList.map((service) => (
             <ServicesCard
               key={service.id}

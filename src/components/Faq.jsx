@@ -17,7 +17,7 @@ const Faq = ({ items }) => {
   };
 
   return (
-    <section className="max-w-4xl m-auto  px-3 py-20">
+    <section className="max-w-screen-xl w-11/12 md:w-11/12 lg:w-9/12  m-auto  px-3 py-24">
       <div className="mb-8 ">
         <h3 className="text-3xl font-bold text-center"> Frequently Asked Questions</h3>
       </div>

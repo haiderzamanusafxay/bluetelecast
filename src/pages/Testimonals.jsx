@@ -166,7 +166,7 @@ const Testimonals = () => {
       <Swiper
         // install Swiper modules
         key={1212}
-        className="w-11/12 md:w-8/12 lg:w-6/12 relative py-8"
+        className="max-w-screen-xl w-11/12 md:w-11/12 lg:w-6/12 2xl:w-6/12 md:px-6 relative py-8"
         modules={[Navigation, Pagination, Scrollbar, A11y]}
         spaceBetween={50}
         slidesPerView={1}
@@ -175,7 +175,7 @@ const Testimonals = () => {
           prevEl: ".swiper-button-prev",
         }}
       >
-        <div className="absolute bottom-16 right-16 z-50 ">
+        <div className="absolute bottom-8 md:bottom-16 right-16 z-50 ">
           <div
             className="swiper-button-prev text-gray-100 text-md bg-gray-900 w-12 h-12 rounded-full hover:bg-gray-800 hover:shadow-lg"
             style={{ left: "-120px" }}

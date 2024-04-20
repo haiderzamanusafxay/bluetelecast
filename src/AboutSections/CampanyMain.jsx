@@ -2,12 +2,7 @@ import { Link } from "react-router-dom";
 
 const CampanyMain = () => {
   return (
-    <section className="pb-24 bg-gray-50 mt-16"   style={{
-      backgroundImage: 'linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(254, 255, 255, 0.8)), url("/static/images/bg.png")',
-      backgroundSize: 'cover',
-      backgroundRepeat: 'no-repeat',
-      width: '100%',
-    }}>
+    <section className=" bg-gray-50 mt-16"  >
       <div className="text-md w-9/12 m-auto pt-4 flex items-center ">
         <span>
           <Link to="/" className="hover:text-blue-700" title="Home">
@@ -33,7 +28,7 @@ const CampanyMain = () => {
         </span>
         <span className="text-blue-700">Our Company</span>
       </div>
-      <div className=" mx-auto w-11/12 md:w-8/12   pt-24 pb-20">
+      <div className=" mx-auto max-w-screen-xl w-11/12 md:w-11/12 lg:w-9/12 md:px-8 pt-24 pb-24">
         <h1 className="font-bold text-2xl leading-[1.1] md:text-3xl">
           <span className="block w-full py-2 text-gray-900 bg-clip-text leading-12 lg:inline">
             About Company
@@ -60,7 +55,7 @@ const CampanyMain = () => {
         </p>
         <Link
           to="/services"
-          className="inline-flex items-center justify-center text-base  px-6 py-3 mb-2 text-md bg-blue-700 text-white hover:bg-blue-800 rounded-2xl sm:w-auto sm:mb-0 font-semibold"
+          className="inline-flex items-center justify-center text-base  px-6 py-3 text-md bg-blue-700 text-white hover:bg-blue-800 rounded-2xl sm:w-auto sm:mb-0 font-semibold"
         >
           Explore our services
         </Link>

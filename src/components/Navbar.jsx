@@ -1554,7 +1554,7 @@ function Navbar() {
 
                     <li>
                       <Link
-                        to="/why-us"
+                        to="/team"
                         className="block text-gray-300 py-3 hover:text-gray-600"
                         onClick={toggleMenu}
                       >
@@ -1563,7 +1563,7 @@ function Navbar() {
                     </li>
                     <li>
                       <Link
-                        to="/why-us"
+                        to="/our-partners"
                         className="block text-gray-300 py-3 hover:text-gray-600"
                         onClick={toggleMenu}
                       >
@@ -1572,7 +1572,7 @@ function Navbar() {
                     </li>
                     <li>
                       <Link
-                        to="/why-us"
+                        to="/our-clients"
                         className="block text-gray-300 py-3 hover:text-gray-600"
                         onClick={toggleMenu}
                       >
@@ -1581,7 +1581,7 @@ function Navbar() {
                     </li>
                     <li>
                       <Link
-                        to="/why-us"
+                        to="/testimonals"
                         className="block text-gray-300 py-3 hover:text-gray-600"
                         onClick={toggleMenu}
                       >
@@ -1686,7 +1686,7 @@ function Navbar() {
                 </li> */}
                  <li>
                   <Link
-                    to="/careers"
+                    to="/industries"
                     className="block text-gray-300 py-4 hover:text-gray-600"
                     onClick={toggleMenu}
                   >

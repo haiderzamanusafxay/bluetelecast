@@ -57,7 +57,7 @@ const Portfolio = () => {
           </h1>
         </div>
 
-        <div className="container mx-auto grid md:grid-cols-2 lg:grid-cols-3  md:w-10/12 gap-10 pb-24 ">
+        <div className="container mx-auto grid md:grid-cols-2 lg:grid-cols-3 max-w-screen-xl w-11/12 md:w-11/12 lg:w-9/12 gap-10 pb-24 ">
           {ProjectsArray.map((project) => {
             return (
               <PortfolioCard

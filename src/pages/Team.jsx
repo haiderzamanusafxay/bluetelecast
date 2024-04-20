@@ -20,7 +20,7 @@ const OurTeam = [
   },
   {
     id: 2,
-    url: "/static/images/team/",
+    url: "/static/images/team/JoeCannon.jpg",
     name: "Joe Cannon",
     title: "Board of Director",
     description:
@@ -28,7 +28,7 @@ const OurTeam = [
   },
   {
     id: 10,
-    url: "/static/images/team/",
+    url: "/static/images/team/JohnScott.jpg",
     name: "John Scott",
     title: "Sales Manager",
     description:
@@ -107,8 +107,6 @@ const OurTeam = [
       "As chief people and communications officer, Greg Giangrande leads all aspects of Ellucian’s global people organization, including employee experience, HR business partners, talent acquisition, total rewards, diversity, equity and inclusion, learning and development, and communications. Greg has deep experience as a transformative human resources and communications leader. He comes to Ellucian most recently from McKinsey & Company where he served as a senior advisor working with clients across sectors and geographies on enterprise transformation, employee experience, human resources, organizational health and culture, leadership development, diversity and inclusion, and communications strategies.",
   },
 
-
-
   {
     id: 11,
     url: "/static/images/team/",
@@ -120,27 +118,17 @@ const OurTeam = [
 
   {
     id: 13,
-    url: "/static/images/team/",
+    url: "/static/images/team/Haider.jpg",
     name: "Haider Zaman",
     title: "Full Stack Developer",
     description:
-      "As chief people and communications officer, Greg Giangrande leads all aspects of Ellucian’s global people organization, including employee experience, HR business partners, talent acquisition, total rewards, diversity, equity and inclusion, learning and development, and communications. Greg has deep experience as a transformative human resources and communications leader. He comes to Ellucian most recently from McKinsey & Company where he served as a senior advisor working with clients across sectors and geographies on enterprise transformation, employee experience, human resources, organizational health and culture, leadership development, diversity and inclusion, and communications strategies.",
+      "Passionate and skilled Senior MERN Stack Engineer with over 1 year of hands-on experience in full-stack web development. Committed to delivering high-quality, scalable solutions that exceed client expectations. Proficient in leveraging the power of MongoDB, Express.js, React.js, and Node.js to create dynamic and user-friendly web applications. Skilled collaborator known for effectively working within cross-functional teams to achieve project goals.",
   },
-
 ];
 
 const Team = () => {
   return (
-    <section
-      className="mt-16"
-      style={{
-        backgroundImage:
-          'linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(254, 255, 255, 0.8)), url("/static/images/bg.png")',
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-        width: "100%",
-      }}
-    >
+    <section className="mt-16">
       <div className="text-md w-9/12 m-auto pt-4 flex items-center ">
         <span>
           <Link to="/" className="hover:text-blue-700" title="Home">
@@ -166,14 +154,14 @@ const Team = () => {
         </span>
         <span className="text-blue-700">Our Team</span>
       </div>
-      <div className="px-4  mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 ">
-        <div className="text-center w-full mx-auto md:w-11/12 xl:w-9/12 md:text-center pt-24 mb-20">
+      <div className=" mx-auto max-w-screen-xl w-11/12 md:w-11/12 lg:w-9/12 md:px-6">
+        <div className="text-center mx-auto  md:text-center pt-24 mb-20">
           <h1 className="font-bold text-2xl leading-[1.1] md:text-3xl pb-4">
             <span className="block w-full py-2 text-gray-900 bg-clip-text leading-12 lg:inline">
               Our Team
             </span>
           </h1>
-          <p className="flex  mb-4  text-base text-justify text-gray-900 nd-pr-16">
+          <p className="flex mb-4 text-base text-justify text-gray-900 nd-pr-16">
             At Bluetelecast, our team members are the ones who make everything
             happen. Each person has an important role in helping us reach our
             goal of making really good products for our customers while keeping
@@ -217,7 +205,7 @@ function LoadImages(props) {
 
   return imageLoaded ? (
     <img
-      className=" w-48 h-48 mr-4 rounded-full shadow cursor-pointer"
+      className=" w-full h-52 rounded-sm shadow cursor-pointer"
       src={props.src}
       alt={props.alt}
     />
@@ -245,12 +233,15 @@ const Person = (props) => {
   };
   return (
     <>
-      <div className="flex flex-col items-center" onClick={openModal}>
+      <div
+        className="flex flex-col pb-6 shadow-lg  hover:shadow-xl  rounded-md items-center cursor-pointer"
+        onClick={openModal}
+      >
         <LoadImages src={props.url} alt={props.alt} />
 
-        <div className="text-center mt-4">
+        <div className="text-center">
           <p
-            className="text-xl font-bold hover:text-blue-700 cursor-pointer"
+            className="text-xl font-bold pt-6 hover:text-gray-800 "
             onClick={openModal}
           >
             {props.name}
@@ -258,35 +249,35 @@ const Person = (props) => {
           <p className="text-base text-gray-800">{props.title}</p>
         </div>
       </div>
+
       {isModalOpen && (
-      
-          <div
-            className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-gray-900 z-50"
-            onClick={handleBackdropClick}
-          >
-            <div className="bg-white p-8 pb-16 rounded-xl w-11/12  lg:w-3/5 max-h-full overflow-y-auto transform transition-all duration-300 relative">
-              <div className="absolute top-0 right-0 p-2">
-                <button
-                  onClick={closeModal}
-                  className="text-5xl px-4 py-2 border-dotted border border-gray-700 font-bold"
-                >
-                  &times;
-                </button>
+        <div
+          className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-gray-900 z-50"
+          onClick={handleBackdropClick}
+        >
+          <div className="bg-white p-8 pb-16 rounded-xl w-11/12  lg:w-3/5 max-h-full overflow-y-auto transform transition-all duration-300 relative">
+            <div className="absolute top-0 right-0 p-2">
+              <button
+                onClick={closeModal}
+                className="text-5xl px-4 py-2 border-dotted border border-gray-700 font-bold"
+              >
+                &times;
+              </button>
+            </div>
+            <div className="grid lg:grid-cols-2 gap-4 lg:gap-20 pt-8">
+              <div className=" order-2 lg:order-1">
+                <h2 className="text-3xl font-bold">{props.name}</h2>
+                <p className="text-xl text-gray-800">{props.title}</p>
+                <p className="mt-4 text-justify">{props.description}</p>
               </div>
-              <div className="grid lg:grid-cols-2 gap-4 lg:gap-20 pt-8">
-                <div className=" order-2 lg:order-1">
-                  <h2 className="text-3xl font-bold">{props.name}</h2>
-                  <p className="text-xl text-gray-800">{props.title}</p>
-                  <p className="mt-4 text-justify">{props.description}</p>
-                </div>
-                <img
-                  src={props.url}
-                  alt={props.name}
-                  className="mt-4 w-60 object-cover shadow  order-1 lg:order-2"
-                />
-              </div>
+              <img
+                src={props.url}
+                alt={props.name}
+                className="mt-4 w-60 object-cover shadow rounded-sm order-1 lg:order-2"
+              />
             </div>
           </div>
+        </div>
       )}
     </>
   );
