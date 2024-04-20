@@ -4,13 +4,8 @@ import { Link } from "react-router-dom";
 export const Hero = () => {
   return (
     <>
-      <section className="py-24 bg-gray-50 mt-16"   style={{
-          backgroundImage: 'linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(254, 255, 255, 0.8)), url("/static/images/bg.png")',
-          backgroundSize: 'cover',
-          backgroundRepeat: 'no-repeat',
-          width: '100%',
-        }}>
-        <div className="mx-auto max-w-7xl pb-24">
+      <section className="py-24 bg-gray-50 mt-16" >
+        <div className="mx-auto max-w-7xl pb-24" >
           <div class="w-full mx-auto text-center md:w-11/12 xl:w-9/12 md:text-center">
             <h1 class="mb-8 justify-center px-8 text-4xl sm:px-5 font-extrabold leading-none tracking-normal text-gray-900 md:text-6xl md:tracking-tight">
               <span>

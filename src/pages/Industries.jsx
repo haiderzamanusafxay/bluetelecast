@@ -54,16 +54,7 @@ const Industries = () => {
   ];
   return (
     <>
-      <section
-        className="pb-8 bg-gray-50 mt-16"
-        style={{
-          backgroundImage:
-            'linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(254, 255, 255, 0.8)), url("/static/images/bg.png")',
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-          width: "100%",
-        }}
-      >
+      <section className="pb-8 bg-gray-50 mt-16">
         <div className="text-md w-9/12 m-auto pt-4 flex items-center ">
           <span>
             <Link to="/" className="hover:text-blue-700" title="Home">
@@ -89,13 +80,13 @@ const Industries = () => {
           </span>
           <span className="text-blue-700">Industrial</span>
         </div>
-        <div className="text-center w-full mx-auto md:w-11/12 xl:w-9/12 2xl:w-8/12 md:text-center pt-24">
+        <div className="text-center w-11/12 mx-auto max-w-screen-xl md:w-11/12 lg:w-9/12 md:px-8  md:text-center pt-24">
           <h1 className="font-bold text-2xl leading-[1.1] md:text-3xl">
             <span className="block w-full py-2 text-gray-900 bg-clip-text leading-12 lg:inline">
               Industrial
             </span>
           </h1>
-          <p className="flex px-5 mb-8 text-justify text-gray-900 text-base lg:px-24 md:mt-4 ">
+          <p className="flex mb-8 text-justify text-gray-900 text-base  md:mt-4 ">
             To provide reliable software solutions and support, we need to do
             more than just know about technology. We must understand different
             types of businesses and the technology they use. This means knowing
@@ -113,7 +104,7 @@ const Industries = () => {
         </div>
       </section>
       <section className="pb-24 bg-gray-50 pt-8">
-        <div className="container mx-auto grid grid-cols-1 sm:grid-cols-3   xl:grid-cols-4 w-11/12  md:w-8/12 gap-5  bg-gray-50">
+        <div className="container mx-auto grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3  2xl:grid-cols-5 max-w-screen-xl w-11/12 md:w-11/12 lg:w-9/12 md:px-8  gap-5  bg-gray-50">
           {CardList.map((about) => (
             <IndustrialCard
               key={about.id}

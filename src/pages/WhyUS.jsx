@@ -62,12 +62,7 @@ const WhyUs = () => {
   ];
   return (
     <>
-      <section className="pb-8 bg-gray-50 mt-16"   style={{
-          backgroundImage: 'linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(254, 255, 255, 0.8)), url("/static/images/bg.png")',
-          backgroundSize: 'cover',
-          backgroundRepeat: 'no-repeat',
-          width: '100%',
-        }}>
+      <section className="pb-8 bg-gray-50 mt-16" >
         <div className="text-md w-9/12 m-auto pt-4 flex items-center ">
           <span>
             <Link to="/" className="hover:text-blue-700" title="Home">
@@ -93,13 +88,13 @@ const WhyUs = () => {
           </span>
           <span className="text-blue-700">Why Us</span>
         </div>
-        <div className="text-center w-full mx-auto md:w-11/12 xl:w-9/12 2xl:w-6/12 md:text-center pt-24">
+        <div className="text-center mx-auto max-w-screen-xl w-11/12 md:w-11/12 lg:w-9/12 md:px-6 md:text-center pt-24">
           <h1 className="font-bold text-2xl leading-[1.1] md:text-3xl">
             <span className="block w-full py-2 text-gray-900 bg-clip-text leading-12 lg:inline">
               Why Choose Bluetelecast for Your Software Development Needs?
             </span>
           </h1>
-          <p className="flex px-5 mb-8 text-justify text-gray-900 text-base lg:px-24 md:mt-4 ">
+          <p className="flex px-5 mb-8 text-justify text-gray-900 text-base md:mt-4 ">
             At Bluetelecast, we understand that choosing the right partner for
             your software development projects is crucial for the success of
             your business. Here's why Bluetelecast stands out as the ideal
@@ -108,7 +103,7 @@ const WhyUs = () => {
         </div>
       </section>
       <section className="pb-24 bg-gray-50">
-        <div className="container mx-auto grid lg:grid-cols-2 w-11/12  md:w-9/12 gap-5  bg-gray-50">
+        <div className="container mx-auto grid lg:grid-cols-2 max-w-screen-xl w-11/12 md:w-11/12 lg:w-9/12 gap-5 md:px-6 bg-gray-50">
           {CardList.map((about) => (
             <WhyUsCard
               key={about.id}
@@ -123,13 +118,13 @@ const WhyUs = () => {
       </section>
 
       <section className="py-28">
-        <div className="text-center  mx-auto w-11/12 xl:w-9/12 md:text-center ">
+        <div className="text-center  mx-auto max-w-screen-xl w-11/12 md:w-11/12 lg:w-9/12 md:px-6  ">
           <h1 className="font-bold text-2xl leading-[1.1] md:text-3xl pb-4">
             <span className="block w-full py-2 text-gray-900 bg-clip-text leading-12 lg:inline">
               Ready to Transform Your Ideas into Reality?{" "}
             </span>
           </h1>
-          <p className="flex px-5 mb-8 text-center text-gray-900 text-base lg:px-24 ">
+          <p className="flex px-5 mb-8 text-justify text-gray-900 text-base">
             Whether you're looking to develop a mobile app, a web application,
             or an enterprise solution, Bluetelecast is your trusted partner for
             all your software development needs. Contact us today to schedule a

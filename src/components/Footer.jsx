@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <>
       <footer className="bg-gray-900 text-gray-400 border-t">
-        <div className="mx-auto max-w-screen-xl space-y-8 px-4 pt-16 pb-10 sm:px-6 lg:space-y-8 lg:px-8">
+        <div className="mx-auto max-w-screen-xl space-y-8 px-4 py-12 sm:px-6 lg:space-y-8 lg:px-8">
           <div className="md:flex md:items-center md:justify-between">
             <div className="text-teal-600">
               <img src={logo} alt="" width="200" />
@@ -190,7 +190,10 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link to="/services" className=" transition hover:opacity-75">
+                  <Link
+                    to="/industries"
+                    className=" transition hover:opacity-75"
+                  >
                     {" "}
                     Industries{" "}
                   </Link>
@@ -277,7 +280,8 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-
+          <div>
+            
           <div className="grid grid-cols-3  md:mt-0  md:m-auto w-12/12  md:w-3/12 gap-5 items-center place-items-center">
             <a
               href="https://superbcompanies.com/categories/mobile-app-development-companies/"
@@ -313,10 +317,11 @@ const Footer = () => {
               />
             </a>
           </div>
-          <p className="text-sm text-gray-300 ">
+          <p className="text-sm text-gray-300 mt-12 md:-mt-5">
             &copy; {new Date().getFullYear()}. Bluetelecast. All rights
             reserved.
           </p>
+          </div>
         </div>
       </footer>
     </>

@@ -29,7 +29,7 @@ const About = () => {
         id="about"
         className="overflow-hidden lg:pt-[120px]  lg:pb-[90px] bg-gray-50"
       >
-        <div className="container w-11/12 mx-auto">
+        <div className="container max-w-screen-xl w-11/12 md:w-11/12 lg:w-9/12 md:px-8 mx-auto">
           <div className="flex flex-wrap items-center justify-between -mx-4">
             <div className="w-full px-4 lg:w-6/12">
               <div className="py-3 sm:py-4">
@@ -50,7 +50,7 @@ const About = () => {
                 </h1>
 
                 <p
-                  className="flex text-gray-900 text-md  nd-pr-16 md:text-base text-justify pt-4"
+                  className="flex text-gray-900 text-md nd-pr-16 md:text-base text-justify pt-4"
                   ref={paragraphRef}
                 >
                   In 2010, a small group of people with big ideas started a
