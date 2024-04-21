@@ -1,6 +1,7 @@
 import React from "react";
 import * as Yup from "yup";
 import Map from "../components/Map.jsx";
+import HowItWorks from "../components/HowItWorks.jsx";
 import {
   Formik,
   Form,
@@ -40,6 +41,7 @@ const Contact = () => {
   });
   return (
     <>
+      <HowItWorks />
       <FormikProvider value={formik}>
         <div className="flex items-center justify-center py-20 bg-gray-100">
           <div className="mx-auto w-full max-w-[550px]">

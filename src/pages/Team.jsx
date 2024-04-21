@@ -5,7 +5,7 @@ const OurTeam = [
   {
     id: 0,
     url: "/static/images/team/Jorry.jpg",
-    name: "jorry Dorelian",
+    name: "Jorry Dorelian",
     title: "Operations Manager",
     description:
       "As chief people and communications officer, Greg Giangrande leads all aspects of Ellucian’s global people organization, including employee experience, HR business partners, talent acquisition, total rewards, diversity, equity and inclusion, learning and development, and communications. Greg has deep experience as a transformative human resources and communications leader. He comes to Ellucian most recently from McKinsey & Company where he served as a senior advisor working with clients across sectors and geographies on enterprise transformation, employee experience, human resources, organizational health and culture, leadership development, diversity and inclusion, and communications strategies.",
@@ -22,7 +22,7 @@ const OurTeam = [
     id: 2,
     url: "/static/images/team/JoeCannon.jpg",
     name: "Joe Cannon",
-    title: "Board of Director",
+    title: "Product Manager",
     description:
       "As chief people and communications officer, Greg Giangrande leads all aspects of Ellucian’s global people organization, including employee experience, HR business partners, talent acquisition, total rewards, diversity, equity and inclusion, learning and development, and communications. Greg has deep experience as a transformative human resources and communications leader. He comes to Ellucian most recently from McKinsey & Company where he served as a senior advisor working with clients across sectors and geographies on enterprise transformation, employee experience, human resources, organizational health and culture, leadership development, diversity and inclusion, and communications strategies.",
   },
@@ -30,7 +30,7 @@ const OurTeam = [
     id: 10,
     url: "/static/images/team/JohnScott.jpg",
     name: "John Scott",
-    title: "Sales Manager",
+    title: "Project Manager",
     description:
       "As chief people and communications officer, Greg Giangrande leads all aspects of Ellucian’s global people organization, including employee experience, HR business partners, talent acquisition, total rewards, diversity, equity and inclusion, learning and development, and communications. Greg has deep experience as a transformative human resources and communications leader. He comes to Ellucian most recently from McKinsey & Company where he served as a senior advisor working with clients across sectors and geographies on enterprise transformation, employee experience, human resources, organizational health and culture, leadership development, diversity and inclusion, and communications strategies.",
   },
@@ -45,8 +45,8 @@ const OurTeam = [
   {
     id: 111,
     url: "/static/images/team/AimalSamsour.jpg",
-    name: "Aimal Khan Samsor",
-    title: "Business Development Director",
+    name: "Aimal Samsor",
+    title: "Business Development Manager",
     description:
       "As chief people and communications officer, Greg Giangrande leads all aspects of Ellucian’s global people organization, including employee experience, HR business partners, talent acquisition, total rewards, diversity, equity and inclusion, learning and development, and communications. Greg has deep experience as a transformative human resources and communications leader. He comes to Ellucian most recently from McKinsey & Company where he served as a senior advisor working with clients across sectors and geographies on enterprise transformation, employee experience, human resources, organizational health and culture, leadership development, diversity and inclusion, and communications strategies.",
   },
@@ -93,7 +93,7 @@ const OurTeam = [
   {
     id: 6,
     url: "/static/images/team/",
-    name: "Gabor",
+    name: "John Bartz",
     title: "UI/UX Designer",
     description:
       "As chief people and communications officer, Greg Giangrande leads all aspects of Ellucian’s global people organization, including employee experience, HR business partners, talent acquisition, total rewards, diversity, equity and inclusion, learning and development, and communications. Greg has deep experience as a transformative human resources and communications leader. He comes to Ellucian most recently from McKinsey & Company where he served as a senior advisor working with clients across sectors and geographies on enterprise transformation, employee experience, human resources, organizational health and culture, leadership development, diversity and inclusion, and communications strategies.",
@@ -102,7 +102,7 @@ const OurTeam = [
     id: 7,
     url: "/static/images/team/Badhon.jpg",
     name: "Raiful Islam Badhon",
-    title: "Logo Desinger",
+    title: "Graphic Designer",
     description:
       "As chief people and communications officer, Greg Giangrande leads all aspects of Ellucian’s global people organization, including employee experience, HR business partners, talent acquisition, total rewards, diversity, equity and inclusion, learning and development, and communications. Greg has deep experience as a transformative human resources and communications leader. He comes to Ellucian most recently from McKinsey & Company where he served as a senior advisor working with clients across sectors and geographies on enterprise transformation, employee experience, human resources, organizational health and culture, leadership development, diversity and inclusion, and communications strategies.",
   },
