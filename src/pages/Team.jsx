@@ -36,7 +36,7 @@ const OurTeam = [
   },
   {
     id: 9,
-    url: "/static/images/team/",
+    url: "/static/images/team/tina.jpeg",
     name: "Tina Steven",
     title: "Marketing Manager",
     description:
@@ -109,7 +109,7 @@ const OurTeam = [
 
   {
     id: 11,
-    url: "/static/images/team/",
+    url: "/static/images/team/susan.jpeg",
     name: "Susan Caplan",
     title: "HR Manager",
     description:
