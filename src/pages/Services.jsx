@@ -159,7 +159,7 @@ const Services = () => {
             width: "100%",
           }}
         >
-          <h1 className="font-bold text-4xl leading-[1.1] sm:text-3xl md:text-6xl pb-8">
+          <h1 className="font-bold text-4xl leading-[1.1]  md:text-6xl pb-8">
             <span className="block w-full py-2 text-gray-900 bg-clip-text leading-12 lg:inline">
               Our Services
             </span>
