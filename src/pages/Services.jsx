@@ -153,6 +153,7 @@ const Services = () => {
 
         <div className="text-center w-full mx-auto md:w-11/12 xl:w-9/12 md:text-center pt-24">
           <h1 className="font-bold text-2xl leading-[1.1]  md:text-3xl pb-4">
+
             <span className="block w-full py-2 text-gray-900 bg-clip-text leading-12 lg:inline">
               Our Services
             </span>
