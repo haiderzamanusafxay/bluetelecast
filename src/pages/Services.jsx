@@ -97,7 +97,8 @@ const Services = () => {
     },
 
     {
-      title: "How long does it typically take Bluetelecast to complete a project?",
+      title:
+        "How long does it typically take Bluetelecast to complete a project?",
       content:
         "The duration of a project depends on its complexity and scope. Bluetelecast provides estimated timelines during the initial consultation phase and keeps our clients updated on the progress throughout the development process.",
     },
@@ -109,7 +110,8 @@ const Services = () => {
     },
 
     {
-      title: "Can Bluetelecast provide references or examples of previous work?",
+      title:
+        "Can Bluetelecast provide references or examples of previous work?",
       content:
         "Yes, Bluetelecast can provide references and case studies of previous work upon request. You can also visit our portfolio section on our website to see examples of our work.",
     },
@@ -122,7 +124,7 @@ const Services = () => {
   ];
   return (
     <>
-      <section className="pb-12 mt-20">
+      <section className=" mt-20">
         <div className="text-md w-9/12 m-auto  flex items-center">
           <span>
             <Link to="/" className="hover:text-blue-700" title="Home">
@@ -149,28 +151,20 @@ const Services = () => {
           <span className="text-blue-700">Our Services</span>
         </div>
 
-        <div
-          className="text-center w-full mx-auto md:w-11/12 xl:w-9/12 md:text-center pt-24"
-          style={{
-            backgroundImage:
-              'linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(254, 255, 255, 0.8)), url("/static/images/bg.png")',
-            backgroundSize: "cover",
-            backgroundRepeat: "no-repeat",
-            width: "100%",
-          }}
-        >
-          <h1 className="font-bold text-4xl leading-[1.1]  md:text-6xl pb-8">
+        <div className="text-center w-full mx-auto md:w-11/12 xl:w-9/12 md:text-center pt-24">
+          <h1 className="font-bold text-2xl leading-[1.1]  md:text-3xl pb-4">
+
             <span className="block w-full py-2 text-gray-900 bg-clip-text leading-12 lg:inline">
               Our Services
             </span>
           </h1>
-          <p className="flex px-5  text-lg text-justify md:text-center m-auto  text-gray-900 md:text-xl  md:w-9/12 lg:px-24 pb-16">
+          <p className="flex px-5 text-md text-justify  md:text-center m-auto  text-gray-900 md:text-base max-w-screen-xl w-11/12 md:w-11/12 lg:w-9/12   lg:px-24 pb-16">
             We're really good at making awesome mobile apps, websites, logos,
             and ads. We help businesses get better and bigger by creating cool
             stuff that people love and solving tricky problems.
           </p>
         </div>
-        <div className="container mx-auto grid md:grid-cols-2 lg:grid-cols-3 w-11/12 md:w-11/12  lg:w-9/12 gap-5 pb-24 border-b border-gray-200">
+        <div className="container mx-auto grid md:grid-cols-2 lg:grid-cols-3 max-w-screen-xl w-11/12 md:w-11/12 lg:w-9/12   gap-5 pb-24 border-b border-gray-200">
           {ServicesList.map((service) => (
             <ServicesCard
               key={service.id}

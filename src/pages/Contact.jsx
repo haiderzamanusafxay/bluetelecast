@@ -1,5 +1,7 @@
 import React from "react";
 import * as Yup from "yup";
+import Map from "../components/Map.jsx";
+import HowItWorks from "../components/HowItWorks.jsx";
 import {
   Formik,
   Form,
@@ -39,9 +41,18 @@ const Contact = () => {
   });
   return (
     <>
+      <HowItWorks />
       <FormikProvider value={formik}>
         <div className="flex items-center justify-center py-20 bg-gray-100">
           <div className="mx-auto w-full max-w-[550px]">
+            <h2 className="mb-6 mt-6 text-4xl tracking-tight font-extrabold text-center text-gray-900">
+              Contact Us
+            </h2>
+            <p className="mb-8 lg:mb-16 font-light text-center text-gray-600 sm:text-xl">
+              Got a technical issue? want to send us a feedback? Need details
+              about our Business plan? Let us know.
+            </p>
+
             <form action="https://formbold.com/s/FORM_ID" method="POST">
               <div className="mb-5">
                 <label
@@ -54,7 +65,7 @@ const Contact = () => {
                   type="text"
                   name="name"
                   placeholder="Enter your name"
-                  className="w-full rounded-full border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+                  className="py-2 px-3 pe-11 block w-full border-2 border-gray-200 shadow-sm text-sm rounded-lg focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none"
                 />
                 <ErrorMessage
                   name="name"
@@ -72,7 +83,7 @@ const Contact = () => {
                 <Field
                   type="email"
                   name="email"
-                  className="w-full rounded-full border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+                  className="py-2 px-3 pe-11 block w-full border-2 border-gray-200 shadow-sm text-sm rounded-lg focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none"
                   placeholder="Enter your email"
                 />
                 <ErrorMessage
@@ -83,19 +94,24 @@ const Contact = () => {
               </div>
               <div className="mb-5">
                 <label
-                  for="subject"
+                  htmlFor="service"
                   className="mb-3 block text-base font-medium text-[#07074D]"
                 >
-                  Subject
+                  Service Need
                 </label>
                 <Field
-                  type="text"
-                  name="subject"
-                  placeholder="Subject"
-                  className="w-full rounded-full border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
-                />
+                  as="select"
+                  name="service"
+                  className="py-2 px-3 pe-11 block w-full border-2 bg-white border-gray-200 shadow-sm text-sm rounded-lg focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none"
+                >
+                  <option value="">Select a Service</option>
+                  <option value="service2">Graphic Designing</option>
+                  <option value="service1">Web Development</option>
+                  <option value="service3">Software Development</option>
+                  <option value="service4">Digital Marketing</option>
+                </Field>
                 <ErrorMessage
-                  name="subject"
+                  name="service"
                   component="div"
                   className="error text-red-500"
                 />
@@ -111,7 +127,7 @@ const Contact = () => {
                   as="textarea"
                   id="message"
                   name="message"
-                  className="w-full resize rounded-lg border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+                  className="py-2 px-3 pe-11 block w-full border-2 border-gray-200 shadow-sm text-sm rounded-lg focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none"
                   placeholder="Enter your message"
                   rows="4"
                 />
@@ -120,13 +136,6 @@ const Contact = () => {
                   component="div"
                   className="text-red-500"
                 />
-                {/* <textarea
-                  rows="4"
-                  name="message"
-                  id="message"
-                  placeholder="Type your message"
-                  className="w-full resize rounded-lg border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
-                ></textarea> */}
               </div>
               <div>
                 <button className="hover:shadow-form rounded-full bg-[#6A64F1] py-3 px-8 text-base font-semibold text-white outline-none">
@@ -137,6 +146,7 @@ const Contact = () => {
           </div>
         </div>
       </FormikProvider>
+      <Map />
     </>
   );
 };

@@ -31,10 +31,10 @@ const ServicesCard = (props) => {
 
           </div>
           <div className="px-5">
-            <h1 className="text-gray-900 font-bold text-2xl tracking-tight mb-2 dark:text-gray-900 ">
+            <h1 className="text-gray-900 font-bold text-lg  nd-pr-16 md:text-xl mb-2">
               {props.title}
             </h1>
-            <p className="flex text-gray-900 text-lg text-justify mb-5 ">
+            <p className="flex text-gray-900 text-md  nd-pr-16 md:text-base text-justify mb-5 ">
               {props.description}
             </p>
 

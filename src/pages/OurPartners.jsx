@@ -47,16 +47,7 @@ const PartnerList = [
 const OurPartners = () => {
   return (
     <>
-      <section
-        className="mt-16"
-        style={{
-          backgroundImage:
-            'linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(254, 255, 255, 0.8)), url("/static/images/bg.png")',
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-          width: "100%",
-        }}
-      >
+      <section className="mt-16">
         <div className="text-md w-9/12 m-auto pt-4 flex items-center ">
           <span>
             <Link to="/" className="hover:text-blue-700" title="Home">
@@ -82,14 +73,14 @@ const OurPartners = () => {
           </span>
           <span className="text-blue-700">Our Partners</span>
         </div>
-        <div className="px-4  mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 ">
-          <div className="text-center w-full mx-auto md:w-11/12 xl:w-9/12 md:text-center pt-24 mb-20">
-            <h1 className="font-bold text-4xl leading-[1.1] sm:text-3xl md:text-6xl pb-8">
+        <div className="px-4  mx-auto max-w-screen-xl w-11/12 md:w-11/12 lg:w-9/12 md:px-6 ">
+          <div className="text-center  mx-auto md:text-center pt-24 mb-20">
+            <h1 className="font-bold text-2xl leading-[1.1] md:text-3xl pb-4">
               <span className="block w-full py-2 text-gray-900 bg-clip-text leading-12 lg:inline">
                 Our Partners
               </span>
             </h1>
-            <p className="flex  mb-8 text-lg text-justify text-gray-900 md:text-xl   ">
+            <p className="flex  mb-8 text-base text-justify text-gray-900">
               At Bluetelecast, we believe in the power of collaboration. Our
               partnerships are key to delivering exceptional software solutions
               and driving success for our clients.
@@ -107,7 +98,7 @@ const OurPartners = () => {
               leverage our collective strengths to deliver superior results and
               achieve mutual success.
             </p>
-            <p className="flex  mb-8 text-lg text-justify text-gray-900 md:text-xl   ">
+            <p className="flex  mb-8 text-base text-justify text-gray-900">
               Explore our Partners Page to learn more about our esteemed
               collaborators and the impactful projects we have undertaken
               together. From joint ventures to strategic alliances, each
@@ -120,7 +111,7 @@ const OurPartners = () => {
               development and driving positive change in the digital landscape.
             </p>
           </div>
-          <div className="grid gap-10 row-gap-8 mx-auto sm:row-gap-10 lg:max-w-screen-lg grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 ">
+          <div className="grid gap-10 row-gap-8 mx-auto sm:row-gap-10 lg:max-w-screen-lg grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 ">
             {PartnerList.map((partner) => (
               <Partners
                 key={partner.id}
@@ -134,14 +125,14 @@ const OurPartners = () => {
           </div>
         </div>
       </section>
-      <div className="text-center mx-auto w-11/12 md:w-6/12 md:text-center m-auto pt-24 mb-20">
-        <p className="flex  mb-8 text-lg text-justify text-gray-900 md:text-xl   ">
+      <div className=" mx-auto w-11/12 md:w-3/12 text-center m-auto pt-24 mb-20">
+        <p className="flex mb-8 text-base text-gray-900 m-auto">
           For inquiries about partnership opportunities or to explore
           collaboration possibilities, please contact us.
         </p>
         <Link
           to="/contact"
-          className="inline-flex items-center justify-center  px-6 py-3 mb-2 text-lg bg-blue-700 text-white hover:bg-blue-800 rounded-2xl sm:w-auto sm:mb-0 font-semibold"
+          className="inline-flex items-center justify-center  px-6 py-3 mb-2 text-base bg-blue-700 text-white hover:bg-blue-800 rounded-2xl sm:w-auto sm:mb-0 font-semibold"
         >
           Contact Us
         </Link>

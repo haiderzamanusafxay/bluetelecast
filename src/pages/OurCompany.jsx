@@ -35,7 +35,7 @@ const About = () => {
       <CampanyMain />
       <Background />
       <section className="py-24 bg-gray-50">
-        <div className="container mx-auto grid lg:grid-cols-3  md:w-9/12 gap-5  bg-gray-50">
+        <div className="container mx-auto grid lg:grid-cols-3 max-w-screen-xl w-11/12 md:w-11/12 lg:w-9/12 md:px-8 gap-5  bg-gray-50">
           {AboutCardList.map((about) => (
             <AboutCard
               key={about.id}

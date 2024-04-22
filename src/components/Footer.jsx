@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <>
       <footer className="bg-gray-900 text-gray-400 border-t">
-        <div className="mx-auto max-w-screen-xl space-y-8 px-4 pt-16 pb-10 sm:px-6 lg:space-y-8 lg:px-8">
+        <div className="mx-auto max-w-screen-xl space-y-8 px-4 py-12 sm:px-6 lg:space-y-8 lg:px-8">
           <div className="md:flex md:items-center md:justify-between">
             <div className="text-teal-600">
               <img src={logo} alt="" width="200" />
@@ -190,7 +190,10 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link to="/services" className=" transition hover:opacity-75">
+                  <Link
+                    to="/industries"
+                    className=" transition hover:opacity-75"
+                  >
                     {" "}
                     Industries{" "}
                   </Link>
@@ -222,7 +225,10 @@ const Footer = () => {
                 </li>
 
                 <li>
-                  <Link to="/privacy-policy" className=" transition hover:opacity-75">
+                  <Link
+                    to="/privacy-policy"
+                    className=" transition hover:opacity-75"
+                  >
                     {" "}
                     Privacy Policy{" "}
                   </Link>
@@ -250,43 +256,72 @@ const Footer = () => {
                 <li>
                   <Link to="/services" className=" transition hover:opacity-75">
                     {" "}
-                     sales@bluetelecast.com{" "}
+                    sales@bluetelecast.com{" "}
                   </Link>
                 </li>
                 <li>
                   <Link to="/services" className=" transition hover:opacity-75">
                     {" "}
-                    Address: 227 Church St, New Haven, CT 06510{" "}
+                    Address: 227 Church St, New Haven US.{" "}
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/services" className=" transition hover:opacity-75">
+                    {" "}
+                    Phone: +1 475-300-7486{" "}
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/services" className=" transition hover:opacity-75">
+                    {" "}
+                    Open Hours: Mon – Sat: 8 am – 5 pm, Sunday: CLOSED{" "}
                   </Link>
                 </li>
               </ul>
             </div>
           </div>
-
+          <div>
+            
           <div className="grid grid-cols-3  md:mt-0  md:m-auto w-12/12  md:w-3/12 gap-5 items-center place-items-center">
-            <img
-              src="static/images/footer/toprated.webp"
-              alt="Top Rated App Development Companies"
-              width="100"
-              className="shadow hover:filter hover:grayscale transition-all"
-            />
-            <img
-              src="static/images/footer/clutch.webp"
-              alt="Clutch"
-              className="shadow hover:filter hover:grayscale transition-all"
-              width="100"
-            />
-            <img
-              src="static/images/footer/goofgirms.webp"
-              alt="Good Firms"
-              width="100"
-              className="rounded-lg shadow hover:filter hover:grayscale transition-all"
-            />
+            <a
+              href="https://superbcompanies.com/categories/mobile-app-development-companies/"
+              target="_blank"
+            >
+              <img
+                src="static/images/footer/toprated.webp"
+                alt="Top Rated App Development Companies"
+                width="100"
+                className="shadow hover:filter hover:grayscale transition-all"
+              />
+            </a>
+            <a
+              href="https://clutch.co/it-services/connecticut?related_services=field_pp_sl_application_dev"
+              target="_blank"
+            >
+              <img
+                src="static/images/footer/clutch.webp"
+                alt="Clutch"
+                className="shadow hover:filter hover:grayscale transition-all"
+                width="100"
+              />
+            </a>
+            <a
+              href="https://www.goodfirms.co/directory/state/top-software-development-companies/ohio"
+              target="_blank"
+            >
+              <img
+                src="static/images/footer/goofgirms.webp"
+                alt="Good Firms"
+                width="100"
+                className="rounded-lg shadow hover:filter hover:grayscale transition-all"
+              />
+            </a>
           </div>
-          <p className="text-sm text-gray-300 ">
+          <p className="text-sm text-gray-300 mt-12 md:-mt-5">
             &copy; {new Date().getFullYear()}. Bluetelecast. All rights
             reserved.
           </p>
+          </div>
         </div>
       </footer>
     </>

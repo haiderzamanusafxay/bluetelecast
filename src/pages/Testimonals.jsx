@@ -157,7 +157,7 @@ const Testimonals = () => {
       </div>
 
       <div className="text-center pt-24 w-full mx-auto md:w-11/12 xl:w-9/12 md:text-center">
-        <h1 className="font-bold text-4xl leading-[1.1] sm:text-3xl md:text-6xl">
+        <h1 className="font-bold text-2xl leading-[1.1] md:text-3xl">
           <span className="block w-full py-2 text-gray-900 bg-clip-text leading-12 lg:inline">
             Testimonials
           </span>
@@ -166,7 +166,7 @@ const Testimonals = () => {
       <Swiper
         // install Swiper modules
         key={1212}
-        className="w-11/12 md:w-8/12 lg:w-6/12 relative py-16"
+        className="max-w-screen-xl w-11/12 md:w-11/12 lg:w-6/12 2xl:w-6/12 md:px-6 relative py-8"
         modules={[Navigation, Pagination, Scrollbar, A11y]}
         spaceBetween={50}
         slidesPerView={1}
@@ -175,7 +175,7 @@ const Testimonals = () => {
           prevEl: ".swiper-button-prev",
         }}
       >
-        <div className="absolute bottom-16 right-16 z-50 ">
+        <div className="absolute bottom-8 md:bottom-16 right-16 z-50 ">
           <div
             className="swiper-button-prev text-gray-100 text-md bg-gray-900 w-12 h-12 rounded-full hover:bg-gray-800 hover:shadow-lg"
             style={{ left: "-120px" }}
@@ -192,11 +192,11 @@ const Testimonals = () => {
               <div className="w-36">
                 <img src="./static/images/5star.png" />
               </div>
-              <p className="flex  mb-8 text-lg text-justify text-gray-900 md:text-xl  mt-8 ">
+              <p className="flex  mb-8 text-base text-justify text-gray-900 mt-8 ">
                 "{data.description}"
               </p>
-              <h4 className="text-gray-900 text-2xl font-bold">{data.name}</h4>
-              <h5 className="text-gray-900 text-xl font-medium">
+              <h4 className="text-gray-900 text-xl font-bold">{data.name}</h4>
+              <h5 className="text-gray-900 text-lg font-medium">
                 <span>{data.title}</span>
               </h5>
             </div>

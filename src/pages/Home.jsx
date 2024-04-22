@@ -19,7 +19,7 @@ const Home = () => {
   return (
     <>
       <Hero />
-      <WorkedWith />
+      {/* <WorkedWith /> */}
       <Services />
       <About />
       <Projects />

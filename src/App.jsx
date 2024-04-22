@@ -18,6 +18,7 @@ import WhyUs from "./pages/WhyUS.jsx";
 import OurClients from "./pages/OurClients.jsx";
 import OurPartners from "./pages/OurPartners.jsx";
 import PrivacyPolicy from "./pages/PrivacyPolicy.jsx";
+import Industries from "./pages/Industries.jsx";
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
           <Route path="/our-partners" element={<OurPartners />} />
           <Route path="/testimonals" element={<Testimonals />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/industries" element={<Industries />} />
           <Route path="/content-not-found" element={<ContentNotFound />} />
           <Route path="*" element={<NotFound />} />
         </Route>

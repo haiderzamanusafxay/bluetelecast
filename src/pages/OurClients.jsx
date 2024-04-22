@@ -56,13 +56,7 @@ const OurTeam = [
 const OurClients = () => {
   return (
     <section className="mt-16"
-      style={{
-        backgroundImage:
-          'linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(254, 255, 255, 0.8)), url("/static/images/bg.png")',
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-        width: "100%",
-      }}
+    
     >
         <div className="text-md w-9/12 m-auto pt-4 flex items-center ">
           <span>
@@ -89,14 +83,14 @@ const OurClients = () => {
           </span>
           <span className="text-blue-700">Our Clients</span>
         </div>
-      <div className="px-4  mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 ">
-        <div className="text-center w-full mx-auto md:w-11/12 xl:w-9/12 md:text-center pt-24 mb-20">
-          <h1 className="font-bold text-4xl leading-[1.1] sm:text-3xl md:text-6xl pb-8">
+      <div className="px-4  mx-auto max-w-screen-xl w-11/12 md:w-11/12 lg:w-9/12 md:px-6">
+        <div className="text-center mx-auto md:text-center pt-24 mb-20">
+          <h1 className="font-bold text-2xl leading-[1.1] md:text-3xl pb-4">
             <span className="block w-full py-2 text-gray-900 bg-clip-text leading-12 lg:inline">
               Our Clients
             </span>
           </h1>
-          <p className="flex  mb-8 text-lg text-justify text-gray-900 md:text-xl   ">
+          <p className="flex  mb-4 text-base text-justify text-gray-900">
             At Bluetelecast, we truly value our clients. Each partnership shows
             our commitment to providing great software solutions that fit your
             needs.
@@ -107,7 +101,7 @@ const OurClients = () => {
             company, we're here to offer reliable, creative, and effective
             software development services.
           </p>
-          <p className="flex  mb-8 text-lg text-justify text-gray-900 md:text-xl   ">
+          <p className="flex  mb-4 text-base text-justify text-gray-900">
             As you browse our client page, take a look at the organizations
             we've worked with. Together, we've tackled challenges and achieved
             goals, building strong relationships based on trust and success.

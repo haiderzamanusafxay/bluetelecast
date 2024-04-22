@@ -50,14 +50,14 @@ const Portfolio = () => {
     <>
       <section className="pb-12">
         <div className="text-center w-full mx-auto md:w-11/12 xl:w-9/12 md:text-center pt-24">
-          <h1 className="font-bold text-4xl leading-[1.1] sm:text-3xl md:text-6xl pb-16">
+          <h1 className="font-bold text-2xl leading-[1.1]  md:text-3xl pb-16">
             <span className="block w-full py-2 text-gray-900 bg-clip-text leading-12 lg:inline">
               Our Resent Projects
             </span>
           </h1>
         </div>
 
-        <div className="container mx-auto grid md:grid-cols-2 lg:grid-cols-3  md:w-10/12 gap-10 pb-24 ">
+        <div className="container mx-auto grid md:grid-cols-2 lg:grid-cols-3 max-w-screen-xl w-11/12 md:w-11/12 lg:w-9/12 gap-10 pb-24 ">
           {ProjectsArray.map((project) => {
             return (
               <PortfolioCard
