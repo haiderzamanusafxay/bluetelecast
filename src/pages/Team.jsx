@@ -11,12 +11,12 @@ const OurTeam = [
       "As chief people and communications officer, Greg Giangrande leads all aspects of Ellucian’s global people organization, including employee experience, HR business partners, talent acquisition, total rewards, diversity, equity and inclusion, learning and development, and communications. Greg has deep experience as a transformative human resources and communications leader. He comes to Ellucian most recently from McKinsey & Company where he served as a senior advisor working with clients across sectors and geographies on enterprise transformation, employee experience, human resources, organizational health and culture, leadership development, diversity and inclusion, and communications strategies.",
   },
   {
-    id: 12,
+    id: 1,
     url: "/static/images/team/Qais.png",
     name: "Qais Abdul Rashid",
     title: "Sales Lead ",
     description:
-      "As chief people and communications officer, Greg Giangrande leads all aspects of Ellucian’s global people organization, including employee experience, HR business partners, talent acquisition, total rewards, diversity, equity and inclusion, learning and development, and communications. Greg has deep experience as a transformative human resources and communications leader. He comes to Ellucian most recently from McKinsey & Company where he served as a senior advisor working with clients across sectors and geographies on enterprise transformation, employee experience, human resources, organizational health and culture, leadership development, diversity and inclusion, and communications strategies.",
+      "Meet Qais Abdul Rasheed: an esteemed sales lead renowned for consistently surpassing targets and cultivating unwavering client confidence. With a decade-long track record in business development and spearheading revenue expansion, Qais injects our team with strategic foresight and charismatic leadership. His fervent drive for innovation and unwavering commitment to client contentment render him an indispensable force in navigating the ever-evolving terrain of modern business.",
   },
   {
     id: 2,
@@ -27,7 +27,7 @@ const OurTeam = [
       "As chief people and communications officer, Greg Giangrande leads all aspects of Ellucian’s global people organization, including employee experience, HR business partners, talent acquisition, total rewards, diversity, equity and inclusion, learning and development, and communications. Greg has deep experience as a transformative human resources and communications leader. He comes to Ellucian most recently from McKinsey & Company where he served as a senior advisor working with clients across sectors and geographies on enterprise transformation, employee experience, human resources, organizational health and culture, leadership development, diversity and inclusion, and communications strategies.",
   },
   {
-    id: 10,
+    id: 3,
     url: "/static/images/team/JohnScott.jpg",
     name: "John Scott",
     title: "Project Manager",
@@ -35,7 +35,7 @@ const OurTeam = [
       "As chief people and communications officer, Greg Giangrande leads all aspects of Ellucian’s global people organization, including employee experience, HR business partners, talent acquisition, total rewards, diversity, equity and inclusion, learning and development, and communications. Greg has deep experience as a transformative human resources and communications leader. He comes to Ellucian most recently from McKinsey & Company where he served as a senior advisor working with clients across sectors and geographies on enterprise transformation, employee experience, human resources, organizational health and culture, leadership development, diversity and inclusion, and communications strategies.",
   },
   {
-    id: 9,
+    id: 4,
     url: "/static/images/team/tina.jpeg",
     name: "Tina Steven",
     title: "Marketing Manager",
@@ -43,7 +43,7 @@ const OurTeam = [
       "As chief people and communications officer, Greg Giangrande leads all aspects of Ellucian’s global people organization, including employee experience, HR business partners, talent acquisition, total rewards, diversity, equity and inclusion, learning and development, and communications. Greg has deep experience as a transformative human resources and communications leader. He comes to Ellucian most recently from McKinsey & Company where he served as a senior advisor working with clients across sectors and geographies on enterprise transformation, employee experience, human resources, organizational health and culture, leadership development, diversity and inclusion, and communications strategies.",
   },
   {
-    id: 111,
+    id: 5,
     url: "/static/images/team/AimalSamsour.jpg",
     name: "Aimal Samsor",
     title: "Business Development Manager",
@@ -51,7 +51,7 @@ const OurTeam = [
       "As chief people and communications officer, Greg Giangrande leads all aspects of Ellucian’s global people organization, including employee experience, HR business partners, talent acquisition, total rewards, diversity, equity and inclusion, learning and development, and communications. Greg has deep experience as a transformative human resources and communications leader. He comes to Ellucian most recently from McKinsey & Company where he served as a senior advisor working with clients across sectors and geographies on enterprise transformation, employee experience, human resources, organizational health and culture, leadership development, diversity and inclusion, and communications strategies.",
   },
   {
-    id: 1,
+    id: 6,
     url: "/static/images/team/FiasalKhan.jpg",
     name: "Fiasal Khan",
     title: "Technical Manager",
@@ -59,7 +59,7 @@ const OurTeam = [
       "As chief people and communications officer, Greg Giangrande leads all aspects of Ellucian’s global people organization, including employee experience, HR business partners, talent acquisition, total rewards, diversity, equity and inclusion, learning and development, and communications. Greg has deep experience as a transformative human resources and communications leader. He comes to Ellucian most recently from McKinsey & Company where he served as a senior advisor working with clients across sectors and geographies on enterprise transformation, employee experience, human resources, organizational health and culture, leadership development, diversity and inclusion, and communications strategies.",
   },
   {
-    id: 14,
+    id: 7,
     url: "/static/images/team/Javid.jpg",
     name: "Javid",
     title: "Technical Manager",
@@ -72,34 +72,34 @@ const OurTeam = [
     name: "Mohammad Yusuf",
     title: "Full Stack Developer",
     description:
-      "As chief people and communications officer, Greg Giangrande leads all aspects of Ellucian’s global people organization, including employee experience, HR business partners, talent acquisition, total rewards, diversity, equity and inclusion, learning and development, and communications. Greg has deep experience as a transformative human resources and communications leader. He comes to Ellucian most recently from McKinsey & Company where he served as a senior advisor working with clients across sectors and geographies on enterprise transformation, employee experience, human resources, organizational health and culture, leadership development, diversity and inclusion, and communications strategies.",
+      "Meet Mohammad Yousaf, an adept Senior MERN Stack Engineer with extensive experience in full-stack web development. With a keen eye for innovation and a steadfast dedication to client satisfaction, Mohammad consistently exceeds expectations. Proficient in MongoDB, Express.js, React.js, Larval, and Node.js, he crafts dynamic and user-friendly web applications with ease. Mohammad's collaborative nature and knack for seamlessly integrating into teams ensure project success, making him a standout in the field of web development.",
   },
   {
-    id: 4,
-    url: "/static/images/team/",
-    name: "Thomas",
+    id: 9,
+    url: "/static/images/team/ThomasAlbert.jpg",
+    name: "Thomas Albert",
     title: "Full Stack Developer",
     description:
-      "As chief people and communications officer, Greg Giangrande leads all aspects of Ellucian’s global people organization, including employee experience, HR business partners, talent acquisition, total rewards, diversity, equity and inclusion, learning and development, and communications. Greg has deep experience as a transformative human resources and communications leader. He comes to Ellucian most recently from McKinsey & Company where he served as a senior advisor working with clients across sectors and geographies on enterprise transformation, employee experience, human resources, organizational health and culture, leadership development, diversity and inclusion, and communications strategies.",
+      "Meet Thomas Albert, a University of Bridgeport BCS graduate who has spearheaded full-stack development projects for major players like Google, Indeed, and Charter Communication. With a knack for innovation and a commitment to client satisfaction, Thomas consistently delivers exceptional results. His expertise, collaborative nature, and seamless integration into teams have earned him a stellar reputation in the industry.",
   },
   {
-    id: 5,
-    url: "/static/images/team/",
-    name: "Kevin",
+    id: 10,
+    url: "/static/images/team/KevinFord.jpg",
+    name: "Kevin Ford",
     title: "Full Stack Developer",
     description:
-      "As chief people and communications officer, Greg Giangrande leads all aspects of Ellucian’s global people organization, including employee experience, HR business partners, talent acquisition, total rewards, diversity, equity and inclusion, learning and development, and communications. Greg has deep experience as a transformative human resources and communications leader. He comes to Ellucian most recently from McKinsey & Company where he served as a senior advisor working with clients across sectors and geographies on enterprise transformation, employee experience, human resources, organizational health and culture, leadership development, diversity and inclusion, and communications strategies.",
+      "Meet with Kevin Ford, a seasoned Senior MERN Stack Engineer who graduated from New Haven University. With a track record of delivering exceptional projects, Kevin's portfolio speaks volumes about his expertise and dedication. His commitment to client satisfaction is unwavering, and his innovative approach to web development sets him apart. Proficient in MongoDB, Express.js, React.js, and Node.js, Kevin effortlessly creates dynamic and intuitive web applications. Known for his collaborative spirit and ability to seamlessly blend into teams, Kevin consistently ensures project success, solidifying his reputation as a standout in the web development industry.",
   },
   {
-    id: 6,
-    url: "/static/images/team/",
-    name: "John Bartz",
+    id: 11,
+    url: "/static/images/team/DanielWilliam.jpg",
+    name: "Daniel Willam",
     title: "UI/UX Designer",
     description:
-      "As chief people and communications officer, Greg Giangrande leads all aspects of Ellucian’s global people organization, including employee experience, HR business partners, talent acquisition, total rewards, diversity, equity and inclusion, learning and development, and communications. Greg has deep experience as a transformative human resources and communications leader. He comes to Ellucian most recently from McKinsey & Company where he served as a senior advisor working with clients across sectors and geographies on enterprise transformation, employee experience, human resources, organizational health and culture, leadership development, diversity and inclusion, and communications strategies.",
+      "Meet Daniel William, a seasoned professional programmer with a Bachelor's degree in Computer Science from the prestigious University of Yale. With nine years of experience under his belt, Daniel has honed his skills and expertise to deliver outstanding results in the field of programming. His impressive track record of successful projects attests to his commitment and proficiency. Daniel's dedication to client satisfaction is unmatched, and his innovative approach to programming distinguishes him from his peers. Armed with extensive knowledge of various programming languages and technologies, Daniel consistently produces high-quality work. His collaborative nature and ability to seamlessly integrate into teams ensure project success, earning him a well-deserved reputation as a standout in the industry.",
   },
   {
-    id: 7,
+    id: 12,
     url: "/static/images/team/Badhon.jpg",
     name: "Raiful Islam Badhon",
     title: "Graphic Designer",
@@ -108,7 +108,7 @@ const OurTeam = [
   },
 
   {
-    id: 11,
+    id: 13,
     url: "/static/images/team/susan.jpeg",
     name: "Susan Caplan",
     title: "HR Manager",
@@ -117,12 +117,12 @@ const OurTeam = [
   },
 
   {
-    id: 13,
+    id: 14,
     url: "/static/images/team/Haider.jpg",
     name: "Haider Zaman",
     title: "Full Stack Developer",
     description:
-      "Passionate and skilled Senior MERN Stack Engineer with over 1 year of hands-on experience in full-stack web development. Committed to delivering high-quality, scalable solutions that exceed client expectations. Proficient in leveraging the power of MongoDB, Express.js, React.js, and Node.js to create dynamic and user-friendly web applications. Skilled collaborator known for effectively working within cross-functional teams to achieve project goals.",
+      "Meet Haider Zaman: a Senior MERN Stack Engineer with over a year of hands-on experience in full-stack web development. His passion for innovation and commitment to excellence consistently exceed client expectations. Proficient in MongoDB, Express.js, React.js, and Node.js, he crafts dynamic and user-centric web applications. Haider's collaborative nature and mastery of his craft ensure project success, leaving an indelible mark on the world of web development.",
   },
 ];
 
@@ -234,7 +234,7 @@ const Person = (props) => {
   return (
     <>
       <div
-        className="flex flex-col pb-6 shadow-lg  hover:shadow-xl  rounded-md items-center cursor-pointer"
+        className="flex flex-col pb-6 shadow-lg  hover:shadow-xl  rounded-md items-center cursor-pointer px-4 pt-4"
         onClick={openModal}
       >
         <LoadImages src={props.url} alt={props.alt} />
