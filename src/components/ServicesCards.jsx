@@ -30,7 +30,7 @@ const ServicesCard = (props) => {
 
 
           </div>
-          <div className="px-5">
+          <div className="px-5 min-h-64">
             <h1 className="text-gray-900 font-bold text-lg  nd-pr-16 md:text-xl mb-2">
               {props.title}
             </h1>
@@ -38,13 +38,13 @@ const ServicesCard = (props) => {
               {props.description}
             </p>
 
+          </div>
             <Link
               to="/content-not-found"
               className="font-medium text-blue-600 dark:text-blue-700 hover:underline"
             >
               Read more
             </Link>
-          </div>
         </div>
     </div>
 

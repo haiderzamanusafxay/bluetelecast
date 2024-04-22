@@ -60,6 +60,22 @@ const Services = () => {
         "Concentrate on important business tasks, and let Bluetelecast handle and support your apps. We offer different levels of support to keep your software running smoothly, update it, introduce new features, and make sure it can handle growth.",
       alt: "APPLICATION MAINTENANCE AND SUPPORT",
     },
+    {
+      id: 7,
+      url: "/static/images/seo.png",
+      title: "SEO",
+      description:
+        "Concentrate on important business tasks, and let Bluetelecast handle and support your apps. We offer different levels of support to keep your software running smoothly, update it, introduce new features, and make sure it can handle growth.",
+      alt: "SEO",
+    },
+    {
+      id: 8,
+      url: "/static/images/digital-marketing.png",
+      title: "Digital Marketing",
+      description:
+        "Concentrate on important business tasks, and let Bluetelecast handle and support your apps. We offer different levels of support to keep your software running smoothly, update it, introduce new features, and make sure it can handle growth.",
+      alt: "Digital Marketing",
+    },
   ];
 
   const Faqs = [
