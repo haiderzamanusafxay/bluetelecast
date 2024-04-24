@@ -8,7 +8,7 @@ const OurTeam = [
     name: "Jorry Dorelian",
     title: "Operations Manager",
     description:
-      "As chief people and communications officer, Greg Giangrande leads all aspects of Ellucian’s global people organization, including employee experience, HR business partners, talent acquisition, total rewards, diversity, equity and inclusion, learning and development, and communications. Greg has deep experience as a transformative human resources and communications leader. He comes to Ellucian most recently from McKinsey & Company where he served as a senior advisor working with clients across sectors and geographies on enterprise transformation, employee experience, human resources, organizational health and culture, leadership development, diversity and inclusion, and communications strategies.",
+      "Meet Jorry Dorelian, a driven individual who graduated from the College of Westchester and has since amassed an impressive track record of achievements over the past 11 years. Currently serving as the Operations Manager at Bluetelecast, Jorry brings a wealth of experience and expertise to the table. Known for his meticulous attention to detail and proactive approach to problem-solving, he has consistently delivered outstanding results throughout his career. Jorry's dedication to excellence and his ability to effectively streamline operations make him an invaluable asset to the Bluetelecast team. With his leadership, the company continues to thrive and excel in its endeavors.",
   },
   {
     id: 1,
@@ -24,31 +24,28 @@ const OurTeam = [
     name: "Joe Cannon",
     title: "Product Manager",
     description:
-      "As chief people and communications officer, Greg Giangrande leads all aspects of Ellucian’s global people organization, including employee experience, HR business partners, talent acquisition, total rewards, diversity, equity and inclusion, learning and development, and communications. Greg has deep experience as a transformative human resources and communications leader. He comes to Ellucian most recently from McKinsey & Company where he served as a senior advisor working with clients across sectors and geographies on enterprise transformation, employee experience, human resources, organizational health and culture, leadership development, diversity and inclusion, and communications strategies.",
-  },
+"Meet Joe Cannon: Joe Cannon is an accomplished professional with over 15 years of experience in the field of product management. He graduated from the University of Southern Connecticut, where he specialized in business and honed his skills in areas such as product strategy, market research, and product development. Joe’s expertise lies in creating innovative products that meet customer needs and drive business growth. His strategic thinking, leadership, and dedication have made him an invaluable asset to every organization he has worked with. Currently, Joe serves as the Vice President of Business Development at Hyperice, where he continues to excel in his role, contributing to the company’s success through impactful product strategies and partnerships."  },
   {
     id: 3,
     url: "/static/images/team/JohnScott.jpg",
     name: "John Scott",
     title: "Project Manager",
     description:
-      "As chief people and communications officer, Greg Giangrande leads all aspects of Ellucian’s global people organization, including employee experience, HR business partners, talent acquisition, total rewards, diversity, equity and inclusion, learning and development, and communications. Greg has deep experience as a transformative human resources and communications leader. He comes to Ellucian most recently from McKinsey & Company where he served as a senior advisor working with clients across sectors and geographies on enterprise transformation, employee experience, human resources, organizational health and culture, leadership development, diversity and inclusion, and communications strategies.",
-  },
+"John Scott is an accomplished Project Manager with a wealth of experience in leading software development projects. He graduated from the University of California, where he honed his skills in project management, team collaboration, and stakeholder communication. John’s journey likely began at the university, where he gained a solid foundation in project management methodologies and industry-related knowledge. Throughout his career, John has worked with various organizations, including digital publishing, enterprise software, and utilities companies. His expertise extends beyond technical aspects; he excels in fostering collaboration, resolving conflicts, and ensuring successful project outcomes. As a certified Project Management Professional (PMP) and Scrum Master (CSM), John brings a wealth of knowledge to every project he leads. John’s ability to manage virtual teams effectively is especially valuable in today’s remote work environment. He understands the importance of online collaboration tools and strategies, ensuring seamless communication across distributed teams. His dedication to client satisfaction and project success has made him an invaluable asset to the organizations he has served."  },
   {
     id: 4,
     url: "/static/images/team/tina.jpeg",
     name: "Tina Steven",
     title: "Marketing Manager",
     description:
-      "As chief people and communications officer, Greg Giangrande leads all aspects of Ellucian’s global people organization, including employee experience, HR business partners, talent acquisition, total rewards, diversity, equity and inclusion, learning and development, and communications. Greg has deep experience as a transformative human resources and communications leader. He comes to Ellucian most recently from McKinsey & Company where he served as a senior advisor working with clients across sectors and geographies on enterprise transformation, employee experience, human resources, organizational health and culture, leadership development, diversity and inclusion, and communications strategies.",
-  },
+"Meet Tina Steven: Tina Steven is an accomplished Marketing Manager with 12 years of experience in the field of digital marketing. She graduated from the University of New Haven, where she specialized in marketing and honed her skills in areas such as social media, database marketing, Google AdWords, and data mining. Tina’s expertise lies in creating effective marketing campaigns that leverage cutting-edge technologies to drive business growth. Her strategic thinking, creativity, and dedication have made her an invaluable asset to every organization she has worked with. Currently, Tina serves as the Marketing Manager at Bluetelecast, where she continues to excel in her role, contributing to the company’s success through innovative marketing strategies and impactful campaigns."  },
   {
     id: 5,
     url: "/static/images/team/AimalSamsour.jpg",
     name: "Aimal Samsor",
     title: "Business Development Manager",
     description:
-      "As chief people and communications officer, Greg Giangrande leads all aspects of Ellucian’s global people organization, including employee experience, HR business partners, talent acquisition, total rewards, diversity, equity and inclusion, learning and development, and communications. Greg has deep experience as a transformative human resources and communications leader. He comes to Ellucian most recently from McKinsey & Company where he served as a senior advisor working with clients across sectors and geographies on enterprise transformation, employee experience, human resources, organizational health and culture, leadership development, diversity and inclusion, and communications strategies.",
+      "Meet Aimal Samsour, a seasoned business development professional who graduated from the University of Khurasan with a degree in Business Administration. With a wealth of experience working for numerous international companies, Aimal has established himself as a driving force in the field of business development. Currently serving as a Business Development Manager at Bluetelecast, he continues to leverage his expertise to drive growth and foster strategic partnerships. Aimal's track record of success and dedication to his craft make him an invaluable asset in the world of business development.",
   },
   {
     id: 6,
@@ -56,7 +53,7 @@ const OurTeam = [
     name: "Fiasal Khan",
     title: "Technical Manager",
     description:
-      "As chief people and communications officer, Greg Giangrande leads all aspects of Ellucian’s global people organization, including employee experience, HR business partners, talent acquisition, total rewards, diversity, equity and inclusion, learning and development, and communications. Greg has deep experience as a transformative human resources and communications leader. He comes to Ellucian most recently from McKinsey & Company where he served as a senior advisor working with clients across sectors and geographies on enterprise transformation, employee experience, human resources, organizational health and culture, leadership development, diversity and inclusion, and communications strategies.",
+      "Meet Faisal, a expert technical manager with a rich and diverse background in project management across various industries. With a journey that began in 2015, Faisal has navigated through numerous projects, each presenting unique challenges and opportunities for growth. His expertise in web development, honed through years of hands-on experience with technologies like Laravel and React (Next.js), has made him a sought-after leader in the field. Having successfully led projects in Kabul and contributed to startups in Berlin, Faisal now brings his wealth of knowledge and leadership skills to Bluetelecast as a technical manager. With a proven track record of delivering innovative solutions and driving project success, Faisal is poised to make a significant impact on Bluetelecast's technical endeavors. His relentless commitment to excellence and ability to navigate complex technical landscapes make him an invaluable asset to the team.",
   },
   {
     id: 7,
@@ -64,7 +61,7 @@ const OurTeam = [
     name: "Javid",
     title: "Technical Manager",
     description:
-      "As chief people and communications officer, Greg Giangrande leads all aspects of Ellucian’s global people organization, including employee experience, HR business partners, talent acquisition, total rewards, diversity, equity and inclusion, learning and development, and communications. Greg has deep experience as a transformative human resources and communications leader. He comes to Ellucian most recently from McKinsey & Company where he served as a senior advisor working with clients across sectors and geographies on enterprise transformation, employee experience, human resources, organizational health and culture, leadership development, diversity and inclusion, and communications strategies.",
+      "Meet Javid, a experienced technical manager with over a decade of experience in full-stack development and project management. Graduating with a BCS from Peshawar University, Javid has led more than 120 successful projects, showcasing his prowess in navigating complex technical landscapes. Proficient in a variety of technologies, from front-end frameworks like React and Angular to back-end solutions like Node.js and Django, Javid brings a diverse skill set to the table. Now, as a key member of the Bluetelecast team, he continues to drive innovation and excellence, inspiring his team to achieve new heights of success.",
   },
   {
     id: 8,
@@ -104,7 +101,7 @@ const OurTeam = [
     name: "Raiful Islam Badhon",
     title: "Graphic Designer",
     description:
-      "As chief people and communications officer, Greg Giangrande leads all aspects of Ellucian’s global people organization, including employee experience, HR business partners, talent acquisition, total rewards, diversity, equity and inclusion, learning and development, and communications. Greg has deep experience as a transformative human resources and communications leader. He comes to Ellucian most recently from McKinsey & Company where he served as a senior advisor working with clients across sectors and geographies on enterprise transformation, employee experience, human resources, organizational health and culture, leadership development, diversity and inclusion, and communications strategies.",
+      "Meet Raiful Islam Badhon, a graphic designer renowned for his mastery of visual storytelling. With a repertoire of design tools that includes Adobe Photoshop, Illustrator, and InDesign, as well as CorelDRAW and Affinity Designer, Raiful brings a unique blend of creativity and technical skill to his craft. Over the years, he has curated a portfolio of captivating designs, from intricate logos to compelling marketing collateral. Now contributing his expertise to Bluetelecast as a graphics designer, Raiful continues to elevate brand identities and communication strategies with his innovative approach and impeccable execution.",
   },
 
   {
@@ -113,7 +110,7 @@ const OurTeam = [
     name: "Susan Caplan",
     title: "HR Manager",
     description:
-      "As chief people and communications officer, Greg Giangrande leads all aspects of Ellucian’s global people organization, including employee experience, HR business partners, talent acquisition, total rewards, diversity, equity and inclusion, learning and development, and communications. Greg has deep experience as a transformative human resources and communications leader. He comes to Ellucian most recently from McKinsey & Company where he served as a senior advisor working with clients across sectors and geographies on enterprise transformation, employee experience, human resources, organizational health and culture, leadership development, diversity and inclusion, and communications strategies.",
+      "Meet Susan Caplan, a qualified HR Manager at Bluetelecast, boasting an impressive 24-year career in human resources across various organizations. A graduate of the prestigious University of MIT, MA, Susan brings a wealth of knowledge and expertise to her role. With her extensive experience and unwavering dedication, she plays a pivotal role in fostering a positive and productive work environment at Bluetelecast. Susan’s exceptional leadership skills and commitment to employee well-being make her an invaluable asset to the team.",
   },
 
   {
