@@ -65,7 +65,7 @@ const Services = () => {
       url: "/static/images/seo.png",
       title: "SEO",
       description:
-        "Concentrate on important business tasks, and let Bluetelecast handle and support your apps. We offer different levels of support to keep your software running smoothly, update it, introduce new features, and make sure it can handle growth.",
+        "Unlock the full potential of your website with our comprehensive SEO solutions. From targeted keyword research and compelling content creation to seamless user experience optimization, we ensure your website ranks higher, attracts quality traffic, and keeps visitors engaged. Dominate your local market with our local SEO strategies, optimize visual content for maximum impact, and amplify your brand's reach through social media integration. With continuous performance monitoring and refinement, we guarantee sustained growth and success in the digital landscape.",
       alt: "SEO",
     },
     {
@@ -73,7 +73,7 @@ const Services = () => {
       url: "/static/images/digital-marketing.png",
       title: "Digital Marketing",
       description:
-        "Concentrate on important business tasks, and let Bluetelecast handle and support your apps. We offer different levels of support to keep your software running smoothly, update it, introduce new features, and make sure it can handle growth.",
+        "Take your online presence to the next level with Bluetelecast's digital marketing services. Our team specializes in creating strategies that work for you. We'll help you connect with your audience, create great content, and use data to make smart decisions. Whether it's getting found on search engines, advertising online, managing social media, or sending emails, we've got you covered. With Bluetelecast, digital marketing is easy, effective, and tailored to your needs.",
       alt: "Digital Marketing",
     },
   ];
@@ -169,7 +169,6 @@ const Services = () => {
 
         <div className="text-center w-full mx-auto md:w-11/12 xl:w-9/12 md:text-center pt-24">
           <h1 className="font-bold text-2xl leading-[1.1]  md:text-3xl pb-4">
-
             <span className="block w-full py-2 text-gray-900 bg-clip-text leading-12 lg:inline">
               Our Services
             </span>
